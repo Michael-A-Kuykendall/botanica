@@ -173,28 +173,50 @@ impl BotanicalContext {
 }
 
 /// Extract recommendations from context text
-fn extract_recommendations(context: &str) -> Vec<String> {
+pub fn extract_recommendations(context: &str) -> Vec<String> {
     let mut recommendations = Vec::new();
     
+    if context.is_empty() {
+        return recommendations;
+    }
+    
+    let context_lower = context.to_lowercase();
+    
     // Look for recommendation patterns in text
-    if context.contains("nutrient") && context.contains("deficiency") {
+    if context_lower.contains("nutrient") && context_lower.contains("deficiency") {
         recommendations.push("Consider adjusting nutrient levels".to_string());
     }
     
-    if context.contains("water") && (context.contains("over") || context.contains("under")) {
+    if context_lower.contains("water") && (context_lower.contains("over") || context_lower.contains("under")) {
         recommendations.push("Review watering schedule".to_string());
     }
     
-    if context.contains("light") && context.contains("stress") {
+    if context_lower.contains("light") && context_lower.contains("stress") {
         recommendations.push("Adjust lighting conditions".to_string());
     }
     
-    if context.contains("pH") {
+    if context_lower.contains("ph") {
         recommendations.push("Check and adjust soil/water pH levels".to_string());
     }
     
-    if context.contains("harvest") && context.contains("ready") {
+    if context_lower.contains("harvest") && context_lower.contains("ready") {
         recommendations.push("Consider harvest timing evaluation".to_string());
+    }
+    
+    if context_lower.contains("temperature") {
+        recommendations.push("Monitor temperature conditions".to_string());
+    }
+    
+    if context_lower.contains("pest") || context_lower.contains("insect") {
+        recommendations.push("Check for pest management needs".to_string());
+    }
+    
+    if context_lower.contains("disease") || context_lower.contains("fungus") {
+        recommendations.push("Evaluate plant health and disease prevention".to_string());
+    }
+    
+    if context_lower.contains("pruning") || context_lower.contains("trim") {
+        recommendations.push("Consider pruning and plant training techniques".to_string());
     }
     
     // If no specific patterns found, provide general recommendation
@@ -203,6 +225,43 @@ fn extract_recommendations(context: &str) -> Vec<String> {
     }
     
     recommendations
+}
+
+/// Build context query from plant data
+pub fn build_plant_context_query(
+    species: &Species, 
+    records: &[CultivationRecord],
+    user_query: &str
+) -> PlantContextQuery {
+    PlantContextQuery {
+        plant_id: species.id,
+        query: format!("Species: {} {} - {}", 
+            species.genus_id, 
+            species.specific_epithet, 
+            user_query
+        ),
+        include_cultivation_history: !records.is_empty(),
+        include_species_data: true,
+        max_documents: 10,
+        max_tokens: 4000,
+    }
+}
+
+/// Validate context response quality
+pub fn validate_context_response(response: &PlantContextResponse) -> Result<(), DatabaseError> {
+    if response.query.is_empty() {
+        return Err(DatabaseError::ValidationError("Query cannot be empty".to_string()));
+    }
+    
+    if response.context.is_empty() {
+        return Err(DatabaseError::ValidationError("Context cannot be empty".to_string()));
+    }
+    
+    if response.confidence_score < 0.0 || response.confidence_score > 1.0 {
+        return Err(DatabaseError::ValidationError("Confidence score must be between 0.0 and 1.0".to_string()));
+    }
+    
+    Ok(())
 }
 
 #[cfg(test)]
@@ -257,11 +316,96 @@ mod tests {
 
     #[test]
     fn test_recommendation_extraction() {
-        // TODO: Test recommendation extraction once ContextLite API is working
-        // For now, test basic text pattern matching
-        let test_context = "The plant shows signs of nutrient deficiency and may need water adjustment";
+        // Test nutrient deficiency detection
+        let nutrient_context = "The plant shows signs of nutrient deficiency";
+        let recommendations = extract_recommendations(nutrient_context);
+        assert!(recommendations.contains(&"Consider adjusting nutrient levels".to_string()));
         
-        assert!(test_context.contains("nutrient"));
-        assert!(test_context.contains("water"));
+        // Test watering issues
+        let water_context = "Plant appears to be overwatered";
+        let recommendations = extract_recommendations(water_context);
+        assert!(recommendations.contains(&"Review watering schedule".to_string()));
+        
+        // Test pH issues
+        let ph_context = "Check the pH levels in soil";
+        let recommendations = extract_recommendations(ph_context);
+        assert!(recommendations.contains(&"Check and adjust soil/water pH levels".to_string()));
+        
+        // Test empty context
+        let empty_recommendations = extract_recommendations("");
+        assert!(empty_recommendations.is_empty());
+        
+        // Test general case
+        let general_context = "General plant concern";
+        let recommendations = extract_recommendations(general_context);
+        assert!(!recommendations.is_empty());
+        assert!(recommendations.contains(&"Review cultivation data and environmental conditions".to_string()));
+    }
+    
+    #[test]
+    fn test_build_plant_context_query() {
+        let species = Species::new(
+            Uuid::new_v4(),
+            "testspecies".to_string(),
+            "L.".to_string(),
+            Some(1753),
+            None
+        );
+        
+        let records = vec![
+            CultivationRecord::new(
+                species.id,
+                GrowthStage::Vegetative,
+                "test_cultivator".to_string()
+            )
+        ];
+        
+        let query = build_plant_context_query(&species, &records, "How is my plant?");
+        
+        assert_eq!(query.plant_id, species.id);
+        assert!(query.query.contains("testspecies"));
+        assert!(query.query.contains("How is my plant?"));
+        assert!(query.include_cultivation_history);
+        assert!(query.include_species_data);
+        assert_eq!(query.max_documents, 10);
+        assert_eq!(query.max_tokens, 4000);
+    }
+    
+    #[test]
+    fn test_validate_context_response() {
+        let valid_response = PlantContextResponse {
+            plant_id: Uuid::new_v4(),
+            query: "Test query".to_string(),
+            context: "Test context".to_string(),
+            recommendations: vec!["Test recommendation".to_string()],
+            relevant_documents: vec![],
+            confidence_score: 0.8,
+        };
+        
+        assert!(validate_context_response(&valid_response).is_ok());
+        
+        // Test invalid confidence score
+        let invalid_confidence = PlantContextResponse {
+            plant_id: Uuid::new_v4(),
+            query: "Test query".to_string(),
+            context: "Test context".to_string(),
+            recommendations: vec![],
+            relevant_documents: vec![],
+            confidence_score: 1.5, // Invalid score > 1.0
+        };
+        
+        assert!(validate_context_response(&invalid_confidence).is_err());
+        
+        // Test empty query
+        let empty_query = PlantContextResponse {
+            plant_id: Uuid::new_v4(),
+            query: "".to_string(),
+            context: "Test context".to_string(),
+            recommendations: vec![],
+            relevant_documents: vec![],
+            confidence_score: 0.5,
+        };
+        
+        assert!(validate_context_response(&empty_query).is_err());
     }
 }

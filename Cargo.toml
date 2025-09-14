@@ -1,6 +1,6 @@
 [package]
 name = "botanica"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Professional botanical cultivation database with AI-powered plant insights"
 license = "MIT OR Apache-2.0"
@@ -18,12 +18,25 @@ thiserror = "1.0"
 anyhow = "1.0"
 log = "0.4"
 
-# ContextLite integration
+# ContextLite integration (original v0.1.0 feature)
 contextlite-client = { version = "2.0.7", optional = true }
+
+# Professional features (v0.2.0+) - all optional
+geo = { version = "0.28", features = ["use-serde"], optional = true }
+reqwest = { version = "0.12", features = ["json"], optional = true }
+url = { version = "2.5", optional = true }
 
 [features]
 default = ["contextlite"]
 contextlite = ["dep:contextlite-client"]
+
+# Professional botanical features (backward compatible)
+darwin-core = []
+herbarium = ["darwin-core", "dep:geo"]  
+conservation = ["darwin-core", "dep:reqwest", "dep:url"]
+germplasm = ["darwin-core", "dep:geo"]
+api = ["darwin-core"]
+full = ["darwin-core", "herbarium", "conservation", "germplasm", "api"]
 
 [dev-dependencies]
 tokio-test = "0.4"
