@@ -12,6 +12,13 @@ pub mod error;
 #[cfg(feature = "contextlite")]
 pub mod contextlite;
 
+// Professional features (v0.2.0+) - optional and additive only
+#[cfg(feature = "darwin-core")]
+pub mod darwin_core;
+
+#[cfg(feature = "conservation")]
+pub mod conservation;
+
 // Re-exports for convenience
 pub use database::{BotanicalDatabase, DatabaseConfig};
 pub use error::DatabaseError;

@@ -17,7 +17,7 @@ Botanica is a **production-ready botanical database** that provides type-safe ta
 | **Performance** | Native SQLite 🏆 | ORM overhead |
 | **Taxonomy** | Scientific standard 🏆 | Ad-hoc schemas |
 | **AI Integration** | Optional ContextLite 🏆 | None |
-| **Testing** | 69 comprehensive tests 🏆 | Minimal |
+| **Testing** | 97 comprehensive tests 🏆 | Minimal |
 | **Memory Safety** | Zero unsafe code 🏆 | Manual management |
 
 ## 🎯 Perfect for Botanical Applications
@@ -28,7 +28,7 @@ Botanica is a **production-ready botanical database** that provides type-safe ta
 - **Education**: Teaching tools, botanical surveys, field guides
 - **Commercial**: Plant nurseries, seed companies, botanical gardens
 
-**BONUS:** Optional AI integration provides intelligent plant care recommendations and species identification.
+**NEW in v0.2.0:** Professional features include Darwin Core compliance for GBIF integration, IUCN Red List conservation tracking, and enhanced AI-powered botanical intelligence.
 
 ## Quick Start (2 minutes)
 
@@ -36,7 +36,7 @@ Botanica is a **production-ready botanical database** that provides type-safe ta
 
 ```toml
 [dependencies]
-botanica = "0.1"
+botanica = "0.2"
 tokio = { version = "1.0", features = ["full"] }
 uuid = { version = "1.0", features = ["v4"] }
 ```
@@ -78,6 +78,35 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ```
 
 ## 📦 Advanced Features
+
+### 🔬 Professional Features (v0.2.0)
+
+**Darwin Core Compliance** (`darwin-core` feature):
+```rust
+// Export data in GBIF-compatible format
+#[cfg(feature = "darwin-core")]
+use botanica::darwin_core::*;
+
+let darwin_taxon = species_to_darwin_core_taxon(&species, &genus_name);
+let occurrence = create_occurrence_record(&species, &genus_name, &family_name, 
+                                        coordinates, collector_info);
+```
+
+**IUCN Red List Integration** (`conservation` feature):
+```rust
+#[cfg(feature = "conservation")]
+use botanica::conservation::*;
+
+let client = IUCNClient::new(api_token);
+let assessment = client.get_conservation_status("Rosa rubiginosa").await?;
+```
+
+**Feature Flags for Modular Adoption**:
+```toml
+[dependencies]
+botanica = { version = "0.2", features = ["darwin-core", "conservation"] }
+# Or enable everything: features = ["full"]
+```
 
 ### 🧬 Scientific Taxonomy
 - **Complete hierarchy**: Kingdom → Family → Genus → Species
@@ -211,7 +240,7 @@ See our amazing [sponsors](SPONSORS.md) who make Botanica possible! 🙏
 
 **✅ Ready for production:**
 - Memory-safe Rust implementation
-- 69 comprehensive tests passing
+- 97 comprehensive tests passing
 - Zero unsafe code
 - Comprehensive error handling
 - Async/await throughout

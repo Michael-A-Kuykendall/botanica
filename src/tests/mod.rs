@@ -13,6 +13,7 @@ pub mod species_tests;
 pub mod genus_tests;
 pub mod family_tests;
 pub mod integration_tests;
+pub mod comprehensive_tests;
 
 /// Helper function to create a test database with sample data
 pub async fn setup_test_database() -> BotanicalDatabase {
