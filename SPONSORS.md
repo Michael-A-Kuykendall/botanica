@@ -1,25 +1,38 @@
-# These amazing people make Botanica possible üôè
+# Sponsors
 
-## Conservation Partners ($500+/month)
-*Your logo could be here*
+Thank you to all our sponsors who help make this project possible!
 
-## Institutional Backers ($100+/month)  
-*Your logo could be here*
+## Current Sponsors
 
-## Research Supporters ($25+/month)
-*Your logo could be here*
+*No sponsors yet. Be the first to support this project!*
 
-## Coffee Heroes ($5+/month)
-*Be the first!*
+## Sponsorship Tiers
 
----
+### Ì≤é Enterprise Partners ($500+/month)
+- Logo on README and website
+- Priority feature requests
+- Direct support channel
+- Quarterly roadmap input
 
-**Want to support Botanica?** [Become a sponsor](https://github.com/sponsors/Michael-A-Kuykendall)
+### Ìµá Corporate Backers ($100+/month)
+- Name on README
+- Priority issue triage
+- Early access to releases
 
-Botanica is free forever, but your sponsorship helps me:
-- Fix bugs faster
-- Add new features
-- Support more database backends
-- Keep botanical science moving forward
+### Ìµà Developer Supporters ($25+/month)
+- Name in SPONSORS.md
+- Discord role
+- Supporter badge
 
-Every dollar matters. Every sponsor gets my eternal gratitude. üå±
+### ‚òï Coffee Heroes ($5+/month)
+- Our eternal gratitude
+- Name in release notes
+
+## Become a Sponsor
+
+- **GitHub Sponsors**: [github.com/sponsors/Michael-A-Kuykendall](https://github.com/sponsors/Michael-A-Kuykendall)
+- **Ko-fi**: [ko-fi.com/mikekuykendall](https://ko-fi.com/mikekuykendall)
+- **Open Collective**: [opencollective.com/botanica](https://opencollective.com/botanica)
+- **Buy Me a Coffee**: [buymeacoffee.com/michaelakuykendall](https://buymeacoffee.com/michaelakuykendall)
+
+For enterprise sponsorship inquiries, contact: michaelallenkuykendall@gmail.com
