@@ -8,6 +8,10 @@ pub mod types;
 pub mod queries;
 pub mod migrations;
 pub mod error;
+#[cfg(feature = "ingestion")]
+pub mod ingestion;
+#[cfg(feature = "ingestion")]
+pub mod discovery;
 
 #[cfg(feature = "contextlite")]
 pub mod contextlite;
