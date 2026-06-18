@@ -24,3 +24,9 @@ Thumbs.db
 __pycache__/
 *.pyc
 *.pyo
+
+# Generated analysis reports
+json
+punch_analysis.json
+
+.internal/chat.md
