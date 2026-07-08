@@ -1,5 +1,5 @@
 use crate::error::DatabaseError;
-use sqlx::SqlitePool;
+use crate::database::BotanicalDatabase;
 use uuid::Uuid;
 use sha2::{Sha256, Digest};
 
@@ -50,10 +50,7 @@ pub struct PowoSpeciesDetail {
 }
 
 impl PowoClient {
-    /// Fetch species details (accepted name, synonyms, distribution, uses)
     pub async fn fetch_species_detail(&self, powo_id: &str) -> anyhow::Result<(PowoSpeciesDetail, String)> {
-        // NOTE: POWO API paths vary; keep configurable and resilient.
-        // Example path pattern (to adjust as needed): /taxon/{id}
         let url = format!("{}/taxon/{}", self.base_url, powo_id);
         let resp = self.http.get(&url).send().await?;
         let status = resp.status();
@@ -70,10 +67,8 @@ impl PowoClient {
 }
 
 /// Ingest POWO data for an existing species_id
-/// - Assumes the species row already exists in `species` table
-/// - Inserts into synonyms, distribution_regions, uses, provenance
 pub async fn ingest_powo_for_species(
-    pool: &SqlitePool,
+    db: &BotanicalDatabase,
     species_id: &str,
     powo_id: &str,
     client: &PowoClient,
@@ -83,76 +78,51 @@ pub async fn ingest_powo_for_species(
         .await
         .map_err(|e| DatabaseError::validation(format!("POWO fetch failed: {}", e)))?;
 
-    let mut tx = pool.begin().await?;
+    let species_id = species_id.to_string();
+    let powo_id = powo_id.to_string();
 
-    // Synonyms
-    for syn in detail.synonyms.into_iter() {
-        let id = Uuid::new_v4().to_string();
-        sqlx::query(
-            r#"INSERT OR IGNORE INTO synonyms
-               (id, species_id, synonym_name, authorship, source, source_record_id)
-               VALUES (?1, ?2, ?3, ?4, 'POWO', ?5)"#,
-        )
-        .bind(&id)
-        .bind(species_id)
-        .bind(syn.name.unwrap_or_default())
-        .bind(syn.authorship.unwrap_or_default())
-        .bind(syn.id.unwrap_or_default())
-        .execute(&mut *tx)
-        .await?;
-    }
+    db.run_in_transaction(move |conn| {
+        // Synonyms
+        for syn in detail.synonyms.into_iter() {
+            let id = Uuid::new_v4().to_string();
+            conn.execute(
+                "INSERT INTO synonyms (id, species_id, synonym_name, authorship, source, source_record_id)
+                 VALUES (?, ?, ?, ?, 'POWO', ?)
+                 ON CONFLICT (id) DO NOTHING",
+                [&id as &dyn duckdb::ToSql, &species_id, &syn.name.unwrap_or_default(), &syn.authorship.unwrap_or_default(), &syn.id.unwrap_or_default()],
+            ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
+        }
 
-    // Distribution
-    for d in detail.distribution.into_iter() {
-        let id = Uuid::new_v4().to_string();
-        sqlx::query(
-            r#"INSERT OR IGNORE INTO distribution_regions
-               (id, species_id, region_code, region_source, notes, source)
-               VALUES (?1, ?2, ?3, ?4, NULL, 'POWO')"#,
-        )
-        .bind(&id)
-        .bind(species_id)
-        .bind(d.region_code.unwrap_or_default())
-        .bind(d.source.unwrap_or_else(|| "WGSRPD".to_string()))
-        .execute(&mut *tx)
-        .await?;
-    }
+        // Distribution
+        for d in detail.distribution.into_iter() {
+            let id = Uuid::new_v4().to_string();
+            conn.execute(
+                "INSERT INTO distribution_regions (id, species_id, region_code, region_source, notes, source)
+                 VALUES (?, ?, ?, ?, NULL, 'POWO')
+                 ON CONFLICT (id) DO NOTHING",
+                [&id as &dyn duckdb::ToSql, &species_id, &d.region_code.unwrap_or_default(), &d.source.unwrap_or_else(|| "WGSRPD".to_string())],
+            ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
+        }
 
-    // Uses
-    for u in detail.uses.into_iter() {
-        let id = Uuid::new_v4().to_string();
-        sqlx::query(
-            r#"INSERT OR IGNORE INTO uses
-               (id, species_id, use_category, description, source)
-               VALUES (?1, ?2, ?3, ?4, 'POWO')"#,
-        )
-        .bind(&id)
-        .bind(species_id)
-        .bind(u.category.unwrap_or_else(|| "unspecified".to_string()))
-        .bind(u.description.unwrap_or_default())
-        .execute(&mut *tx)
-        .await?;
-    }
+        // Uses
+        for u in detail.uses.into_iter() {
+            let id = Uuid::new_v4().to_string();
+            conn.execute(
+                "INSERT INTO uses (id, species_id, use_category, description, source)
+                 VALUES (?, ?, ?, ?, 'POWO')
+                 ON CONFLICT (id) DO NOTHING",
+                [&id as &dyn duckdb::ToSql, &species_id, &u.category.unwrap_or_else(|| "unspecified".to_string()), &u.description.unwrap_or_default()],
+            ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
+        }
 
-    // Provenance (record the fetch)
-    let prov_id = Uuid::new_v4().to_string();
-    sqlx::query(
-        r#"INSERT INTO provenance
-           (id, species_id, source, source_record_id, license, retrieved_at, hash)
-           VALUES (?1, ?2, 'POWO', ?3, 'CC BY 4.0', datetime('now'), NULL)"#,
-    )
-    .bind(&prov_id)
-    .bind(species_id)
-    .bind(powo_id)
-    .execute(&mut *tx)
-    .await?;
-    // Update hash
-    sqlx::query("UPDATE provenance SET hash = ?1 WHERE id = ?2")
-        .bind(&payload_hash)
-        .bind(&prov_id)
-        .execute(&mut *tx)
-        .await?;
+        // Provenance
+        let prov_id = Uuid::new_v4().to_string();
+        conn.execute(
+            "INSERT INTO provenance (id, species_id, source, source_record_id, license, retrieved_at, hash)
+             VALUES (?, ?, 'POWO', ?, 'CC BY 4.0', current_timestamp, ?)",
+            [&prov_id as &dyn duckdb::ToSql, &species_id, &powo_id, &payload_hash],
+        ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
 
-    tx.commit().await?;
-    Ok(())
+        Ok(())
+    }).await
 }

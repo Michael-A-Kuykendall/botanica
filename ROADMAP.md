@@ -1,38 +1,31 @@
-# Botanica Roadmap
+# Botanica roadmap
 
-Botanica is a production-ready botanical database with AI-powered plant insights.
-Its mission is **invisible botanical infrastructure**: drop it in, it works.
+Aligned with [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). This is not a marketing checklist.
 
-## Current Milestones
-- ✅ Complete taxonomic hierarchy (Family → Genus → Species).
-- ✅ Scientific nomenclature with authority citations and publication tracking.
-- ✅ Professional cultivation management with growth stages and environmental tracking.
-- ✅ Optional ContextLite AI integration for plant recommendations.
-- ✅ 69 comprehensive tests with zero unsafe code.
+## Done
 
-## Next Goals
-- [ ] Enhanced search and filtering capabilities across all taxonomic levels.
-- [ ] IUCN Red List integration for conservation status updates.
-- [ ] Herbarium specimen management with location and collector data.
-- [ ] Phenology tracking for seasonal growth patterns.
-- [ ] Advanced cultivation analytics and yield optimization.
-- [ ] GraphQL API layer for modern application integration.
+- [x] Taxonomic hierarchy types + CRUD (family / genus / species)
+- [x] DuckDB migrations: L1 + L2 reference tables + L3 inventory schema (empty in seed)
+- [x] Optional ingest scaffolding (POWO / GBIF / USDA)
+- [x] Architecture decisions Phase 0 (Q1–Q6, D1–D15)
+- [x] Honesty pass: README, remove ContextLite, archive vapor specs
+- [x] Phase 1B Budsy park (sibling repo)
+- [x] Phase 2: schema 0.4.0 — identifiers, cultivars, quarantine, plant health, sync hooks, plant CRUD, no Unknown bulk
+- [x] Phase 3: gate2 seed + USDA Species bulk taxonomy (62k) + silver parquet + MANIFEST
+- [x] Execution plan aligned to Budsy research (`docs/EXECUTION_PLAN.md`)
 
-## Long-Term Vision
-- Complete botanical research platform covering all major plant families.
-- Integration with major herbarium databases and botanical institutions.
-- AI-powered species identification from photographs and descriptions.
-- Climate adaptation modeling for conservation planning.
-- Open data exchange with global botanical databases.
-- Mobile app companion for field research.
+## In progress / next
 
-## Philosophy
-Botanica will remain **free forever** under MIT license. Scientific research deserves scientific-grade tools without paywalls or feature restrictions.
+- [ ] USDA Gate 5A.3 — 1k symbol trait scrape via `botanica_usda`
+- [ ] POWO 1k “uses” sample gate (research Decision 5)
+- [ ] GBIF vernacular pass
+- [ ] Phase 4 notes: source limits / size (partially superseded by bulk USDA taxonomy)
+- [ ] Phase 5: v1 cultivated load (coverage bar in architecture)
+- [ ] Phase 6: Budsy vertical slice on real seed
 
----
+## Explicitly not promised
 
-### Governance
-- **Lead Maintainer:** Michael A. Kuykendall  
-- Contributions are welcome via Pull Requests.  
-- The roadmap is set by the lead maintainer to preserve project vision.
-- No features will be added that compromise the "invisible infrastructure" philosophy.
+- Full wild flora of Earth
+- Real IUCN production client (mock if enabled)
+- Darwin Core as complete herbarium stack
+- ContextLite / bundled “AI insights”

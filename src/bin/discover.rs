@@ -1,4 +1,5 @@
 /// Discovery CLI tool: extract master species list from USDA PLANTS
+#[cfg(feature = "ingestion")]
 use botanica::discovery::{parse_usda_plants, export_master_list};
 
 #[tokio::main]
@@ -17,23 +18,29 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         std::process::exit(2);
     }
 
-    let usda_file = if args.get(0).map(|s| s.as_str()) == Some("--usda-file") {
-        args.get(1).ok_or("Missing --usda-file path")?
-    } else {
-        eprintln!("Expected --usda-file flag");
-        std::process::exit(2);
-    };
+    #[cfg(feature = "ingestion")]
+    {
+        let usda_file = if args.get(0).map(|s| s.as_str()) == Some("--usda-file") {
+            args.get(1).ok_or("Missing --usda-file path")?
+        } else {
+            eprintln!("Expected --usda-file flag");
+            std::process::exit(2);
+        };
 
-    let output_file = args.get(2).ok_or("Missing output CSV path")?;
+        let output_file = args.get(2).ok_or("Missing output CSV path")?;
 
-    // Parse USDA PLANTS CSV
-    let records = parse_usda_plants(Some(usda_file)).await?;
+        let records = parse_usda_plants(Some(usda_file)).await?;
+        export_master_list(records, output_file).await?;
 
-    // Export master list
-    export_master_list(records, output_file).await?;
+        println!("\nMaster list generated successfully!");
+        println!("  Use with: ingest <db> bulk-load --from-csv {}", output_file);
+    }
 
-    println!("\n✓ Master list generated successfully!");
-    println!("  Use with: ingest <db> bulk-load --from-csv {}", output_file);
+    #[cfg(not(feature = "ingestion"))]
+    {
+        eprintln!("Rebuild with --features ingestion to enable discovery");
+        std::process::exit(3);
+    }
 
     Ok(())
 }

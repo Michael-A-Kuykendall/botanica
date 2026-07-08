@@ -1,7 +1,7 @@
 //! Test modules for BotanyDB
 //!
 //! Comprehensive test suite covering database operations, CRUD functionality,
-//! and integration testing with in-memory SQLite databases.
+//! and integration testing with in-memory DuckDB databases.
 
 use crate::{create_test_database, BotanicalDatabase};
 use crate::types::{Family, Genus, Species};
@@ -9,11 +9,13 @@ use uuid::Uuid;
 
 // Test modules
 pub mod database_tests;
-pub mod species_tests; 
+pub mod species_tests;
 pub mod genus_tests;
 pub mod family_tests;
 pub mod integration_tests;
 pub mod comprehensive_tests;
+pub mod phase2_tests;
+pub mod seed_tests;
 
 /// Helper function to create a test database with sample data
 pub async fn setup_test_database() -> BotanicalDatabase {
@@ -59,9 +61,9 @@ pub async fn setup_sample_taxonomy(db: &BotanicalDatabase) -> Result<(Family, Ge
     let genus = create_test_genus(family.id);
     let species = create_test_species(genus.id);
 
-    insert_family(db.pool(), &family).await?;
-    insert_genus(db.pool(), &genus).await?;
-    insert_species(db.pool(), &species).await?;
+    insert_family(db, &family).await?;
+    insert_genus(db, &genus).await?;
+    insert_species(db, &species).await?;
 
     Ok((family, genus, species))
 }

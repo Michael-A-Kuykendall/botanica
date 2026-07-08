@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased] — honesty / architecture realignment
+
+### Removed
+- ContextLite integration (feature, dependency, module, mock AI APIs)
+
+### Changed
+- README rewritten for DuckDB truth and non-production status
+- Default features are empty (no contextlite)
+- Vapor professional specs moved to `docs/archive/`
+- Ingest runbook rewritten for DuckDB (`docs/RUNBOOK_INGEST.md`)
+- Architecture: `docs/ARCHITECTURE.md` (Phase 0 locked)
+
+---
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

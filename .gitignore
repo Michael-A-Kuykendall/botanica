@@ -19,6 +19,14 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
+*.duckdb
+*.duckdb.wal
+
+# Keep silver parquet + manifests; ignore local rebuild noise
+/data/botanica-cultivated-*.duckdb
+
+# Large bronze rebuildables (regenerate via scripts / PlantSearch)
+/data/bronze/usda_catalog/plant_search_pct.json
 
 # Python cache (for demo scripts)
 __pycache__/

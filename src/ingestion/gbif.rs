@@ -1,6 +1,6 @@
-use sqlx::SqlitePool;
 use uuid::Uuid;
 use crate::error::DatabaseError;
+use crate::database::BotanicalDatabase;
 use sha2::{Sha256, Digest};
 
 #[derive(Debug, serde::Deserialize)]
@@ -51,9 +51,8 @@ impl GbifClient {
 }
 
 /// Ingest GBIF vernacular names for an existing species
-/// Dedup logic: keep first preferred name per language; silently skip later duplicates
 pub async fn ingest_gbif_vernacular(
-    pool: &SqlitePool,
+    db: &BotanicalDatabase,
     species_id: &str,
     gbif_id: &str,
     client: &GbifClient,
@@ -63,60 +62,38 @@ pub async fn ingest_gbif_vernacular(
         .await
         .map_err(|e| DatabaseError::validation(format!("GBIF fetch failed: {}", e)))?;
 
-    let mut tx = pool.begin().await?;
-    
-    // Dedup: track languages seen to keep first preferred per language
-    let mut seen_languages: std::collections::HashSet<String> = std::collections::HashSet::new();
+    let species_id = species_id.to_string();
+    let gbif_id = gbif_id.to_string();
 
-    for n in names.into_iter() {
-        let name = n.vernacular_name.unwrap_or_default();
-        if name.is_empty() { continue; }
-        
-        let lang = n.language.unwrap_or_else(|| "unknown".to_string());
-        let is_preferred = n.is_preferred_name.unwrap_or(false);
-        
-        // Skip if we've already seen a name in this language
-        if seen_languages.contains(&lang) {
-            continue;
+    db.run_in_transaction(move |conn| {
+        let mut seen_languages: std::collections::HashSet<String> = std::collections::HashSet::new();
+
+        for n in names.into_iter() {
+            let name = n.vernacular_name.unwrap_or_default();
+            if name.is_empty() { continue; }
+
+            let lang = n.language.unwrap_or_else(|| "unknown".to_string());
+            let is_preferred = n.is_preferred_name.unwrap_or(false);
+
+            if seen_languages.contains(&lang) { continue; }
+            seen_languages.insert(lang.clone());
+
+            let id = Uuid::new_v4().to_string();
+            conn.execute(
+                "INSERT INTO vernacular_names (id, species_id, name, language_code, is_primary, source, created_at)
+                 VALUES (?, ?, ?, ?, ?, 'GBIF', current_timestamp)
+                 ON CONFLICT (id) DO NOTHING",
+                [&id as &dyn duckdb::ToSql, &species_id, &name, &lang, &(is_preferred as i32).to_string()],
+            ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
         }
-        
-        // Mark language as seen (on first encounter, preferred or not)
-        seen_languages.insert(lang.clone());
-        
-        let id = Uuid::new_v4().to_string();
-        sqlx::query(
-            r#"INSERT OR IGNORE INTO vernacular_names
-               (id, species_id, name, language_code, is_primary, source, created_at)
-               VALUES (?1, ?2, ?3, ?4, ?5, 'GBIF', datetime('now'))"#,
-        )
-        .bind(&id)
-        .bind(species_id)
-        .bind(&name)
-        .bind(&lang)
-        .bind(is_preferred as i32)
-        .execute(&mut *tx)
-        .await?;
-    }
 
-    // Provenance for GBIF pull
-    let prov_id = Uuid::new_v4().to_string();
-    sqlx::query(
-        r#"INSERT INTO provenance
-           (id, species_id, source, source_record_id, license, retrieved_at, hash)
-           VALUES (?1, ?2, 'GBIF', ?3, 'CC BY 4.0', datetime('now'), NULL)"#,
-    )
-    .bind(&prov_id)
-    .bind(species_id)
-    .bind(gbif_id)
-    .execute(&mut *tx)
-    .await?;
-    // Update hash
-    sqlx::query("UPDATE provenance SET hash = ?1 WHERE id = ?2")
-        .bind(&payload_hash)
-        .bind(&prov_id)
-        .execute(&mut *tx)
-        .await?;
+        let prov_id = Uuid::new_v4().to_string();
+        conn.execute(
+            "INSERT INTO provenance (id, species_id, source, source_record_id, license, retrieved_at, hash)
+             VALUES (?, ?, 'GBIF', ?, 'CC BY 4.0', current_timestamp, ?)",
+            [&prov_id as &dyn duckdb::ToSql, &species_id, &gbif_id, &payload_hash],
+        ).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
 
-    tx.commit().await?;
-    Ok(())
+        Ok(())
+    }).await
 }

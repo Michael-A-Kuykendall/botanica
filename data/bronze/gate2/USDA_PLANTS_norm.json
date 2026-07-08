@@ -1,0 +1,5153 @@
+[
+  {
+    "scientific_name": "Acer negundo L.",
+    "common_names": [
+      "ash-leaf maple",
+      "boxelder",
+      "three-leaf maple"
+    ],
+    "usda_symbol": "ACNE2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1829,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Abies concolor (Gord. & Glend.) Lindl. ex Hildebr.",
+    "common_names": [
+      "white fir"
+    ],
+    "usda_symbol": "ABCO",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3658,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Acer rubrum L.",
+    "common_names": [
+      "red maple"
+    ],
+    "usda_symbol": "ACRU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2073,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Abies lasiocarpa (Hook.) Nutt.",
+    "common_names": [
+      "subalpine fir"
+    ],
+    "usda_symbol": "ABLA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2743,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Acer saccharum Marshall",
+    "common_names": [
+      "sugar maple"
+    ],
+    "usda_symbol": "ACSA3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Alnus rubra Bong.",
+    "common_names": [
+      "red alder"
+    ],
+    "usda_symbol": "ALRU2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2743,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Artemisia tridentata Nutt.",
+    "common_names": [
+      "big sagebrush"
+    ],
+    "usda_symbol": "ARTR2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 122,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Betula papyrifera Marshall",
+    "common_names": [
+      "paper birch"
+    ],
+    "usda_symbol": "BEPA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2134,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48",
+        "SPM"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Celtis occidentalis L.",
+    "common_names": [
+      "common hackberry"
+    ],
+    "usda_symbol": "CEOC",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Calocedrus decurrens (Torr.) Florin",
+    "common_names": [
+      "incense cedar"
+    ],
+    "usda_symbol": "CADE27",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Chamaecyparis lawsoniana (A. Murray bis) Parl.",
+    "common_names": [
+      "Port Orford cedar"
+    ],
+    "usda_symbol": "CHLA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 6096,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Cornus nuttallii Audubon ex Torr. & A. Gray",
+    "common_names": [
+      "Pacific dogwood"
+    ],
+    "usda_symbol": "CONU4",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Fraxinus pennsylvanica Marshall",
+    "common_names": [
+      "green ash"
+    ],
+    "usda_symbol": "FRPE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1981,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Fagus grandifolia Ehrh.",
+    "common_names": [
+      "American beech"
+    ],
+    "usda_symbol": "FAGR",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Juniperus scopulorum Sarg.",
+    "common_names": [
+      "Rocky Mountain juniper"
+    ],
+    "usda_symbol": "JUSC2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Notholithocarpus densiflorus (Hook. & Arn.) P.S. Manos, C.H. Cannon, & S.H. Oh",
+    "common_names": [
+      "tanoak"
+    ],
+    "usda_symbol": "NODE3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3810,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Pinus ponderosa Lawson & C. Lawson",
+    "common_names": [
+      "ponderosa pine"
+    ],
+    "usda_symbol": "PIPO",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 6797,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Pinus strobus L.",
+    "common_names": [
+      "eastern white pine"
+    ],
+    "usda_symbol": "PIST",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 4572,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "None",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48",
+        "SPM"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Populus tremuloides Michx.",
+    "common_names": [
+      "quaking aspen"
+    ],
+    "usda_symbol": "POTR5",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1981,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48",
+        "SPM"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Prunus serotina Ehrh.",
+    "common_names": [
+      "black cherry"
+    ],
+    "usda_symbol": "PRSE2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "Severe",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Pseudotsuga menziesii (Mirb.) Franco",
+    "common_names": [
+      "Douglas-fir"
+    ],
+    "usda_symbol": "PSME",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 6096,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus garryana Douglas ex Hook.",
+    "common_names": [
+      "Oregon white oak"
+    ],
+    "usda_symbol": "QUGA4",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus agrifolia Née",
+    "common_names": [
+      "California live oak"
+    ],
+    "usda_symbol": "QUAG",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2134,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus alba L.",
+    "common_names": [
+      "white oak"
+    ],
+    "usda_symbol": "QUAL",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus gambelii Nutt.",
+    "common_names": [
+      "Gambel oak"
+    ],
+    "usda_symbol": "QUGA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1219,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus douglasii Hook. & Arn.",
+    "common_names": [
+      "blue oak"
+    ],
+    "usda_symbol": "QUDO",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1829,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus rubra L.",
+    "common_names": [
+      "northern red oak"
+    ],
+    "usda_symbol": "QURU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2469,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus kelloggii Newberry",
+    "common_names": [
+      "California black oak"
+    ],
+    "usda_symbol": "QUKE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2591,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Sequoiadendron giganteum (Lindl.) J. Buchholz",
+    "common_names": [
+      "giant sequoia"
+    ],
+    "usda_symbol": "SEGI2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 6096,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Thuja plicata Donn ex D. Don",
+    "common_names": [
+      "western redcedar"
+    ],
+    "usda_symbol": "THPL",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 4572,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Tsuga heterophylla (Raf.) Sarg.",
+    "common_names": [
+      "western hemlock"
+    ],
+    "usda_symbol": "TSHE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 5182,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Tsuga mertensiana (Bong.) Carrière",
+    "common_names": [
+      "mountain hemlock"
+    ],
+    "usda_symbol": "TSME",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3810,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Arbutus menziesii Pursh",
+    "common_names": [
+      "Pacific madrone"
+    ],
+    "usda_symbol": "ARME",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Acer macrophyllum Pursh",
+    "common_names": [
+      "bigleaf maple"
+    ],
+    "usda_symbol": "ACMA3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1829,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Amelanchier alnifolia (Nutt.) Nutt. ex M. Roem.",
+    "common_names": [
+      "Saskatoon serviceberry"
+    ],
+    "usda_symbol": "AMAL2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 457,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Mahonia repens (Lindl.) G. Don",
+    "common_names": [
+      "creeping barberry"
+    ],
+    "usda_symbol": "MARE11",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 61,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Cercocarpus ledifolius Nutt.",
+    "common_names": [
+      "curl-leaf mountain mahogany"
+    ],
+    "usda_symbol": "CELE3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 610,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Cornus florida L.",
+    "common_names": [
+      "flowering dogwood"
+    ],
+    "usda_symbol": "COFL2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 914,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Celtis laevigata Willd.",
+    "common_names": [
+      "sugarberry"
+    ],
+    "usda_symbol": "CELA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Coreopsis stillmanii (A. Gray) S.F. Blake",
+    "common_names": [
+      "Stillman's tickseed"
+    ],
+    "usda_symbol": "COST3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Fraxinus americana L.",
+    "common_names": [
+      "white ash"
+    ],
+    "usda_symbol": "FRAM2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2743,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": [
+        "HI"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Juniperus virginiana L.",
+    "common_names": [
+      "eastern redcedar"
+    ],
+    "usda_symbol": "JUVI",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Larix lyallii Parl.",
+    "common_names": [
+      "subalpine larch"
+    ],
+    "usda_symbol": "LALY",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1219,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Maclura pomifera (Raf.) C.K. Schneid.",
+    "common_names": [
+      "Osage-orange"
+    ],
+    "usda_symbol": "MAPO",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1067,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": [
+        "CAN"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Platanus occidentalis L.",
+    "common_names": [
+      "American sycamore"
+    ],
+    "usda_symbol": "PLOC",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Morus alba L.",
+    "common_names": [
+      "white mulberry"
+    ],
+    "usda_symbol": "MOAL",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "CAN",
+        "HI",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Poa pratensis L.",
+    "common_names": [
+      "Kentucky bluegrass"
+    ],
+    "usda_symbol": "POPR",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 30,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "GL",
+        "L48"
+      ],
+      "introduced": [
+        "AK",
+        "CAN",
+        "GL",
+        "HI",
+        "L48",
+        "PR",
+        "SPM"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Populus deltoides W. Bartram ex Marshall",
+    "common_names": [
+      "eastern cottonwood"
+    ],
+    "usda_symbol": "PODE3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3962,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus bicolor Willd.",
+    "common_names": [
+      "swamp white oak"
+    ],
+    "usda_symbol": "QUBI",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Polygonum pensylvanicum L.",
+    "common_names": [
+      "Pennsylvania smartweed"
+    ],
+    "usda_symbol": "POPE2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": 119,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus chrysolepis Liebm.",
+    "common_names": [
+      "canyon live oak"
+    ],
+    "usda_symbol": "QUCH2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2743,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus macrocarpa Michx.",
+    "common_names": [
+      "bur oak"
+    ],
+    "usda_symbol": "QUMA2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus shumardii Buckley",
+    "common_names": [
+      "Shumard's oak"
+    ],
+    "usda_symbol": "QUSH",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3048,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus michauxii Nutt.",
+    "common_names": [
+      "swamp chestnut oak"
+    ],
+    "usda_symbol": "QUMI",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2438,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Quercus stellata Wangenh.",
+    "common_names": [
+      "post oak"
+    ],
+    "usda_symbol": "QUST",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1829,
+      "mature_spread_cm": null,
+      "toxicity": "Moderate",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Sassafras albidum (Nutt.) Nees",
+    "common_names": [
+      "sassafras"
+    ],
+    "usda_symbol": "SAAL5",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2286,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Salix L.",
+    "common_names": [
+      "willow"
+    ],
+    "usda_symbol": "SALIX",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Shrub",
+        "Subshrub",
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "GL",
+        "L48",
+        "SPM"
+      ],
+      "introduced": [
+        "AK",
+        "CAN",
+        "L48",
+        "PR",
+        "VI"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Sequoia sempervirens (Lamb. ex D. Don) Endl.",
+    "common_names": [
+      "redwood"
+    ],
+    "usda_symbol": "SESE3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 7620,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Ulmus americana L.",
+    "common_names": [
+      "American elm"
+    ],
+    "usda_symbol": "ULAM",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 3658,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Zea mays L.",
+    "common_names": [
+      "corn"
+    ],
+    "usda_symbol": "ZEMA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": 244,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "CAN",
+        "L48",
+        "PB",
+        "PR",
+        "VI"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Agropyron cristatum (L.) Gaertn.",
+    "common_names": [
+      "crested wheatgrass"
+    ],
+    "usda_symbol": "AGCR",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 61,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "High",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "AK",
+        "CAN",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Bromus tectorum L.",
+    "common_names": [
+      "cheatgrass"
+    ],
+    "usda_symbol": "BRTE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "AK",
+        "CAN",
+        "GL",
+        "HI",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Elymus elymoides (Raf.) Swezey",
+    "common_names": [
+      "squirreltail"
+    ],
+    "usda_symbol": "ELEL5",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 46,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Fendlera rupicola A. Gray",
+    "common_names": [
+      "cliff fendlerbush"
+    ],
+    "usda_symbol": "FERU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 183,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Koeleria macrantha (Ledeb.) Schult.",
+    "common_names": [
+      "crested hair grass",
+      "prairie Junegrass"
+    ],
+    "usda_symbol": "KOMA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 46,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": [
+        "HI"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Lolium perenne L.",
+    "common_names": [
+      "perennial ryegrass"
+    ],
+    "usda_symbol": "LOPE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual",
+        "Perennial"
+      ],
+      "mature_height_cm": 40,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "High",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "AK",
+        "CAN",
+        "GL",
+        "HI",
+        "L48",
+        "PR",
+        "SPM"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Achnatherum hymenoides (Roem. & Schult.) Barkworth",
+    "common_names": [
+      "Indian ricegrass"
+    ],
+    "usda_symbol": "ACHY",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 61,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Poa secunda J. Presl",
+    "common_names": [
+      "Sandberg bluegrass"
+    ],
+    "usda_symbol": "POSE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 40,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Pseudoroegneria spicata (Pursh) Á. Löve",
+    "common_names": [
+      "bluebunch wheatgrass"
+    ],
+    "usda_symbol": "PSSP6",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Hesperostipa comata (Trin. & Rupr.) Barkworth ssp. comata",
+    "common_names": [
+      "needle and thread"
+    ],
+    "usda_symbol": "HECOC8",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 91,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Achillea millefolium L.",
+    "common_names": [
+      "common yarrow",
+      "milenrama",
+      "milfoil"
+    ],
+    "usda_symbol": "ACMI2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 91,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "GL",
+        "L48",
+        "SPM"
+      ],
+      "introduced": [
+        "CAN",
+        "HI",
+        "L48",
+        "SPM"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Ancistrocactus scheeri (Salm-Dyck) Britton & Rose",
+    "common_names": [
+      "Scheer's fishhook cactus"
+    ],
+    "usda_symbol": "ANSC",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Shrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Aristida purpurea Nutt. var. longiseta (Steud.) Vasey",
+    "common_names": [
+      "Fendler threeawn"
+    ],
+    "usda_symbol": "ARPUL",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 43,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Arctostaphylos uva-ursi (L.) Spreng.",
+    "common_names": [
+      "kinnikinnick"
+    ],
+    "usda_symbol": "ARUV",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Shrub",
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 15,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "GL",
+        "L48",
+        "SPM"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Arnica cordifolia Hook.",
+    "common_names": [
+      "heartleaf arnica"
+    ],
+    "usda_symbol": "ARCO9",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 46,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Astragalus microcystis A. Gray",
+    "common_names": [
+      "dwarf milkvetch"
+    ],
+    "usda_symbol": "ASMI4",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Picradeniopsis oppositifolia (Nutt.) Rydb. ex Britton",
+    "common_names": [
+      "oppositeleaf bahia"
+    ],
+    "usda_symbol": "PIOP",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb",
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": [
+        "CAN"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Calamagrostis rubescens Buckley",
+    "common_names": [
+      "pinegrass"
+    ],
+    "usda_symbol": "CARU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 91,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Tiquilia nuttallii (Hook.) A.T. Richardson",
+    "common_names": [
+      "Nuttall's crinklemat"
+    ],
+    "usda_symbol": "TINU2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Ephedra antisyphilitica Berl. ex C.A. Mey.",
+    "common_names": [
+      "clapweed"
+    ],
+    "usda_symbol": "EPAN",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Shrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Gutierrezia sarothrae (Pursh) Britton & Rusby",
+    "common_names": [
+      "broom snakeweed"
+    ],
+    "usda_symbol": "GUSA2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Forb/herb",
+        "Shrub",
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 46,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Eriogonum corymbosum Benth.",
+    "common_names": [
+      "crispleaf buckwheat"
+    ],
+    "usda_symbol": "ERCO14",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Shrub",
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Helianthus annuus L.",
+    "common_names": [
+      "common sunflower"
+    ],
+    "usda_symbol": "HEAN3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": 274,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": [
+        "AK",
+        "CAN",
+        "HI",
+        "PR",
+        "SPM"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Lactuca serriola L.",
+    "common_names": [
+      "prickly lettuce"
+    ],
+    "usda_symbol": "LASE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual",
+        "Biennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "CAN",
+        "HI",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Lupinus palmeri S. Watson",
+    "common_names": [
+      "bluebonnet lupine"
+    ],
+    "usda_symbol": "LUPA3",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Matelea reticulata (Engelm. ex A. Gray) Woodson",
+    "common_names": [
+      "netted milkvine"
+    ],
+    "usda_symbol": "MARE4",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Vine"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Machaeranthera canescens (Pursh) A. Gray",
+    "common_names": [
+      "hoary tansyaster"
+    ],
+    "usda_symbol": "MACA2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual",
+        "Biennial",
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Rosa woodsii Lindl.",
+    "common_names": [
+      "Woods' rose"
+    ],
+    "usda_symbol": "ROWO",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Subshrub"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 91,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "Low",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": null,
+    "common_names": [],
+    "usda_symbol": "SAKA4",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [],
+      "growth_rate": null,
+      "duration": [],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Rumex aquaticus L. var. fenestratus (Greene) Dorn",
+    "common_names": [
+      "western dock"
+    ],
+    "usda_symbol": "RUAQF",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": "FACW, OBL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48",
+        "SPM"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Sisymbrium altissimum L.",
+    "common_names": [
+      "tall tumblemustard"
+    ],
+    "usda_symbol": "SIAL2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual",
+        "Biennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "AK",
+        "CAN",
+        "HI",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Taxus brevifolia Nutt.",
+    "common_names": [
+      "Pacific yew"
+    ],
+    "usda_symbol": "TABR2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "partial shade",
+        "shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1219,
+      "mature_spread_cm": null,
+      "toxicity": "Moderate",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Tolerant",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Vicia americana Muhl. ex Willd.",
+    "common_names": [
+      "American vetch"
+    ],
+    "usda_symbol": "VIAM",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "coarse",
+        "medium"
+      ],
+      "moisture": [
+        "Low"
+      ],
+      "plant_type": [
+        "Forb/herb",
+        "Vine"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 40,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "High",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Acer platanoides L.",
+    "common_names": [
+      "Norway maple"
+    ],
+    "usda_symbol": "ACPL",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun",
+        "partial shade"
+      ],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1524,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intermediate",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "CAN",
+        "L48"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Wyethia amplexicaulis (Nutt.) Nutt.",
+    "common_names": [
+      "mule-ears"
+    ],
+    "usda_symbol": "WYAM",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 76,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC, FACU",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Bromus inermis Leyss.",
+    "common_names": [
+      "smooth brome"
+    ],
+    "usda_symbol": "BRIN2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [
+        "full sun"
+      ],
+      "soil": [
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 76,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Intolerant",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FACU, UPL",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "AK",
+        "CAN",
+        "L48",
+        "SPM"
+      ],
+      "introduced": [
+        "AK",
+        "CAN",
+        "GL",
+        "L48",
+        "SPM"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Polycarpon depressum Nutt.",
+    "common_names": [
+      "California manyseed"
+    ],
+    "usda_symbol": "PODE",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": null,
+    "common_names": [],
+    "usda_symbol": "SOLTU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [],
+      "growth_rate": null,
+      "duration": [],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Solidago radula Nutt.",
+    "common_names": [
+      "western rough goldenrod"
+    ],
+    "usda_symbol": "SORA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [],
+      "moisture": [],
+      "plant_type": [
+        "Forb/herb"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": null,
+      "mature_spread_cm": null,
+      "toxicity": null,
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": null,
+      "drought_tolerance": null,
+      "salt_tolerance": null,
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  }
+]

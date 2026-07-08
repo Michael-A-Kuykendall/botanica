@@ -1,15 +1,16 @@
 [package]
 name = "botanica"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
-description = "Professional botanical cultivation database with AI-powered plant insights"
+description = "Cultivated-plant knowledge base: taxonomy, traits, and provenance on DuckDB"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Michael-A-Kuykendall/botanica"
-keywords = ["botany", "cultivation", "database", "plants", "ai"]
+keywords = ["botany", "cultivation", "database", "plants", "duckdb"]
 categories = ["database", "science"]
+readme = "README.md"
 
 [dependencies]
-sqlx = { version = "0.8", features = ["runtime-tokio-rustls", "sqlite", "chrono", "uuid"] }
+duckdb = { version = "1.10504", features = ["bundled", "chrono"] }
 tokio = { version = "1.40", features = ["full"] }
 uuid = { version = "1.10", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
@@ -22,27 +23,23 @@ sha2 = "0.10"
 hex = "0.4"
 csv = "1.3"
 
-# ContextLite integration (original v0.1.0 feature)
-contextlite-client = { version = "2.0.7", optional = true }
-
-# Professional features (v0.2.0+) - all optional
+# Optional professional / network features
 geo = { version = "0.28", features = ["use-serde"], optional = true }
 reqwest = { version = "0.12", features = ["json"], optional = true }
 url = { version = "2.5", optional = true }
 
 [features]
-default = ["contextlite"]
-contextlite = ["dep:contextlite-client"]
+default = []
 
-# Professional botanical features (backward compatible)
+# Optional modules (incomplete unless noted)
 darwin-core = []
-herbarium = ["darwin-core", "dep:geo"]  
+herbarium = ["darwin-core", "dep:geo"]
 conservation = ["darwin-core", "dep:reqwest", "dep:url"]
 germplasm = ["darwin-core", "dep:geo"]
 api = ["darwin-core"]
 full = ["darwin-core", "herbarium", "conservation", "germplasm", "api"]
 
-# Ingestion feature for source importers (POWO/GBIF/USDA)
+# Ingestion for source importers (POWO/GBIF/USDA)
 ingestion = ["dep:reqwest", "dep:url"]
 
 [dev-dependencies]

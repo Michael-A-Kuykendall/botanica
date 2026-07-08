@@ -1,0 +1,58 @@
+{
+  "artifact": "botanica-cultivated-v0.1",
+  "built_at": "2026-07-08T22:50:18.689183100+00:00",
+  "engine": "duckdb",
+  "schema_version": "0.4.0",
+  "counts": {
+    "families": 597,
+    "genera": 6972,
+    "species": 62445,
+    "cultivars": 0,
+    "traits": 1856,
+    "vernacular_names": 956,
+    "cultivation_requirements": 532,
+    "provenance": 62445,
+    "quarantine": 2,
+    "plants": 0
+  },
+  "sources": [
+    {
+      "name": "USDA_PLANTS_CATALOG",
+      "license": "Public Domain",
+      "record_count": 62349,
+      "notes": "master=.\\data/bronze/usda_catalog/master_species.csv skipped_existing=0 skipped_rows=0"
+    },
+    {
+      "name": "USDA_PLANTS_GATE3_ENRICH",
+      "license": "Public Domain",
+      "record_count": 1505,
+      "notes": "enrich .\\data/bronze/gate3\\normalized\\USDA_PLANTS_norm_20260708_174749.json"
+    },
+    {
+      "name": "USDA_PLANTS_GATE2_ENRICH",
+      "license": "Public Domain",
+      "record_count": 883,
+      "notes": "enrich .\\data/bronze/gate2/USDA_PLANTS_norm.json"
+    }
+  ],
+  "scope": "usda_species_taxonomy_v0.1 + gate2_gate3_trait_pilot (Tier1 formal 5A.3 not yet met)",
+  "l3_rows": 0,
+  "silver_files": [
+    "./data/silver/families.parquet",
+    "./data/silver/genera.parquet",
+    "./data/silver/species.parquet",
+    "./data/silver/species_identifiers.parquet",
+    "./data/silver/cultivars.parquet",
+    "./data/silver/synonyms.parquet",
+    "./data/silver/vernacular_names.parquet",
+    "./data/silver/distribution_regions.parquet",
+    "./data/silver/traits.parquet",
+    "./data/silver/seasonal_characteristics.parquet",
+    "./data/silver/cultivation_requirements.parquet",
+    "./data/silver/ecological_interactions.parquet",
+    "./data/silver/uses.parquet",
+    "./data/silver/media.parquet",
+    "./data/silver/provenance.parquet",
+    "./data/silver/ingest_quarantine.parquet"
+  ]
+}

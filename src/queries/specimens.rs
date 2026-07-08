@@ -1,23 +1,18 @@
-use sqlx::SqlitePool;
 use crate::error::DatabaseError;
+use crate::database::BotanicalDatabase;
 
 /// Insert new specimen (placeholder implementation)
-pub async fn insert_specimen(_pool: &SqlitePool) -> Result<(), DatabaseError> {
+pub async fn insert_specimen(_db: &BotanicalDatabase) -> Result<(), DatabaseError> {
     // Placeholder implementation
-    // In production, this would insert actual specimen records
     Ok(())
 }
 
 /// Get specimens by collection location
-pub async fn get_specimens_by_location(_pool: &SqlitePool, _location: &str) -> Result<Vec<String>, DatabaseError> {
-    // Placeholder implementation - returns empty results
-    // In production, this would search specimens by geographic location
+pub async fn get_specimens_by_location(_db: &BotanicalDatabase, _location: &str) -> Result<Vec<String>, DatabaseError> {
     Ok(vec![])
 }
 
 /// Get specimens by collector name
-pub async fn get_specimens_by_collector(_pool: &SqlitePool, _collector: &str) -> Result<Vec<String>, DatabaseError> {
-    // Placeholder implementation - returns empty results
-    // In production, this would search specimens by collector information
+pub async fn get_specimens_by_collector(_db: &BotanicalDatabase, _collector: &str) -> Result<Vec<String>, DatabaseError> {
     Ok(vec![])
 }

@@ -42,10 +42,10 @@ async fn test_search_queries() {
     // Test search functionality (currently returns empty but should not panic)
     use crate::queries::search::*;
     
-    let results = search_species_by_common_name(db.pool(), "rose").await;
+    let results = search_species_by_common_name(&db, "rose").await;
     assert!(results.is_ok());
     
-    let results = search_taxa_by_keyword(db.pool(), "plant").await;  
+    let results = search_taxa_by_keyword(&db, "plant").await;  
     assert!(results.is_ok());
 }
 
@@ -56,10 +56,10 @@ async fn test_specimen_queries() {
     use crate::queries::specimens::*;
     
     // Test specimen functions
-    let results = get_specimens_by_location(db.pool(), "test").await;
+    let results = get_specimens_by_location(&db, "test").await;
     assert!(results.is_ok());
     
-    let results = get_specimens_by_collector(db.pool(), "test").await;
+    let results = get_specimens_by_collector(&db, "test").await;
     assert!(results.is_ok());
 }
 
@@ -70,10 +70,10 @@ async fn test_migration_runner() {
     let db = create_test_database().await.unwrap();
     
     // Test migration runner functions
-    let result = validate_migrations(db.pool()).await;
+    let result = validate_migrations(&db).await;
     assert!(result.is_ok());
     
-    let result = get_migration_status(db.pool()).await;
+    let result = get_migration_status(&db).await;
     assert!(result.is_ok());
 }
 
@@ -121,24 +121,6 @@ async fn test_darwin_core_queries() {
     assert!(results.is_ok());
 }
 
-#[cfg(feature = "contextlite")]
-#[tokio::test]
-async fn test_contextlite_error_handling() {
-    use crate::contextlite::*;
-    
-    // Test BotanicalContext creation with invalid workspace
-    let context = BotanicalContext::new("http://localhost:8090", "invalid_token", "invalid_workspace");
-    assert!(context.is_ok());
-    
-    // Test recommendation extraction with empty context
-    let recommendations = extract_recommendations("");
-    assert!(recommendations.is_empty() || !recommendations.is_empty()); // Should handle gracefully
-    
-    // Test with malformed context
-    let recommendations = extract_recommendations("malformed data");
-    assert!(recommendations.len() >= 0); // Should not panic
-}
-
 #[tokio::test]
 async fn test_comprehensive_workflow() {
     // Test complete botanical workflow
@@ -178,7 +160,7 @@ async fn test_comprehensive_workflow() {
     
     // Clean up - use proper import and check that species exists
     use crate::queries::species::delete_species;
-    let deleted = delete_species(db.pool(), species.id).await;
+    let deleted = delete_species(&db, species.id).await;
     assert!(deleted.is_ok());
 }
 
@@ -192,19 +174,19 @@ async fn test_edge_cases() {
     let long_family = Family::new(long_name, "Test Author".to_string());
     
     use crate::queries::family::insert_family;
-    let result = insert_family(db.pool(), &long_family).await;
+    let result = insert_family(&db, &long_family).await;
     // Should either succeed or fail gracefully
     assert!(result.is_ok() || result.is_err());
     
     // Test with Unicode characters
     let unicode_name = "Семейство растений";
     let unicode_family = Family::new(unicode_name.to_string(), "Unicode Author".to_string());
-    let result = insert_family(db.pool(), &unicode_family).await;
+    let result = insert_family(&db, &unicode_family).await;
     assert!(result.is_ok());
     
     // Test with special characters
     let special_name = "Family-Name_With.Special@Characters!";
     let special_family = Family::new(special_name.to_string(), "Special Author".to_string());
-    let result = insert_family(db.pool(), &special_family).await;
+    let result = insert_family(&db, &special_family).await;
     assert!(result.is_ok());
 }

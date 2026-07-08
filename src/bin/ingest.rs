@@ -25,13 +25,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     match cmd.as_str() {
         "powo" => {
             if args.len() < 4 { eprintln!("Missing args: <species_id> <powo_id>"); std::process::exit(2); }
-            let species_id = &args[2];
-            let powo_id = &args[3];
+            let species_id = args[2].clone();
+            let powo_id = args[3].clone();
             #[cfg(feature = "ingestion")]
             {
                 let mut client = powo::PowoClient::default();
                 if let Ok(override_url) = env::var("POWO_BASE_URL") { client.base_url = override_url; }
-                powo::ingest_powo_for_species(db.pool(), species_id, powo_id, &client).await?;
+                powo::ingest_powo_for_species(&db, &species_id, &powo_id, &client).await?;
                 println!("POWO ingestion completed: species={} powo_id={}", species_id, powo_id);
             }
             #[cfg(not(feature = "ingestion"))]
@@ -42,13 +42,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         "gbif" => {
             if args.len() < 4 { eprintln!("Missing args: <species_id> <gbif_id>"); std::process::exit(2); }
-            let species_id = &args[2];
-            let gbif_id = &args[3];
+            let species_id = args[2].clone();
+            let gbif_id = args[3].clone();
             #[cfg(feature = "ingestion")]
             {
                 let mut client = gbif::GbifClient::default();
                 if let Ok(override_url) = env::var("GBIF_BASE_URL") { client.base_url = override_url; }
-                gbif::ingest_gbif_vernacular(db.pool(), species_id, gbif_id, &client).await?;
+                gbif::ingest_gbif_vernacular(&db, &species_id, &gbif_id, &client).await?;
                 println!("GBIF ingestion completed: species={} gbif_id={}", species_id, gbif_id);
             }
             #[cfg(not(feature = "ingestion"))]
@@ -60,7 +60,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "fts-rebuild" => {
             #[cfg(feature = "ingestion")]
             {
-                fts::rebuild_species_name_fts(db.pool()).await?;
+                fts::rebuild_species_name_fts(&db).await?;
                 println!("Done: FTS rebuilt");
             }
             #[cfg(not(feature = "ingestion"))]
@@ -72,7 +72,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "perf" => {
             #[cfg(feature = "ingestion")]
             {
-                perf::benchmark_search(db.pool()).await?;
+                perf::benchmark_search(&db).await?;
             }
             #[cfg(not(feature = "ingestion"))]
             {
@@ -82,22 +82,22 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         "usda" => {
             if args.len() < 4 { eprintln!("Missing args: <species_id> <usda_key>"); std::process::exit(2); }
-            let species_id = &args[2];
-            let usda_key = &args[3];
+            let species_id = args[2].clone();
+            let usda_key = args[3].clone();
             #[cfg(feature = "ingestion")]
             {
                 let mut client = usda::UsdaClient::default();
                 if let Ok(override_url) = env::var("USDA_BASE_URL") { client.base_url = override_url; }
-                usda::ingest_usda_traits(db.pool(), species_id, usda_key, &client).await?;
+                usda::ingest_usda_traits(&db, &species_id, &usda_key, &client).await?;
                 println!("USDA ingestion completed: species={} usda_key={}", species_id, usda_key);
             }
         }
         "usda-csv" => {
             if args.len() < 3 { eprintln!("Missing args: <csv_path>"); std::process::exit(2); }
-            let csv_path = &args[2];
+            let csv_path = args[2].clone();
             #[cfg(feature = "ingestion")]
             {
-                usda_csv::ingest_usda_csv(db.pool(), csv_path).await?;
+                usda_csv::ingest_usda_csv(&db, &csv_path).await?;
                 println!("Done: CSV {}", csv_path);
             }
             #[cfg(not(feature = "ingestion"))]
@@ -109,9 +109,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "bulk-load" => {
             #[cfg(feature = "ingestion")]
             {
-                let master_list_path = args.get(2);
+                let master_list_path = args.get(2).cloned();
                 let max_species = args.get(3).and_then(|s| s.parse::<usize>().ok());
-                bulk::bulk_ingest_cultivated(db.pool(), max_species, master_list_path.map(|s| s.as_str())).await?;
+                bulk::bulk_ingest_cultivated(&db, max_species, master_list_path.as_deref()).await?;
                 println!("Done: Bulk ingestion complete");
             }
             #[cfg(not(feature = "ingestion"))]
