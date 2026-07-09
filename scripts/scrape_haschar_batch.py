@@ -29,6 +29,12 @@ def load_symbols(path: Path) -> list[str]:
 
 
 async def main_async(args) -> int:
+    from botanica_usda.fail_fast import (  # noqa: WPS433
+        assert_coverage,
+        assert_plumbing,
+        print_debug_record,
+    )
+
     symbols = load_symbols(Path(args.symbols_file))
     exclude = set()
     if args.exclude_file and Path(args.exclude_file).exists():
@@ -49,13 +55,26 @@ async def main_async(args) -> int:
     async with USDAPlantsScraper(
         out, rate_limit=args.rate, concurrency=args.concurrency
     ) as s:
-        # chunk for progress + intermediate saves
+        if not args.skip_fail_fast:
+            pre = symbols[: args.smoke_count]
+            print(f"FAIL-FAST smoke n={len(pre)} {pre}", flush=True)
+            raw_pre = await s.fetch_many(pre)
+            norm_pre = [normalize_usda(r) for r in raw_pre]
+            for r, n in zip(raw_pre[:2], norm_pre[:2]):
+                print_debug_record(r, n)
+            assert_plumbing(raw_pre, norm_pre)
+            assert_coverage(norm_pre, min_pct_3plus_practical=args.min_pct_3plus)
+            print("FAIL-FAST passed — continuing full list", flush=True)
+
         chunk = args.chunk
         all_raw = []
         all_norm = []
         for i in range(0, len(symbols), chunk):
             batch = symbols[i : i + chunk]
-            print(f"batch {i//chunk+1}: {i+1}-{i+len(batch)} / {len(symbols)}", flush=True)
+            print(
+                f"batch {i//chunk+1}: {i+1}-{i+len(batch)} / {len(symbols)}",
+                flush=True,
+            )
             raw = await s.fetch_many(batch)
             norm = [normalize_usda(r) for r in raw]
             all_raw.extend(raw)
@@ -73,6 +92,13 @@ def main() -> int:
     ap.add_argument("--rate", type=float, default=0.6)
     ap.add_argument("--concurrency", type=int, default=8)
     ap.add_argument("--chunk", type=int, default=250)
+    ap.add_argument("--smoke-count", type=int, default=5)
+    ap.add_argument("--min-pct-3plus", type=float, default=70.0)
+    ap.add_argument(
+        "--skip-fail-fast",
+        action="store_true",
+        help="Skip pre-flight (not recommended for long runs)",
+    )
     ap.add_argument(
         "--selection-method",
         default="haschar_all_minus_prior_gates",

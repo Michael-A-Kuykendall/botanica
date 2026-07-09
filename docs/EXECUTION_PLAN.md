@@ -76,6 +76,11 @@
 
 ---
 
+## Fail-fast scrapes
+
+**Always** `debug` → `smoke` → `full` before multi-hour feeds.  
+See [`SCRAPE_FAIL_FAST.md`](SCRAPE_FAIL_FAST.md) and `budsy/botanica_usda` `--phase` flags.
+
 ## How to run (USDA taxonomy bulk)
 
 ```powershell
