@@ -1,0 +1,10 @@
+{
+  "built_at": "2026-07-09T22:47:59.508087+00:00",
+  "source": "FAOSTAT Production Crops Livestock item codes",
+  "url": "https://fenixservices.fao.org/faostat/static/bulkdownloads/Production_Crops_Livestock_E_All_Data.zip",
+  "license": "FAOSTAT \u2014 free for use with attribution",
+  "commodity_items": 312,
+  "species_tagged": 488,
+  "batch": "20260709T224757Z",
+  "note": "Match is EN vernacular \u2248 commodity label; not Latin binomial map"
+}

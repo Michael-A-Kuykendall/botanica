@@ -1,0 +1,11 @@
+{
+  "built_at": "2026-07-09T22:47:12.044963+00:00",
+  "source": "GRIN Taxonomy via GBIF hosted zip",
+  "url": "https://hosted-datasets.gbif.org/datasets/grin.zip",
+  "license": "USDA GRIN / checklist \u2014 redistribute with attribution (see GRIN/GBIF)",
+  "grin_accepted_species": 61984,
+  "matched_warehouse_species": 17319,
+  "batch": "20260709T224622Z",
+  "applied": true,
+  "names_file": "data/bronze/grin/grin_species_names.txt"
+}

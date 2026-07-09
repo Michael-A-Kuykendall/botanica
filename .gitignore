@@ -32,6 +32,10 @@ Thumbs.db
 /data/bronze/powo/sample/raw/
 /data/bronze/ff_debug/
 /data/bronze/ff_smoke/
+/data/bronze/grin/grin.zip
+/data/bronze/grin/extracted/
+/data/bronze/faostat/*.zip
+/data/bronze/faostat/extracted/
 
 # Python cache (for demo scripts)
 __pycache__/

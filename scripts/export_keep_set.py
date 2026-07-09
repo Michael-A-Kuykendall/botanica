@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Negative filter: export cultivated KEEP set as columnar silver_keep/.
 
-KEEP = species with ≥1 traits OR cultivation_requirements OR uses row.
-DROP = taxonomy/names only (no cultivation payload).
+KEEP = species with ≥1 traits OR cultivation_requirements OR uses
+    OR species_identifiers.source = 'grin' (GRIN germplasm/cultivated allowlist).
+DROP = taxonomy/names only (no cultivation payload and not GRIN).
 
 Reads data/silver/*.parquet (or DuckDB), writes:
   data/silver_keep/*.parquet
@@ -120,6 +121,10 @@ def main() -> int:
             SELECT 1 FROM """
         + ("src.uses" if src else "uses")
         + """ u WHERE u.species_id = s.id
+        ) OR EXISTS (
+            SELECT 1 FROM """
+        + ("src.species_identifiers" if src else "species_identifiers")
+        + """ i WHERE i.species_id = s.id AND lower(i.source) IN ('grin','faostat')
         )
         """
     )
@@ -215,7 +220,7 @@ def main() -> int:
     ).fetchall()
     membership = {
         "built_at": datetime.now(timezone.utc).isoformat(),
-        "rule": "KEEP = has traits OR cultivation_requirements OR uses",
+        "rule": "KEEP = traits OR cultivation_requirements OR uses OR grin|faostat identifier",
         "all_species": all_n,
         "keep_species": keep_n,
         "drop_species": all_n - keep_n,

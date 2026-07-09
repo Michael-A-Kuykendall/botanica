@@ -22,7 +22,7 @@ Botanica stays free/open for the **knowledge + schema**. Product UX (camera, pla
 | `data/manifests/keep-membership.json` | Filter rule + keep/drop counts |
 
 **KEEP rule:** has `traits` OR `cultivation_requirements` OR `uses`.
-Current baseline: **~3,020 keep** / ~62.5k warehouse / **~19 MB** KEEP parquet (fits GitHub).
+Current baseline: **~18,566 keep** / ~62.5k warehouse (GRIN+FAOSTAT+payload) KEEP parquet (fits GitHub).
 
 ### Load in one command
 
