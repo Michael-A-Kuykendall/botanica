@@ -20,6 +20,12 @@ B1 (KEEP filter) ─┬─► A1–A5 packaging ─► A4 Release (data-v0.2 flo
                                               └─► C1–C3 depth on KEEP only
 ```
 
+### Progress log
+
+| Date | Closed | Note |
+|------|--------|------|
+| 2026-07-09 | B1, A1 | KEEP=3020 (~19 MB `silver_keep/`); full silver ~61 MB; both GitHub-safe |
+
 ---
 
 ## WS-A Packaging (`bot-az9.1`) — share with the world

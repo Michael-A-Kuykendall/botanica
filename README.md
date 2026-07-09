@@ -5,26 +5,54 @@ Open-source “straw” for human agricultural / garden plant data — taxonomy,
 
 | | |
 |--|--|
-| **Status** | Active rebuild — schema + ingest in progress; not a finished world flora |
-| **Engine** | DuckDB (not SQLite) |
-| **License** | MIT OR Apache-2.0 |
-| **Architecture** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
+| **Status** | Cultivated **KEEP** silver (~3k species with care payload) + full warehouse; public product is columnar parquet on GitHub |
+| **Engine** | DuckDB (not SQLite); shareable source of truth is **parquet** |
+| **License** | MIT OR Apache-2.0 (crate); data sources PD / CC BY — see MANIFEST |
+| **Architecture** | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) · workstreams [`docs/WORKSTREAMS.md`](docs/WORKSTREAMS.md) |
 
 Botanica stays free/open for the **knowledge + schema**. Product UX (camera, plant ID, sync) lives in Budsy.
+
+## Public data product (what the world should use)
+
+| Path | What |
+|------|------|
+| **`data/silver_keep/*.parquet`** | Cultivated KEEP — species with hort/care payload |
+| `data/manifests/botanica-keep-baseline.json` | Counts + file list |
+| `data/manifests/quality-keep-baseline.json` | Coverage on KEEP only |
+| `data/manifests/keep-membership.json` | Filter rule + keep/drop counts |
+
+**KEEP rule:** has `traits` OR `cultivation_requirements` OR `uses`.
+Current baseline: **~3,020 keep** / ~62.5k warehouse / **~19 MB** KEEP parquet (fits GitHub).
+
+### Load in one command
+
+```bash
+duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species.parquet');"
+```
+
+Rebuild KEEP after warehouse updates:
+
+```bash
+python scripts/export_keep_set.py --tag baseline
+```
+
+Details: [`data/README.md`](data/README.md) · release: [`docs/RELEASE_PROCESS.md`](docs/RELEASE_PROCESS.md)
 
 ## What works today
 
 - Family → genus → species types and CRUD
-- DuckDB migrations for taxonomy, horticultural reference, and **empty** inventory tables
+- DuckDB migrations for L1/L2 knowledge + empty L3 inventory
+- USDA taxonomy warehouse + HasChar traits + POWO/GBIF enrich
+- **KEEP export** for cultivated/ag public slice
 - Optional ingest feature: POWO / GBIF / USDA scaffolding (`--features ingestion`)
-- Tests for core taxonomy paths
 
 ## What does *not* work (yet) / removed
 
-- Full cultivated world seed (parquet silver + load) — **planned**, see architecture phases 3–5
-- ContextLite / “AI insights” — **removed**
-- Marketing claims of “production-ready institutional use” — **retired**; this README is the truth source
-- Feature flags `herbarium` / `germplasm` / `api` — flags only; no real modules yet (do not enable expecting magic)
+- Global GRIN/FAOSTAT allowlists (workstream B — expands KEEP)
+- Hardiness/sunlight depth on KEEP (workstream C)
+- Cultivars (0 rows until free source)
+- ContextLite / AI insights — **removed**
+- Feature flags `herbarium` / `germplasm` / `api` — incomplete stubs
 
 ## Quick start
 

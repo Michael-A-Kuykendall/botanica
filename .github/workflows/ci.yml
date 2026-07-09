@@ -1,0 +1,17 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master, "feature/**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: cargo test
+        run: cargo test --lib
+      - name: KEEP parquet present
+        run: test -f data/silver_keep/species.parquet || test -f data/silver/species.parquet

@@ -41,3 +41,13 @@ How botanica turns source names into L1 taxonomy without inventing fake taxa.
 Never invent taxa: unmatched POWO/GBIF names skip insert (enrich-only on existing species).
 
 Cultivated scope measurement: see `docs/sources/cultivated_scope.md`.
+
+
+## Merge key harden (B2)
+
+1. **Primary:** unique (source, external_id) in species_identifiers (USDA symbol, powo, gbif).
+2. **Secondary:** lower(trim(scientific_name)) for enrich match only — do not insert a second species if name matches KEEP/warehouse.
+3. **Quarantine** free-text rows that fail ID + name match.
+4. **Validate:** python scripts/validate_merge_keys.py → data/manifests/merge-key-report.json.
+
+New bulk scrapes must enrich existing species or quarantine — never create parallel species for misspellings of known taxa.

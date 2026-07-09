@@ -2,36 +2,54 @@
 
 | Path | Role |
 |------|------|
-| `bronze/` | Raw/normalized source payloads (local; may be committed for small pilots) |
+| `bronze/` | Raw source payloads (local; large dumps may be gitignored) |
 | `lookups/` | Curated maps (e.g. genus → family) |
-| `silver/` | **Published knowledge** — per-table parquet (L1+L2) |
-| `manifests/` | Build MANIFEST json (counts, licenses, schema version) |
-| `botanica-cultivated-v*.duckdb` | Optional built engine file (gitignored if large) |
+| `silver/` | Full warehouse parquet (L1+L2; includes non-cultivated taxonomy bulk) |
+| **`silver_keep/`** | **Public product** — cultivated KEEP only (traits ∨ cult.req ∨ uses) |
+| `manifests/` | MANIFEST + quality + keep-membership json |
+| `botanica-cultivated-v*.duckdb` | Optional local engine (usually gitignored) |
 
-## Build seed (pilot)
+**GitHub packaging:** KEEP set is ~**20 MB** total across parquet files (each file = one table). Full warehouse ~**60 MB**. Both under normal GitHub file limits; Release zip optional for convenience.
 
-From repo root (enough free disk for DuckDB compile):
+## KEEP filter (product slice)
 
 ```bash
-cargo run --bin build_seed
+python scripts/export_keep_set.py --tag baseline
+# → data/silver_keep/*.parquet
+# → data/manifests/keep-membership.json
+# → data/manifests/quality-keep-baseline.json
+# → data/manifests/botanica-keep-baseline.json
 ```
 
-Produces:
+Rule: **KEEP** = species with ≥1 `traits` OR `cultivation_requirements` OR `uses` row. Everything else drops from the public product.
 
-- `data/botanica-cultivated-v0.1.duckdb`
-- `data/silver/*.parquet`
-- `data/manifests/botanica-cultivated-v0.1.json`
+## Load KEEP into DuckDB (anyone)
+
+```bash
+# after clone
+duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species.parquet');"
+duckdb -c "SELECT scientific_name FROM read_parquet('data/silver_keep/species.parquet') LIMIT 10;"
+```
+
+Or in Python:
+
+```python
+import duckdb
+con = duckdb.connect()
+print(con.execute(
+    "SELECT count(*) FROM read_parquet('data/silver_keep/species.parquet')"
+).fetchone())
+```
+
+## Build full warehouse seed
+
+```bash
+cargo run --release --bin build_seed -- usda
+python scripts/export_keep_set.py --tag baseline
+```
 
 L3 `plants` count must be **0** in the OSS seed.
 
-## Load parquet into a fresh DuckDB
-
-```rust
-// sketch — see botanica::seed::export::load_silver_parquet
-```
-
-Or CLI later. Architecture: silver parquet is the GitHub-friendly source of truth; DuckDB is local engine.
-
 ## License notes
 
-Gate2 bronze is USDA PLANTS–derived (**public domain**). Attribution still recorded in `provenance`.
+USDA PLANTS–derived data is **public domain**. POWO/GBIF enrichments are **CC BY 4.0** — attribution in MANIFEST/provenance.
