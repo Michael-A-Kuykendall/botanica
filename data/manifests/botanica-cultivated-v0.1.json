@@ -1,6 +1,6 @@
 {
   "artifact": "botanica-cultivated-v0.1",
-  "built_at": "2026-07-09T18:07:36.279005200+00:00",
+  "built_at": "2026-07-09T21:40:59.385659+00:00",
   "engine": "duckdb",
   "schema_version": "0.4.0",
   "counts": {
@@ -8,12 +8,15 @@
     "genera": 6972,
     "species": 62558,
     "cultivars": 0,
-    "traits": 21164,
-    "vernacular_names": 7078,
+    "traits": 26389,
+    "vernacular_names": 391382,
     "cultivation_requirements": 25733,
-    "provenance": 62558,
+    "provenance": 125731,
     "quarantine": 2,
-    "plants": 0
+    "plants": 0,
+    "synonyms": 35294,
+    "uses": 0,
+    "distribution_regions": 308245
   },
   "sources": [
     {
@@ -57,9 +60,33 @@
       "license": "Public Domain",
       "record_count": 883,
       "notes": "enrich .\\data/bronze\\gate2\\USDA_PLANTS_norm.json"
+    },
+    {
+      "name": "GBIF",
+      "license": "CC BY 4.0",
+      "record_count": 999,
+      "notes": "vern=6961 en_rows\u22481534 batch=20260709T203008Z"
+    },
+    {
+      "name": "POWO",
+      "license": "CC BY 4.0",
+      "record_count": 861,
+      "notes": "syn=11743 loc=97258 trait=1721 batch=20260709T205631Z"
+    },
+    {
+      "name": "GBIF_VERNACULAR_FULL",
+      "license": "CC BY 4.0",
+      "record_count": 59559,
+      "notes": "vern=391191 en_rows=84510 batch=20260709T205917Z"
+    },
+    {
+      "name": "POWO",
+      "license": "CC BY 4.0",
+      "record_count": 1754,
+      "notes": "syn=23980 loc=197239 trait=3504 batch=20260709T213415Z"
     }
   ],
-  "scope": "usda_species_taxonomy + full_HasCharacteristics_traits (~4480 taxa rich traits)",
+  "scope": "usda_species_taxonomy + full_HasCharacteristics_traits (~4480 taxa rich traits) + POWO/GBIF enrich batch=20260709T203008Z powo=0 gbif=999 + POWO/GBIF enrich batch=20260709T205631Z powo=861 gbif=0 + GBIF full vern batch=20260709T205917Z + POWO/GBIF enrich batch=20260709T213415Z powo=1754 gbif=0",
   "l3_rows": 0,
   "silver_files": [
     "./data/silver/families.parquet",
@@ -79,5 +106,5 @@
     "./data/silver/provenance.parquet",
     "./data/silver/ingest_quarantine.parquet"
   ],
-  "notes": "HasChar universe 4480/62349. Soil/moisture/height/toxicity ~95% on haschar set. Hardiness still absent from USDA. Pre-public."
+  "notes": "HasChar universe 4480/62349. Soil/moisture/height/toxicity ~95% on haschar set. Hardiness still absent from USDA. Pre-public. | enrich 20260709T203008Z: powo_matched=0 gbif_matched=999 | enrich 20260709T205631Z: powo_matched=861 gbif_matched=0 | GBIF full {'matched': 59559, 'vern': 391191, 'en': 84510, 'skip': 78} | enrich 20260709T213415Z: powo_matched=1754 gbif_matched=0"
 }

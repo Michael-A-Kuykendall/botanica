@@ -21,13 +21,15 @@ Aligned with [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). This is not a marke
 
 | Round | Focus | Status |
 |------:|-------|--------|
-| **R1** | Scoreboard: field map + quality report + baseline % | **next** |
-| **R2** | POWO fail-fast → 1k uses gate → bulk | queued |
-| **R3** | GBIF vernaculars (// after R1) | queued |
-| **R4** | Merge, cultivated flag, fill blanks to v1 bar | queued |
-| **R5** | OSS parity (CI, templates, RELEASE_PROCESS) | **parallel** |
-| **R6** | **One** data tag + crate bump + Release | after R4+R5 |
+| **R1** | Scoreboard: field map + quality report + baseline % | **done** |
+| **R2** | POWO fail-fast → dense bulk (uses API ceiling) | **done** |
+| **R3** | GBIF vernaculars full on missing-EN | **done** |
+| **R4** | Merge + cultivated denominators + quality ceilings | **done** (v1 bar partial) |
+| **R5** | OSS parity (CI, templates, RELEASE_PROCESS) | **next** |
+| **R6** | **One** data tag + crate bump + Release | after R5 |
 | **R7** | Budsy vertical on real seed | deferred |
+
+Metrics: `data/manifests/quality-post_r2_r3.json`
 
 ## Explicitly not promised
 

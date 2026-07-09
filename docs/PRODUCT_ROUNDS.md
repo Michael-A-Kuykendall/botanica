@@ -229,3 +229,4 @@ Deferred product path; not required for Botanica OSS cut.
 |------|-------|------|
 | 2026-07-09 | R0 complete | USDA 62k + HasChar 4480 + fail-fast; beads tree for R1–R7 created |
 | 2026-07-09 | R1 next | Scoreboard before POWO bulk |
+| 2026-07-09 | **R1–R4 data pass** | Quality script + baseline; POWO dense ~2.6k (uses API ceiling); GBIF vern full missing-EN; enrich+silver. See `quality-post_r2_r3.json` + ceilings. |

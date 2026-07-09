@@ -27,6 +27,11 @@ Thumbs.db
 
 # Large bronze rebuildables (regenerate via scripts / PlantSearch)
 /data/bronze/usda_catalog/plant_search_pct.json
+/data/bronze/gbif_vern/full/
+/data/bronze/powo/full/raw/
+/data/bronze/powo/sample/raw/
+/data/bronze/ff_debug/
+/data/bronze/ff_smoke/
 
 # Python cache (for demo scripts)
 __pycache__/

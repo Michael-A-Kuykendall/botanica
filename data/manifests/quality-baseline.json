@@ -1,0 +1,130 @@
+{
+  "built_at": "2026-07-09T20:23:03.372963+00:00",
+  "db": "C:/Users/micha/repos/botanica/data/botanica-cultivated-v0.1.duckdb",
+  "denominators": {
+    "all_species": {
+      "definition": "COUNT(*) FROM species",
+      "n": 62558
+    },
+    "has_any_trait": {
+      "definition": "species with \u22651 traits OR cultivation_requirements row",
+      "n": 3017
+    },
+    "haschar_proxy": {
+      "definition": "species with \u22651 practical Tier1 field (soil|moisture|height|toxicity)",
+      "n": 2168
+    }
+  },
+  "counts": {
+    "species": 62558,
+    "plants_l3": 0,
+    "cultivars": 0,
+    "traits_rows": 21164,
+    "cultivation_requirements_rows": 25733,
+    "vernacular_rows": 7078,
+    "uses_rows": 0,
+    "synonyms_species": 0,
+    "distribution_species": 2989,
+    "provenance_rows": 62558
+  },
+  "coverage_all_species": {
+    "pct_en_vernacular": 4.67,
+    "pct_any_vernacular": 4.67,
+    "pct_any_trait": 4.82,
+    "pct_3plus_practical_tier1": 3.29,
+    "pct_uses": 0.0,
+    "species_en_vernacular": 2921,
+    "species_any_vernacular": 2921,
+    "species_any_trait": 3017,
+    "species_3plus_practical_tier1": 2057,
+    "species_uses": 0
+  },
+  "coverage_has_any_trait": {
+    "n": 3017,
+    "pct_3plus_practical_tier1": 68.18,
+    "pct_en_vernacular": 95.39
+  },
+  "field_null_rates_practical": {
+    "soil_species": 2116,
+    "moisture_species": 2014,
+    "sunlight_species": 79,
+    "mature_height_species": 2146,
+    "toxicity_species": 2083,
+    "pct_soil": 3.38,
+    "pct_moisture": 3.22,
+    "pct_sunlight": 0.13,
+    "pct_mature_height": 3.43,
+    "pct_toxicity": 3.33
+  },
+  "by_source_provenance": [
+    {
+      "source": "USDA_PLANTS_CATALOG",
+      "record_count": 62349
+    },
+    {
+      "source": "USDA_PLANTS_GATE2",
+      "record_count": 209
+    }
+  ],
+  "trait_name_histogram": [
+    {
+      "name": "growth_habit",
+      "count": 6363
+    },
+    {
+      "name": "duration",
+      "count": 5766
+    },
+    {
+      "name": "mature_height",
+      "count": 4575
+    },
+    {
+      "name": "toxicity",
+      "count": 4460
+    }
+  ],
+  "requirement_type_histogram": [
+    {
+      "name": "drought_tolerance",
+      "count": 4542
+    },
+    {
+      "name": "shade_tolerance",
+      "count": 4537
+    },
+    {
+      "name": "soil",
+      "count": 4520
+    },
+    {
+      "name": "salinity_tolerance",
+      "count": 4485
+    },
+    {
+      "name": "moisture",
+      "count": 4338
+    },
+    {
+      "name": "wetland_indicator",
+      "count": 3232
+    },
+    {
+      "name": "sunlight",
+      "count": 79
+    }
+  ],
+  "v1_bar_check": {
+    "species_ge_5000": true,
+    "en_vernacular_ge_60pct": false,
+    "practical_3plus_ge_40pct": false,
+    "l3_plants_zero": true,
+    "notes": "Global bar uses all_species denominator. USDA HasChar subset is much denser; see coverage_has_any_trait."
+  },
+  "practical_tier1_fields": [
+    "soil",
+    "moisture",
+    "mature_height",
+    "toxicity"
+  ]
+}

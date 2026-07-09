@@ -118,3 +118,4 @@ cargo run --release --bin build_seed -- usda
 | 2026-07-08 | Gate 5A.3 scrape 1k stratified symbols via `botanica_usda`. Formal Tier1 accept **failed** (see coverage report). Seed rebuild: ~62.4k species, ~1.8k traits, ~956 vernaculars. Data tag candidate: **data-v0.1.0**. VERSIONING.md added. |
 | 2026-07-09 | Char API fix; Gate3c HasChar 1k scrape **95.6%** ≥3 Tier1. Seed rebuild: ~62.5k species, **~7.4k traits**, **~3.0k vernaculars**, L3=0. Still **not** public 0.1.0 brand. |
 | 2026-07-09 | Full HasChar universe: **4480** taxa. Scraped all. Seed: ~62.6k species, **21k traits**, **7k vernaculars**, **25k cult.req rows**. Coverage ~95% 3+ Tier1 on haschar set. Still pre-public.
+| 2026-07-09 | **R1–R4 data:** quality scoreboard; POWO dense ~2.6k (uses not in API); GBIF vern full → **54.75% EN** all_species / **97% EN** has_any_trait. See quality-post_r2_r3.json. |

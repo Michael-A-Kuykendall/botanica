@@ -26,3 +26,18 @@ How botanica turns source names into L1 taxonomy without inventing fake taxa.
 1. Grow `genus_family.csv` (or replace with a better backbone later).
 2. Prefer master lists that ship `family,genus,scientific_name,symbol`.
 3. Optional later: WFO/POWO resolution for missing families (network path under `ingestion` feature).
+
+## Multi-source merge (R4)
+
+| Concern | Prefer |
+|---------|--------|
+| Primary taxonomy bulk | USDA symbol → scientific_name |
+| Accepted-name confirmation | POWO match (`species_identifiers.source=powo`) |
+| Synonyms / WGSRPD locations | POWO |
+| Hort practical Tier1 | USDA traits/cult.req |
+| Vernacular multi-lang | GBIF (+ USDA English) |
+| Lifeform / climate | POWO → traits |
+
+Never invent taxa: unmatched POWO/GBIF names skip insert (enrich-only on existing species).
+
+Cultivated scope measurement: see `docs/sources/cultivated_scope.md`.

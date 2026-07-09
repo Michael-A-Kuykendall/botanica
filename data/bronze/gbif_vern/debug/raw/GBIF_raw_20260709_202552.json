@@ -1,0 +1,3797 @@
+[
+  {
+    "query": "Quercus alba",
+    "match": {
+      "usageKey": 2879737,
+      "scientificName": "Quercus alba L.",
+      "canonicalName": "Quercus alba",
+      "rank": "SPECIES",
+      "status": "ACCEPTED",
+      "confidence": 98,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Fagales",
+      "family": "Fagaceae",
+      "genus": "Quercus",
+      "species": "Quercus alba",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 220,
+      "orderKey": 1354,
+      "familyKey": 4689,
+      "genusKey": 2877951,
+      "speciesKey": 2879737,
+      "class": "Magnoliopsida"
+    },
+    "vernaculars": [
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Ak me\u015fe",
+        "language": "tur",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Amerikaanse witte eik",
+        "language": "nld",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Amerikanische Wei\u00df-Eiche",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "A\u011f pal\u0131d",
+        "language": "aze",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Baiyi",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Baltais ozols",
+        "language": "lav",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Baltasis \u0105\u017euolas",
+        "language": "lit",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Baya",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Carvalho-branco",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Ch\u00eane blanc",
+        "language": "fra",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221893350
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Encino blanco",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Feh\u00e9r t\u00f6lgy",
+        "language": "hun",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Hvid-Eg",
+        "language": "dan",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Hv\u00edteik",
+        "language": "isl",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Ki-en-tah-ken-ah'tah",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Kviteik",
+        "language": "nor",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Otok\u00e9nha",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Quercia bianca",
+        "language": "ita",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Roble blanco",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Roure blanc americ\u00e0",
+        "language": "cat",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Runehn\u00fare\u0294",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Stave Oak",
+        "language": "eng",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 202605000
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Stave Oak",
+        "language": "eng",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160785784
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White Oak",
+        "language": "eng",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160785784
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White Oak",
+        "language": "eng",
+        "country": "GB",
+        "area": "eng",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221893350
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White Oak",
+        "language": "eng",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 202605000
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White oak",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Wiishkobi-mitigomizh (m\u00eeci'm\u00een)",
+        "language": "oji",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "ch\u00eane blanc",
+        "language": "fra",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102278773
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "ch\u00eane blanc",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101373064
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "ch\u00eane blanc",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "dub biely",
+        "language": "slk",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "dub b\u00edl\u00fd",
+        "language": "ces",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "d\u0105b bia\u0142y",
+        "language": "pol",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "eastern white oak",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "howaito-&omacr;ku",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101373064
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "howaito-\u014dku",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "hvideg",
+        "language": "dan",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "rinnevalkotammi",
+        "language": "fin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "stave oak",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101373064
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "stave oak",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "vitek",
+        "language": "swe",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101373064
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "vitek",
+        "language": "swe",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "white oak",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103149331
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "white oak",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101373064
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "white oak",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102278773
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u0414\u0443\u0431 \u0431\u0435\u043b\u044b\u0439",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u054d\u057a\u056b\u057f\u0561\u056f \u056f\u0561\u0572\u0576\u056b",
+        "language": "hye",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u0628\u0644\u0648\u0637 \u0633\u0641\u06cc\u062f",
+        "language": "fas",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u0633\u0646\u062f\u064a\u0627\u0646 \u0623\u0628\u064a\u0636",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u0633\u0646\u062f\u064a\u0627\u0646 \u0627\u0628\u064a\u0636",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u10d7\u10d4\u10d7\u10e0\u10d8 \u10db\u10e3\u10ee\u10d0",
+        "language": "kat",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u30db\u30ef\u30a4\u30c8\u30aa\u30fc\u30af",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u5317\u7f8e\u767d\u6a61",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "\u7f8e\u6d32\u767d\u6a61",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295301050
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White Oak",
+        "language": "eng",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180090324,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "White Oak",
+        "language": "eng",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176838548,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "ch\u00eane blanc",
+        "language": "fra",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100022630,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "vitek",
+        "language": "swe",
+        "country": "SE",
+        "source": "Dyntaxa. Svensk taxonomisk databas",
+        "sourceTaxonKey": 160022336,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "white oak",
+        "language": "eng",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100022630,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Eastern White Oak",
+        "language": "eng",
+        "country": "US",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 202605000,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "Eastern White Oak",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160785784,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "eastern white oak",
+        "language": "eng",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100022630,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2879737,
+        "vernacularName": "stave oak",
+        "language": "eng",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100022630,
+        "preferred": false
+      }
+    ]
+  },
+  {
+    "query": "Aloe vera",
+    "match": {
+      "usageKey": 2777724,
+      "scientificName": "Aloe vera (L.) Burm.f.",
+      "canonicalName": "Aloe vera",
+      "rank": "SPECIES",
+      "status": "ACCEPTED",
+      "confidence": 97,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Asparagales",
+      "family": "Asphodelaceae",
+      "genus": "Aloe",
+      "species": "Aloe vera",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 196,
+      "orderKey": 1169,
+      "familyKey": 4259209,
+      "genusKey": 2770879,
+      "speciesKey": 2777724,
+      "class": "Liliopsida"
+    },
+    "vernaculars": [
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Aloe",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Alo\u00e8s vrai, Alo\u00e8s amer, Mazambron, Alo\u00e8s cura\u00e7ao, Alo\u00e8s des Barbades, Alo\u00e8s vulgaire",
+        "language": "fra",
+        "country": "RE",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Alo\u00e8s vrai, Alo\u00e8s cura\u00e7ao, Alo\u00e8s des Barbades, Alo\u00e8s vulgaire",
+        "language": "fra",
+        "country": "YT",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Alo\u00e8s vrai, Alo\u00e8s cura\u00e7ao, Alo\u00e8s des Barbades, Alo\u00e8s vulgaire",
+        "language": "fra",
+        "country": "FR",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Alo\u00e8s vrai, Alo\u00e8s des Barbades",
+        "language": "fra",
+        "country": "FR",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Alo\u00ebs",
+        "language": "fra",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados Aloe",
+        "language": "eng",
+        "country": "GB",
+        "area": "eng",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados Aloes",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados aloe",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados aloe",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados aloe",
+        "language": "eng",
+        "country": "US",
+        "area": "conterminous 48 United States",
+        "source": "Global Register of Introduced and Invasive Species - United States (Contiguous) (ver.2.0, 2022)",
+        "sourceTaxonKey": 205114672
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados aloe",
+        "language": "eng",
+        "country": "US",
+        "area": "Hawaii",
+        "source": "Global Register of Introduced and Invasive Species - Hawaii, United States (ver.2.0, 2022)",
+        "sourceTaxonKey": 205108399
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Chizia mlili",
+        "language": "",
+        "country": "YT",
+        "area": "swb",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Common Aloes",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Cura\u00e7ao aloe",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Cura\u00e7ao aloe",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Cura\u00e7ao aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Indian aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Jaffarabad aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Mediterranean aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Sakoankankini",
+        "language": "",
+        "country": "YT",
+        "area": "buc",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221926173
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Sentebibu",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "West Indian aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "West Indian aloe",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "West Indian aloe",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "acibar",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103084498
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "acibar",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "acibar",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "ac\u00edbar",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "ac\u00edbar",
+        "language": "spa",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "allas",
+        "language": "ell",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe",
+        "language": "spa",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe vera",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe vera",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe vera",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloe-vera",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103084498
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloi",
+        "language": "ell",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "aloja",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e8s amer",
+        "language": "fra",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e8s vulgaire",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e8s vulgaire",
+        "language": "fra",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e8s vulgaire",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e9",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "alo\u00e9-dos-barbados",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "atzavara",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 163994420
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103084498
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa-comum",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 163994420
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa-medicinal",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 163994420
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa-medicinal",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "babosa-medicinal",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "burn plant",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "coastal aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "common aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "echte Aloe",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "echte Aloe",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "erva-azebra",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "erva-babosa",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "erva-babosa",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 163994420
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "erva-babosa",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "erva-babosa",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "flor de deserto",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "lin\u00e1loe",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "loto de deserto",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "maguey morado",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "mazambron",
+        "language": "fra",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "medicinal aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "penca s\u00e1bila",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "pita zabila",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "pitera amarelo",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "star cactus",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "s\u00e1bila do penca",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "s\u00e1vila",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "s\u00e1vila",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "s\u00e1vila",
+        "language": "spa",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "toots amarelo",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "true aloe",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "true aloe",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "true aloe",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "unguentine cactus",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "zabila",
+        "language": "spa",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "zabira",
+        "language": "spa",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "\u00e1loe de los Barbados",
+        "language": "spa",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102227577
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "\u00e4kta aloe",
+        "language": "swe",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296183263
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "\u00e4kta aloe",
+        "language": "swe",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101438589
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "\u017cabbara",
+        "language": "mlt",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159503969
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Aloe",
+        "language": "eng",
+        "source": "Checklist Dutch Caribbean Species Register",
+        "sourceTaxonKey": 181859170,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "\u00e4kta aloe",
+        "language": "swe",
+        "country": "SE",
+        "source": "Dyntaxa. Svensk taxonomisk databas",
+        "sourceTaxonKey": 160028783,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Aloe",
+        "language": "",
+        "source": "Checklist Dutch Caribbean Species Register",
+        "sourceTaxonKey": 181859170,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Barbados Aloes",
+        "language": "eng",
+        "source": "Checklist Dutch Caribbean Species Register",
+        "sourceTaxonKey": 181859170,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Common Aloes",
+        "language": "eng",
+        "source": "Checklist Dutch Caribbean Species Register",
+        "sourceTaxonKey": 181859170,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "Sentebibu",
+        "language": "",
+        "source": "Checklist Dutch Caribbean Species Register",
+        "sourceTaxonKey": 181859170,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2777724,
+        "vernacularName": "true aloe",
+        "language": "eng",
+        "source": "World Register of Marine Species",
+        "sourceTaxonKey": 181182241,
+        "preferred": false
+      }
+    ]
+  },
+  {
+    "query": "Camellia sinensis",
+    "match": {
+      "usageKey": 3189635,
+      "scientificName": "Camellia sinensis (L.) Kuntze",
+      "canonicalName": "Camellia sinensis",
+      "rank": "SPECIES",
+      "status": "ACCEPTED",
+      "confidence": 99,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Ericales",
+      "family": "Theaceae",
+      "genus": "Camellia",
+      "species": "Camellia sinensis",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 220,
+      "orderKey": 1353,
+      "familyKey": 3189597,
+      "genusKey": 3189634,
+      "speciesKey": 3189635,
+      "class": "Magnoliopsida"
+    },
+    "vernaculars": [
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Cam\u00e9lia de Chine",
+        "language": "fra",
+        "country": "FR",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221941912
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Ceai",
+        "language": "ron",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Ch\u00e1 \u00b7ch\u00e1-da-\u00edndia",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "C\u00e2y ch\u00e8",
+        "language": "vie",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Herbata chi\u0144ska",
+        "language": "pol",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Japanese tea",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Japanese tea",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Kininis arbatmedis",
+        "language": "lit",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Mchai",
+        "language": "swa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Pianta del T\u00e8",
+        "language": "ita",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Planta de t\u00e9",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Planta do ch\u00e1",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tea",
+        "language": "eng",
+        "country": "US",
+        "area": "conterminous 48 United States",
+        "source": "Global Register of Introduced and Invasive Species - United States (Contiguous) (ver.2.0, 2022)",
+        "sourceTaxonKey": 205113367
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tea",
+        "language": "eng",
+        "country": "US",
+        "area": "Hawaii",
+        "source": "Global Register of Introduced and Invasive Species - Hawaii, United States (ver.2.0, 2022)",
+        "sourceTaxonKey": 205107640
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tea",
+        "language": "eng",
+        "country": "GB",
+        "area": "eng",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221941912
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tea (EN)",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tea camellia",
+        "language": "eng",
+        "source": "Checklist of Vascular Plants in Korea",
+        "sourceTaxonKey": 223666865
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Tee",
+        "language": "tsn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Teepflanze",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Teep\u00f5\u00f5sas",
+        "language": "est",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Teestrauch",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Teestrauch",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Teestrauch (DE)",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Theestruik",
+        "language": "nld",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "Th\u00e9, Th\u00e9ier",
+        "language": "fra",
+        "country": "RE",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221941912
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "T\u00e8",
+        "language": "ita",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "arbre \u00e0 th\u00e9",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "arbre \u00e0 th\u00e9",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "black tea",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103192932
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "black tea",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "black tea",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "cha",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "cha",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "cha",
+        "language": "hin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "cha-no-ki",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "cha-no-ki",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "chai",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "chai",
+        "language": "eng",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 165119841
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "chai",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 165119841
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1-da-\u00cdndia",
+        "language": "por",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1-da-\u00edndia",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1-da-\u00edndia",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 165119841
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1-preto",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "ch\u00e1-preto",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "common tea",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "common tea",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "green tea",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "green tea",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "te",
+        "language": "swe",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "te",
+        "language": "swe",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tea",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tea",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tea",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102277324
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tea",
+        "language": "eng",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 165119841
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teabush",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teabush",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teaplant",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teaplant",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tebusk",
+        "language": "nob",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teepensas",
+        "language": "fin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teestruik",
+        "language": "afr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "teh",
+        "language": "ind",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "th\u00e9",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "th\u00e9",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "th\u00e9ier",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "th\u00e9ier",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "t\u00e9",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "t\u00e9",
+        "language": "spa",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 165119841
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "t\u00e9",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "zhu",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u00e1rbol del t\u00e9",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101435164
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u00e1rbol del t\u00e9",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u00e7ay",
+        "language": "tur",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u010dajovn\u00edk \u010d\u00ednsky",
+        "language": "slk",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u010dajovn\u00edk \u010d\u00ednsk\u00fd",
+        "language": "ces",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u041a\u0430\u043c\u0435\u043b\u0438\u044f \u043a\u0438\u0442\u0430\u0439\u0441\u043a\u0430\u044f",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u041a\u0430\u043c\u0435\u043b\u0456\u044f \u043a\u0438\u0442\u0430\u0439\u0441\u044c\u043a\u0430",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439 \u00b7 \u0447\u0430\u0301\u0439\u043d\u044b\u0439 \u043a\u0443\u0441\u0442",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439 \u043a\u0438\u0442\u0430\u0439\u0441\u044c\u043a\u0438\u0439",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439\u043d\u0435 \u0434\u0435\u0440\u0435\u0432\u043e",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439\u043d\u0438\u0439 \u043a\u0443\u0449",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u0430\u0439\u043d\u044b\u0439 \u043a\u0443\u0441\u0442",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0427\u044d\u0439 \u044b\u0430\u0440\u0495\u0430\u0442\u0430",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u091a\u093e\u092f",
+        "language": "hin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u091a\u093f\u092f\u093e",
+        "language": "nep",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u099a\u09be\u09b9",
+        "language": "asm",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0dad\u0dda",
+        "language": "sin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u0e0a\u0e32",
+        "language": "tha",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u107c\u1035\u1004\u103a\u1088 \u00b7 \u101a\u102d\u102f\u101d\u103a\u1089",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u30c1\u30e3\u30ce\u30ad",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u30c1\u30e3\u30ce\u30ad\uff08\u8336\u306e\u6728\uff09",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u8336\u6811",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u8336\u6a39",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\u8336\u6a39 \u00b7 \u8336\u6811",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\ucc28\ub098\ubb34",
+        "language": "kor",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295339836
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "\ucc28\ub098\ubb34",
+        "language": "",
+        "source": "Korean Peninsula Flora",
+        "sourceTaxonKey": 124516345
+      },
+      {
+        "taxonKey": 3189635,
+        "vernacularName": "tebusk",
+        "language": "nob",
+        "country": "NO",
+        "sourceTaxonKey": 239450219,
+        "preferred": true
+      }
+    ]
+  },
+  {
+    "query": "Ginkgo biloba",
+    "match": {
+      "usageKey": 2687885,
+      "scientificName": "Ginkgo biloba L.",
+      "canonicalName": "Ginkgo biloba",
+      "rank": "SPECIES",
+      "status": "ACCEPTED",
+      "confidence": 99,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Ginkgoales",
+      "family": "Ginkgoaceae",
+      "genus": "Ginkgo",
+      "species": "Ginkgo biloba",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 244,
+      "orderKey": 418,
+      "familyKey": 3070,
+      "genusKey": 2687884,
+      "speciesKey": 2687885,
+      "class": "Ginkgoopsida"
+    },
+    "vernaculars": [
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Abricotier d'argent",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159500029
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Arbre aux quarante \u00e9cus",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159500029
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Arbre aux quarante \u00e9cus",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Bai Guo",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "B\u1ea1ch qu\u1ea3",
+        "language": "vie",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Coeden ginco",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Common Ginkgo",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 205180268
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Divdaivu ginks",
+        "language": "lav",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Dviskiautis ginkmedis",
+        "language": "lit",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Dvore\u017enjasti ginko",
+        "language": "hrv",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Gincgo",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginco",
+        "language": "ita",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Gingko bilob\u00e9, Ginkgo, Arbre aux quarante \u00e9cus",
+        "language": "fra",
+        "country": "FR",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221943194
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 205180268
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "fra",
+        "country": "FR",
+        "source": "IUCN Red List Vascular Plants (2018, metropolitan France) - IUCN Liste Rouge de la Flore Vasculaire (2018, m\u00e9tropolitaine France)",
+        "sourceTaxonKey": 320343307
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "deu",
+        "country": "DE",
+        "source": "Taxon list of vascular plants from Bavaria, Germany compiled in the context of the BFL project",
+        "sourceTaxonKey": 116804274
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159500029
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgobam",
+        "language": "ltz",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgobaum",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgobaum",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginki",
+        "language": "lav",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Guinco",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Japanse Notenboom",
+        "language": "nld",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Kinesiskt Tempeltr\u00e4d",
+        "language": "swe",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair Tree",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 205180268
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair tree",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair tree",
+        "language": "eng",
+        "source": "Checklist of Vascular Plants in Korea",
+        "sourceTaxonKey": 223665810
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair tree",
+        "language": "eng",
+        "country": "US",
+        "area": "conterminous 48 United States",
+        "source": "Global Register of Introduced and Invasive Species - United States (Contiguous) (ver.2.0, 2022)",
+        "sourceTaxonKey": 205112106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair-tree",
+        "language": "eng",
+        "country": "GB",
+        "area": "eng",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221943194
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair-tree",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Mi\u0142orz\u0105b Dwuklapowy",
+        "language": "pol",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Tempeltre",
+        "language": "nor",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Tempeltr\u00e6",
+        "language": "dan",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Xinkgo",
+        "language": "glg",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Yinxing",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "common ginkgo",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102190975
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "dvokrpi ginko",
+        "language": "slv",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "eunhaengnamu",
+        "language": "kor",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "eunhaengnamu",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "gingko",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "gingo",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "swe",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103016953
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo biloba",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo biloba",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginko dvojlalo\u010dn\u00e9",
+        "language": "slk",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "golden fossil tree",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "h\u00f5lmikpuu",
+        "language": "est",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ich&omacr;",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ich\u014d",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "jinan dvoulalo\u010dn\u00fd",
+        "language": "ces",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "k\u00ednai p\u00e1fr\u00e1nyfeny\u0151",
+        "language": "hun",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "mabet a\u011fac\u0131",
+        "language": "tur",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "maidenhair tree",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102190975
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "maidenhair tree",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103016953
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "maidenhair-tree",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "neidonhiuspuu",
+        "language": "fin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "nogueira-do-Jap\u00e3o",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "nogueira-do-Jap\u00e3o",
+        "language": "por",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "nogueira-do-jap\u00e3o",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "noyer du Japon",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "noyer du Japon",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "p\u00e1fr\u00e1nyfeny\u0151",
+        "language": "hun",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159500029
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "p\u00e1fr\u00e1nyfeny\u0151",
+        "language": "hun",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "stinkbomb tree",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "xinkgu",
+        "language": "",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "yin xing",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101375402
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u00e1rvore-avenca",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u00e1rvore-da-vida",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u00e1rvore-dos-quarenta-escudos",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u00e1rvore-dos-templos",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u00e1rvore-folha-de-avenca",
+        "language": "por",
+        "source": "Flora e Funga do Brasil - Lista Oficial",
+        "sourceTaxonKey": 167682411
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0130kiayal\u0131 ginkqo",
+        "language": "aze",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0393\u03ba\u03af\u03b3\u03ba\u03bf",
+        "language": "ell",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0438\u043d\u043a\u0433\u043e \u0434\u0432\u0443\u043b\u043e\u043f\u0430\u0441\u0442\u043d\u044b\u0439",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0438\u043d\u043a\u0433\u043e \u0434\u0432\u0443\u0445\u043b\u043e\u043f\u0430\u0441\u0442\u043d\u044b\u0439",
+        "language": "rus",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0438\u043d\u043a\u043e",
+        "language": "bul",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0456\u043d\u043a\u0433\u0430",
+        "language": "bel",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0456\u043d\u043a\u0433\u043e \u0434\u0432\u043e\u043b\u043e\u043f\u0430\u0442\u0435\u0432\u0435",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0413\u0456\u043d\u043a\u0433\u043e \u0434\u0432\u043e\u043b\u043e\u043f\u0430\u0442\u0435\u0432\u0435",
+        "language": "ukr",
+        "country": "UA",
+        "source": "Red list of flora and fauna of Odesa region of Ukraine",
+        "sourceTaxonKey": 221748471
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0414\u0432\u0443\u0434\u0435\u043b\u043d\u043e \u0433\u0438\u043d\u043a\u043e",
+        "language": "bul",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0490\u0456\u043d\u043a\u0433\u043e \u0434\u0432\u043e\u043b\u043e\u043f\u0430\u0442\u0435\u0432\u0435",
+        "language": "ukr",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u05d2\u05d9\u05e0\u05e7\u05d2\u05d5 \u05d3\u05d5 \u05d0\u05d5\u05e0\u05ea\u05d9",
+        "language": "heb",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u062c\u0646\u0643\u0629 \u0628\u064a\u0644\u0648\u0628\u0627",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u062c\u0646\u0643\u0648",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u062c\u0646\u0643\u0648 \u0630\u0648 \u0627\u0644\u0634\u0642\u064a\u0646",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u062c\u0646\u0643\u0648 \u0630\u0648 \u0627\u0644\u0641\u0635\u064a\u0646",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0634\u062c\u0631\u0629 \u0627\u0644\u0645\u0639\u0628\u062f",
+        "language": "ara",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u06a9\u0647\u0646\u062f\u0627\u0631",
+        "language": "fas",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u0e41\u0e1b\u0e30\u0e01\u0e4a\u0e27\u0e22",
+        "language": "tha",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u10d2\u10d8\u10dc\u10d9\u10d2\u10dd",
+        "language": "kat",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u30a4\u30c1\u30e7\u30a6",
+        "language": "jpn",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u9280\u674f",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\u94f6\u674f",
+        "language": "zho",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\uc740\ud589\ub098\ubb34",
+        "language": "",
+        "source": "Korean Peninsula Flora",
+        "sourceTaxonKey": 124484175
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "\uc740\ud589\ub098\ubb34",
+        "language": "kor",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 296006106
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "nld",
+        "source": "Checklist Dutch Species Register - Nederlands Soortenregister",
+        "sourceTaxonKey": 152466667,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair-tree",
+        "language": "eng",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180134796,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "nno",
+        "country": "NO",
+        "sourceTaxonKey": 188626933,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "nob",
+        "country": "NO",
+        "sourceTaxonKey": 188626933,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "ginkgo",
+        "language": "swe",
+        "country": "SE",
+        "source": "Dyntaxa. Svensk taxonomisk databas",
+        "sourceTaxonKey": 160005869,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Bai Guo",
+        "language": "zho",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176752578,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "eng",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176752578,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Ginkgo",
+        "language": "lat",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180134796,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Maidenhair Tree",
+        "language": "eng",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176752578,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2687885,
+        "vernacularName": "Yinxing",
+        "language": "zho",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176752578,
+        "preferred": false
+      }
+    ]
+  },
+  {
+    "query": "Mentha spicata",
+    "match": {
+      "usageKey": 2927175,
+      "scientificName": "Mentha spicata L.",
+      "canonicalName": "Mentha spicata",
+      "rank": "SPECIES",
+      "status": "ACCEPTED",
+      "confidence": 97,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Lamiales",
+      "family": "Lamiaceae",
+      "genus": "Mentha",
+      "species": "Mentha spicata",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 220,
+      "orderKey": 408,
+      "familyKey": 2497,
+      "genusKey": 2927173,
+      "speciesKey": 2927175,
+      "class": "Magnoliopsida"
+    },
+    "vernaculars": [
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aarmunt",
+        "language": "nld",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aehrige Minze",
+        "language": "deu",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777236
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aehrige Minze",
+        "language": "deu",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777240
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aehrige Minze",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aehrige Minze",
+        "language": "deu",
+        "source": "Flora Helvetica - Lamiaceae",
+        "sourceTaxonKey": 224054669
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Bush Mint",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160784485
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Bush Mint",
+        "language": "eng",
+        "country": "US",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 245000402
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Bush mint",
+        "language": "eng",
+        "source": "Checklist of Vascular Plants in Korea",
+        "sourceTaxonKey": 223667054
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gruene Minze",
+        "language": "deu",
+        "source": "Flora Helvetica - Lamiaceae",
+        "sourceTaxonKey": 224054669
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gruene Minze",
+        "language": "deu",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777236
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gruene Minze",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00f8n mynte",
+        "language": "dan",
+        "country": "DK",
+        "source": "Red List Vascular Plants (Denmark) - R\u00f8dliste Karplanter (Danmark)",
+        "sourceTaxonKey": 320356588
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00f8n mynte",
+        "language": "dan",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00f8n mynte",
+        "language": "dan",
+        "country": "DK",
+        "source": "National Checklist of all species occurring in Denmark",
+        "sourceTaxonKey": 307215841
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00f8n mynte",
+        "language": "dan",
+        "country": "DK",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00fcn-Minze",
+        "language": "deu",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00fcne Minze",
+        "language": "deu",
+        "country": "DE",
+        "source": "Taxon list of vascular plants from Bavaria, Germany compiled in the context of the BFL project",
+        "sourceTaxonKey": 116784118
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Gr\u00fcne Minze",
+        "language": "deu",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Krauseminze",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Krauseminze",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menta Romana",
+        "language": "ita",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menta romana",
+        "language": "ita",
+        "source": "Flora Helvetica - Lamiaceae",
+        "sourceTaxonKey": 224054669
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menta romana",
+        "language": "ita",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777236
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe Verte",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en Grappe",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en grappe",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en grappe",
+        "language": "fra",
+        "source": "Flora Helvetica - Lamiaceae",
+        "sourceTaxonKey": 224054669
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en grappe",
+        "language": "fra",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777236
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en grappe",
+        "language": "fra",
+        "source": "Info Flora Schweiz - Lamiaceae",
+        "sourceTaxonKey": 224777240
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en \u00e9pi",
+        "language": "fra",
+        "country": "FR",
+        "source": "IUCN Red List Vascular Plants (2018, metropolitan France) - IUCN Liste Rouge de la Flore Vasculaire (2018, m\u00e9tropolitaine France)",
+        "sourceTaxonKey": 320343823
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en \u00e9pi",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en \u00e9pi, Menthe verte",
+        "language": "fra",
+        "country": "FR",
+        "area": "fra",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221911891
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe verte",
+        "language": "fra",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Mair",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Sbigog",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Ysbigog",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys y Gwaed",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mi\u0119ta zielona",
+        "language": "pol",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Nag\u0127niegh",
+        "language": "mlt",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Pupur Fint",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spear Mint",
+        "language": "eng",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 245000402
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spear Mint",
+        "language": "eng",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160784485
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spear Mint",
+        "language": "eng",
+        "country": "GB",
+        "area": "eng",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221911891
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spear Mint",
+        "language": "eng",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "country": "US",
+        "area": "Hawaii",
+        "source": "Global Register of Introduced and Invasive Species - Hawaii, United States (ver.2.0, 2022)",
+        "sourceTaxonKey": 205105832
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "country": "US",
+        "area": "conterminous 48 United States",
+        "source": "Global Register of Introduced and Invasive Species - United States (Contiguous) (ver.2.0, 2022)",
+        "sourceTaxonKey": 205118515
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "country": "US",
+        "source": "Martha's Vineyard species checklist",
+        "sourceTaxonKey": 245000402
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "country": "US",
+        "area": "Alaska",
+        "source": "Global Register of Introduced and Invasive Species - Alaska, United States (ver.2.0, 2022)",
+        "sourceTaxonKey": 205104173
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "country": "US",
+        "source": "Checklist of Vermont Species",
+        "sourceTaxonKey": 160784485
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Ysper Fintys",
+        "language": "cym",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "baume",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "bush mint",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102253639
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "bush mint",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f6nmynta",
+        "language": "swe",
+        "country": "SE",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f6nmynta",
+        "language": "swe",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f6nmynta",
+        "language": "swe",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nmynte",
+        "language": "nno",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nmynte",
+        "language": "nno",
+        "country": "NO",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nnmynte",
+        "language": "nob",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nnmynte",
+        "language": "nor",
+        "country": "NO",
+        "source": "Red List Vascular Plants (2021, Norway) - R\u00f8dlista Karplanter (2021, Norge)",
+        "sourceTaxonKey": 320353238
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nnmynte",
+        "language": "nob",
+        "country": "NO",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00fcne Minze",
+        "language": "deu",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00fcne Minze",
+        "language": "deu",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-comum",
+        "language": "por",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-comum",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-crespa",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-preta",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-preta",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-verde",
+        "language": "por",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-verde",
+        "language": "",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-verde-dos-a\u00e7ores",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "hortel\u00e3-vulgar",
+        "language": "por",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "kr\u016bzm\u0113tra",
+        "language": "lav",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "kursemynte",
+        "language": "",
+        "source": "Nordic plant uses from Gunnerus and H\u00f8eg",
+        "sourceTaxonKey": 164941881
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "kursemynte",
+        "language": "",
+        "source": "Nordic plant uses from Gunnerus and H\u00f8eg",
+        "sourceTaxonKey": 164941885
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "kursemynte",
+        "language": "",
+        "source": "Nordic plant uses from Gunnerus and H\u00f8eg",
+        "sourceTaxonKey": 164941883
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "kursemynte",
+        "language": "",
+        "source": "Nordic plant uses from Gunnerus and H\u00f8eg",
+        "sourceTaxonKey": 164941882
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menta romana",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menta romana",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe en \u00e9pi",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe en \u00e9pis",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe verte",
+        "language": "fra",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe verte",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe \u00e0 \u00e9pis",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe \u00e0 \u00e9pis",
+        "language": "fra",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "m\u00e1ta klasnat\u00e1",
+        "language": "ces",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "otime, mati, mati kekaa",
+        "language": "",
+        "country": "PF",
+        "area": "mqm",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221911891
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "rohem\u00fcnt",
+        "language": "est",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spear mint",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spearmint",
+        "language": "eng",
+        "source": "Integrated Taxonomic Information System (ITIS)",
+        "sourceTaxonKey": 102253639
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spearmint",
+        "language": "",
+        "source": "NCBI Taxonomy",
+        "sourceTaxonKey": 103252496
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spearmint",
+        "language": "eng",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spearmint",
+        "language": "eng",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "viherminttu",
+        "language": "fin",
+        "country": "FI",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "viherminttu",
+        "language": "fin",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 295605712
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "viherminttu",
+        "language": "fin",
+        "country": "FI",
+        "source": "The FinBIF checklist of Finnish species",
+        "sourceTaxonKey": 258017201
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "viherminttu",
+        "language": "swe",
+        "country": "FI",
+        "source": "Nordic Crop Wild Relative (CWR) Checklist",
+        "sourceTaxonKey": 127647689
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "yerbabuena",
+        "language": "spa",
+        "source": "Catalogue of Life",
+        "sourceTaxonKey": 327351417
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "yerbabuena",
+        "language": "spa",
+        "source": "GRIN Taxonomy",
+        "sourceTaxonKey": 101379805
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "z\u00f6ld menta (incl. fodormenta)",
+        "language": "hun",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u00c4hren-Minze",
+        "language": "deu",
+        "country": "DE",
+        "source": "Red List Vascular Plants (2018, Germany) - Rote Liste Gef\u00e4sspflanzen (2018, Deutschland)",
+        "sourceTaxonKey": 320337302
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u00c4hren-Minze",
+        "language": "deu",
+        "source": "EUNIS Biodiversity Database",
+        "sourceTaxonKey": 101284927
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u00c4hren-Minze (Artengruppe)",
+        "language": "deu",
+        "country": "DE",
+        "source": "Red List Vascular Plants (2018, Germany) - Rote Liste Gef\u00e4sspflanzen (2018, Deutschland)",
+        "sourceTaxonKey": 320337303
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u00c4hrige Minze",
+        "language": "deu",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u0160altoji m\u0117ta",
+        "language": "lit",
+        "source": "DAISIE - Inventory of alien invasive species in Europe",
+        "sourceTaxonKey": 159516162
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "\u2019\u00f6time, tut\u00e4mu",
+        "language": "",
+        "country": "PF",
+        "area": "aut",
+        "source": "TAXREF",
+        "sourceTaxonKey": 221911891
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Aarmunt",
+        "language": "nld",
+        "source": "Checklist Dutch Species Register - Nederlands Soortenregister",
+        "sourceTaxonKey": 124616340,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spear Mint",
+        "language": "eng",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176776761,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f6nmynta",
+        "language": "swe",
+        "country": "SE",
+        "source": "Dyntaxa. Svensk taxonomisk databas",
+        "sourceTaxonKey": 160016386,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f6nmynta",
+        "language": "swe",
+        "country": "SE",
+        "source": "Risk assessment of alien taxa in Sweden 2024",
+        "sourceTaxonKey": 318002595,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nmynte",
+        "language": "nno",
+        "country": "NO",
+        "sourceTaxonKey": 168104841,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "gr\u00f8nnmynte",
+        "language": "nob",
+        "country": "NO",
+        "sourceTaxonKey": 168104841,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe \u00e0 \u00e9pis",
+        "language": "fra",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "spearmint",
+        "language": "eng",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": true
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menta Romana",
+        "language": "ita",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176776761,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe Verte",
+        "language": "fra",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176776761,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Menthe en Grappe",
+        "language": "fra",
+        "source": "The IUCN Red List of Threatened Species",
+        "sourceTaxonKey": 176776761,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Mair",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Sbigog",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Ysbigog",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys Ysbigog",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Mintys y Gwaed",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Pupur Fint",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Spearmint",
+        "language": "eng",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "Ysper Fintys",
+        "language": "cym",
+        "source": "United Kingdom Species Inventory (UKSI)",
+        "sourceTaxonKey": 180124924,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "baume",
+        "language": "fra",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "bush mint",
+        "language": "eng",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe en \u00e9pi",
+        "language": "fra",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": false
+      },
+      {
+        "taxonKey": 2927175,
+        "vernacularName": "menthe en \u00e9pis",
+        "language": "fra",
+        "source": "Database of Vascular Plants of Canada (VASCAN)",
+        "sourceTaxonKey": 100007328,
+        "preferred": false
+      }
+    ]
+  }
+]
