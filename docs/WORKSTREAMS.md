@@ -22,6 +22,8 @@ B1 (KEEP filter) ─┬─► A1–A5 packaging ─► A4 Release (data-v0.2 flo
 
 ### Progress log
 
+| 2026-07-09 | A4,C1,B* | KEEP~18.5k; tag+Release data-v0.2.0; Wikidata hardiness~545; WS-A/B done
+
 | Date | Closed | Note |
 |------|--------|------|
 | 2026-07-09 | B1, A1 | KEEP=3020 (~19 MB `silver_keep/`); full silver ~61 MB; both GitHub-safe |
