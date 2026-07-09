@@ -9,6 +9,9 @@
 
 **This file:** executable checklist in the botanica repo. Do not freestyle sources outside this plan without updating research.
 
+**Scoreboard / “what step are we on?”:** [`PRODUCT_ROUNDS.md`](PRODUCT_ROUNDS.md) + `bd ready`  
+Rounds R0–R7 with **measurable** exits (not agent opinion). Beads are the queue; PRODUCT_ROUNDS is the ruler.
+
 ---
 
 ## Product target (research decision)

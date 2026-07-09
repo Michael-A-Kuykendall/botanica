@@ -2,7 +2,9 @@
 
 Aligned with [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). This is not a marketing checklist.
 
-## Done
+**Progress ruler:** [`docs/PRODUCT_ROUNDS.md`](docs/PRODUCT_ROUNDS.md) · **queue:** `bd ready`
+
+## Done (Round 0)
 
 - [x] Taxonomic hierarchy types + CRUD (family / genus / species)
 - [x] DuckDB migrations: L1 + L2 reference tables + L3 inventory schema (empty in seed)
@@ -11,17 +13,21 @@ Aligned with [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). This is not a marke
 - [x] Honesty pass: README, remove ContextLite, archive vapor specs
 - [x] Phase 1B Budsy park (sibling repo)
 - [x] Phase 2: schema 0.4.0 — identifiers, cultivars, quarantine, plant health, sync hooks, plant CRUD, no Unknown bulk
-- [x] Phase 3: gate2 seed + USDA Species bulk taxonomy (62k) + silver parquet + MANIFEST
-- [x] Execution plan aligned to Budsy research (`docs/EXECUTION_PLAN.md`)
+- [x] Phase 3: USDA Species bulk (~62k) + HasChar traits (~4480) + silver parquet + MANIFEST
+- [x] Fail-fast scrape regimen (debug → smoke → full)
+- [x] Execution plan + product rounds + beads R1–R7
 
-## In progress / next
+## In progress / next (by round)
 
-- [ ] USDA Gate 5A.3 — 1k symbol trait scrape via `botanica_usda`
-- [ ] POWO 1k “uses” sample gate (research Decision 5)
-- [ ] GBIF vernacular pass
-- [ ] Phase 4 notes: source limits / size (partially superseded by bulk USDA taxonomy)
-- [ ] Phase 5: v1 cultivated load (coverage bar in architecture)
-- [ ] Phase 6: Budsy vertical slice on real seed
+| Round | Focus | Status |
+|------:|-------|--------|
+| **R1** | Scoreboard: field map + quality report + baseline % | **next** |
+| **R2** | POWO fail-fast → 1k uses gate → bulk | queued |
+| **R3** | GBIF vernaculars (// after R1) | queued |
+| **R4** | Merge, cultivated flag, fill blanks to v1 bar | queued |
+| **R5** | OSS parity (CI, templates, RELEASE_PROCESS) | **parallel** |
+| **R6** | **One** data tag + crate bump + Release | after R4+R5 |
+| **R7** | Budsy vertical on real seed | deferred |
 
 ## Explicitly not promised
 
