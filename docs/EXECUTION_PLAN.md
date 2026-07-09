@@ -109,3 +109,4 @@ cargo run --release --bin build_seed -- usda
 | 2026-07-08 | USDA PlantSearch Species bulk: **62,349** species, 540 families, 6,972 genera. Gate2 enrich: 351 traits, 102 vernaculars. L3=0. Next: 5A.3 trait scrape 1k. |
 | 2026-07-08 | Gate 5A.3 scrape 1k stratified symbols via `botanica_usda`. Formal Tier1 accept **failed** (see coverage report). Seed rebuild: ~62.4k species, ~1.8k traits, ~956 vernaculars. Data tag candidate: **data-v0.1.0**. VERSIONING.md added. |
 | 2026-07-09 | Char API fix; Gate3c HasChar 1k scrape **95.6%** ≥3 Tier1. Seed rebuild: ~62.5k species, **~7.4k traits**, **~3.0k vernaculars**, L3=0. Still **not** public 0.1.0 brand. |
+| 2026-07-09 | Full HasChar universe: **4480** taxa. Scraped all. Seed: ~62.6k species, **21k traits**, **7k vernaculars**, **25k cult.req rows**. Coverage ~95% 3+ Tier1 on haschar set. Still pre-public.

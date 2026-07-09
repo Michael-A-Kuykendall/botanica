@@ -38,3 +38,7 @@ json
 punch_analysis.json
 
 .internal/chat.md
+
+# Probe progress can be huge
+/data/bronze/usda_catalog/lists/haschar_probe_progress.json
+

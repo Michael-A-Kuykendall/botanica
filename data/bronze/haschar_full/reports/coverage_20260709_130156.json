@@ -1,0 +1,22 @@
+{
+  "record_count": 3480,
+  "tier1_coverage_percent": {
+    "hardiness_min_zone": 0.0,
+    "hardiness_max_zone": 0.0,
+    "sunlight": 0.0,
+    "soil": 97.7,
+    "moisture": 93.33,
+    "mature_height_cm": 98.79,
+    "mature_spread_cm": 0.0,
+    "toxicity": 96.21
+  },
+  "records_with_3plus_tier1": 3315,
+  "percent_records_3plus_tier1": 95.26,
+  "generated_at": "2026-07-09T13:01:56.425069",
+  "metadata": {
+    "symbol_source": "file",
+    "symbol_file_path": "data/bronze/usda_catalog/lists/haschar_all.txt",
+    "selection_method": "haschar_all_minus_gate3c",
+    "excluded": 1000
+  }
+}

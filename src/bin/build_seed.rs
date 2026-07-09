@@ -113,38 +113,54 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 ),
             });
 
-            // Trait enrich: HasCharacteristics 1k (gate3c) first, then earlier pilots
-            let enrich_paths = [
-                (
-                    "USDA_PLANTS_GATE3C_ENRICH",
-                    find_latest_norm(&root.join("data/bronze/gate3c")),
-                ),
-                (
-                    "USDA_PLANTS_GATE3B_ENRICH",
-                    find_latest_norm(&root.join("data/bronze/gate3b")),
-                ),
-                (
-                    "USDA_PLANTS_GATE3_ENRICH",
-                    find_latest_norm(&root.join("data/bronze/gate3")),
-                ),
-                (
-                    "USDA_PLANTS_GATE2_ENRICH",
-                    Some(root.join("data/bronze/gate2/USDA_PLANTS_norm.json"))
-                        .filter(|p| p.exists()),
-                ),
-            ];
-            for (name, path_opt) in enrich_paths {
-                let Some(json_path) = path_opt else { continue };
-                if !json_path.exists() {
-                    continue;
+            // Trait enrich: any bronze/*/normalized USDA_PLANTS_norm*.json (newest first per dir)
+            let bronze = root.join("data/bronze");
+            let mut enrich_dirs: Vec<(String, PathBuf)> = Vec::new();
+            if bronze.is_dir() {
+                if let Ok(rd) = std::fs::read_dir(&bronze) {
+                    for ent in rd.flatten() {
+                        let p = ent.path();
+                        if p.is_dir() {
+                            let name = p
+                                .file_name()
+                                .and_then(|s| s.to_str())
+                                .unwrap_or("bronze")
+                                .to_string();
+                            enrich_dirs.push((format!("USDA_BRONZE_{}", name.to_ascii_uppercase()), p));
+                        }
+                    }
                 }
+            }
+            // Prefer full haschar dump, then gates
+            enrich_dirs.sort_by(|a, b| {
+                let rank = |n: &str| {
+                    if n.contains("HASCHAR") {
+                        0
+                    } else if n.contains("GATE3C") {
+                        1
+                    } else if n.contains("GATE3B") {
+                        2
+                    } else if n.contains("GATE3") {
+                        3
+                    } else if n.contains("GATE2") {
+                        4
+                    } else {
+                        5
+                    }
+                };
+                rank(&a.0).cmp(&rank(&b.0))
+            });
+            for (name, dir) in enrich_dirs {
+                let Some(json_path) = find_latest_norm(&dir) else {
+                    continue;
+                };
                 let gstats = gate2::ingest_gate2_json(&db, &json_path, &lookup).await?;
                 println!(
                     "{} traits≈{} vernacular≈{} path={}",
                     name, gstats.traits, gstats.vernacular, json_path.display()
                 );
                 sources.push(manifest::SeedSource {
-                    name: name.into(),
+                    name,
                     license: "Public Domain".into(),
                     record_count: gstats.traits as i64,
                     notes: format!("enrich {}", json_path.display()),

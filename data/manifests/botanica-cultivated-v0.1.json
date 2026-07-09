@@ -1,17 +1,17 @@
 {
   "artifact": "botanica-cultivated-v0.1",
-  "built_at": "2026-07-09T16:17:18.848225200+00:00",
+  "built_at": "2026-07-09T18:07:36.279005200+00:00",
   "engine": "duckdb",
   "schema_version": "0.4.0",
   "counts": {
-    "families": 600,
+    "families": 610,
     "genera": 6972,
-    "species": 62490,
+    "species": 62558,
     "cultivars": 0,
-    "traits": 7429,
-    "vernacular_names": 2990,
-    "cultivation_requirements": 6600,
-    "provenance": 62490,
+    "traits": 21164,
+    "vernacular_names": 7078,
+    "cultivation_requirements": 25733,
+    "provenance": 62558,
     "quarantine": 2,
     "plants": 0
   },
@@ -23,31 +23,43 @@
       "notes": "master=.\\data/bronze/usda_catalog/master_species.csv skipped_existing=0 skipped_rows=0"
     },
     {
-      "name": "USDA_PLANTS_GATE3C_ENRICH",
+      "name": "USDA_BRONZE_HASCHAR_FULL",
+      "license": "Public Domain",
+      "record_count": 32839,
+      "notes": "enrich .\\data/bronze\\haschar_full\\normalized\\USDA_PLANTS_norm_20260709_130156.json"
+    },
+    {
+      "name": "USDA_BRONZE_GATE3C",
       "license": "Public Domain",
       "record_count": 9438,
-      "notes": "enrich .\\data/bronze/gate3c\\normalized\\USDA_PLANTS_norm_20260708_184252.json"
+      "notes": "enrich .\\data/bronze\\gate3c\\normalized\\USDA_PLANTS_norm_20260708_184252.json"
     },
     {
-      "name": "USDA_PLANTS_GATE3B_ENRICH",
+      "name": "USDA_BRONZE_GATE3B",
       "license": "Public Domain",
       "record_count": 2203,
-      "notes": "enrich .\\data/bronze/gate3b\\normalized\\USDA_PLANTS_norm_20260708_181606.json"
+      "notes": "enrich .\\data/bronze\\gate3b\\normalized\\USDA_PLANTS_norm_20260708_181606.json"
     },
     {
-      "name": "USDA_PLANTS_GATE3_ENRICH",
+      "name": "USDA_BRONZE_GATE3",
       "license": "Public Domain",
       "record_count": 1505,
-      "notes": "enrich .\\data/bronze/gate3\\normalized\\USDA_PLANTS_norm_20260708_174749.json"
+      "notes": "enrich .\\data/bronze\\gate3\\normalized\\USDA_PLANTS_norm_20260708_174749.json"
     },
     {
-      "name": "USDA_PLANTS_GATE2_ENRICH",
+      "name": "USDA_BRONZE_GATE3_SMOKE",
+      "license": "Public Domain",
+      "record_count": 29,
+      "notes": "enrich .\\data/bronze\\gate3_smoke\\normalized\\USDA_PLANTS_norm_20260708_180402.json"
+    },
+    {
+      "name": "USDA_BRONZE_GATE2",
       "license": "Public Domain",
       "record_count": 883,
-      "notes": "enrich .\\data/bronze/gate2/USDA_PLANTS_norm.json"
+      "notes": "enrich .\\data/bronze\\gate2\\USDA_PLANTS_norm.json"
     }
   ],
-  "scope": "usda_species_taxonomy + gate2/3/3b/3c_trait_pilots (pre-public; not data-v0.1.0 brand)",
+  "scope": "usda_species_taxonomy + full_HasCharacteristics_traits (~4480 taxa rich traits)",
   "l3_rows": 0,
   "silver_files": [
     "./data/silver/families.parquet",
@@ -67,5 +79,5 @@
     "./data/silver/provenance.parquet",
     "./data/silver/ingest_quarantine.parquet"
   ],
-  "notes": "Gate3c HasCharacteristics 1k: 95.6%% records with 3+ Tier1 (soil/moisture/height/toxicity). Hardiness/sunlight still weak in USDA mapping."
+  "notes": "HasChar universe 4480/62349. Soil/moisture/height/toxicity ~95% on haschar set. Hardiness still absent from USDA. Pre-public."
 }
