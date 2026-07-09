@@ -1,0 +1,158 @@
+[
+  {
+    "scientific_name": "Zea mays L.",
+    "common_names": [
+      "corn"
+    ],
+    "usda_symbol": "ZEMA",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Graminoid"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Annual"
+      ],
+      "mature_height_cm": 244,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Low",
+      "drought_tolerance": "Low",
+      "salt_tolerance": "Low",
+      "wetland_indicator": null,
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [],
+      "introduced": [
+        "CAN",
+        "L48",
+        "PB",
+        "PR",
+        "VI"
+      ]
+    }
+  },
+  {
+    "scientific_name": "Acer rubrum L.",
+    "common_names": [
+      "red maple"
+    ],
+    "usda_symbol": "ACRU",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "High"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 2073,
+      "mature_spread_cm": null,
+      "toxicity": "Slight",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Medium",
+      "drought_tolerance": "Medium",
+      "salt_tolerance": "None",
+      "wetland_indicator": "FAC",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  },
+  {
+    "scientific_name": "Acer negundo L.",
+    "common_names": [
+      "ash-leaf maple",
+      "boxelder",
+      "three-leaf maple"
+    ],
+    "usda_symbol": "ACNE2",
+    "provenance": {
+      "data_source": "USDA_PLANTS",
+      "last_verified_date": null
+    },
+    "horticultural_traits": {
+      "hardiness_min_zone": null,
+      "hardiness_max_zone": null,
+      "sunlight": [],
+      "soil": [
+        "coarse",
+        "fine",
+        "medium"
+      ],
+      "moisture": [
+        "Medium"
+      ],
+      "plant_type": [
+        "Tree"
+      ],
+      "growth_rate": null,
+      "duration": [
+        "Perennial"
+      ],
+      "mature_height_cm": 1829,
+      "mature_spread_cm": null,
+      "toxicity": "None",
+      "is_cultivated": true
+    },
+    "ecological_traits": {
+      "shade_tolerance": "Low",
+      "drought_tolerance": "High",
+      "salt_tolerance": "Medium",
+      "wetland_indicator": "FAC, FACW",
+      "native_status": null,
+      "fire_resistance": null,
+      "pollinator_value": null
+    },
+    "distributions": {
+      "native": [
+        "CAN",
+        "L48"
+      ],
+      "introduced": []
+    }
+  }
+]

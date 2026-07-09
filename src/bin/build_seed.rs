@@ -113,8 +113,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 ),
             });
 
-            // Trait enrich: prefer Gate3 (1k) then Gate2 pilot if present
+            // Trait enrich: HasCharacteristics 1k (gate3c) first, then earlier pilots
             let enrich_paths = [
+                (
+                    "USDA_PLANTS_GATE3C_ENRICH",
+                    find_latest_norm(&root.join("data/bronze/gate3c")),
+                ),
+                (
+                    "USDA_PLANTS_GATE3B_ENRICH",
+                    find_latest_norm(&root.join("data/bronze/gate3b")),
+                ),
                 (
                     "USDA_PLANTS_GATE3_ENRICH",
                     find_latest_norm(&root.join("data/bronze/gate3")),

@@ -47,7 +47,7 @@
 |------|--------|--------|
 | **5A.1** Smoke 10 | ≥70% with ≥3 Tier 1 | ✅ Done (2025-10-26) |
 | **5A.2** Pilot 100 | Tier 1 coverage + attribution | ✅ Gate2 pilot data in `budsy/datasets/botanica_usda` + seed enrich |
-| **5A.3** 1k batch | Coverage trending ≥65% hardiness/sun/moisture | ⚠️ Ran 2026-07-08: stratified 1k scrape completed; **Tier1 formal accept failed** (0% hardiness/sun/soil/moisture — many taxa lack characteristics; USDA rarely has hardiness). Got plant_type/duration/vernaculars for many. **Redo later** with `HasCharacteristics` filter. |
+| **5A.3** 1k batch | Coverage trending ≥65% hardiness/sun/moisture | ✅ **Partial pass (2026-07-08/09):** (1) Fixed USDA char API path in `botanica_usda`. (2) Gate3c: 1000 symbols with `HasCharacteristics=true` → **95.6%** with ≥3 Tier1 (soil/moisture/height/toxicity). Hardiness still 0%; sunlight field often empty (shade_tolerance separate). Research hardiness/sun bar not fully met; practical trait gate passed for soil/moisture/height. |
 | **5A.4** Field mapping lock | USDA → Botanica | ⬜ Formalize from mapping docs |
 | **Full USDA list** | ~30k+ NA taxa taxonomy + traits | 🔄 Taxonomy bulk from PlantSearch catalog (this sprint) |
 
@@ -108,3 +108,4 @@ cargo run --release --bin build_seed -- usda
 | 2026-07-08 | Plan doc created from Budsy research; USDA taxonomy bulk execution follows. |
 | 2026-07-08 | USDA PlantSearch Species bulk: **62,349** species, 540 families, 6,972 genera. Gate2 enrich: 351 traits, 102 vernaculars. L3=0. Next: 5A.3 trait scrape 1k. |
 | 2026-07-08 | Gate 5A.3 scrape 1k stratified symbols via `botanica_usda`. Formal Tier1 accept **failed** (see coverage report). Seed rebuild: ~62.4k species, ~1.8k traits, ~956 vernaculars. Data tag candidate: **data-v0.1.0**. VERSIONING.md added. |
+| 2026-07-09 | Char API fix; Gate3c HasChar 1k scrape **95.6%** ≥3 Tier1. Seed rebuild: ~62.5k species, **~7.4k traits**, **~3.0k vernaculars**, L3=0. Still **not** public 0.1.0 brand. |

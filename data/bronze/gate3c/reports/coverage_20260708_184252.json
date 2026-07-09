@@ -1,0 +1,21 @@
+{
+  "record_count": 1000,
+  "tier1_coverage_percent": {
+    "hardiness_min_zone": 0.0,
+    "hardiness_max_zone": 0.0,
+    "sunlight": 0.0,
+    "soil": 97.1,
+    "moisture": 94.2,
+    "mature_height_cm": 99.0,
+    "mature_spread_cm": 0.0,
+    "toxicity": 96.4
+  },
+  "records_with_3plus_tier1": 956,
+  "percent_records_3plus_tier1": 95.6,
+  "generated_at": "2026-07-08T18:42:52.807547",
+  "metadata": {
+    "symbol_source": "file",
+    "symbol_file_path": "C:\\Users\\micha\\repos\\botanica\\data\\bronze\\usda_catalog\\lists\\gate3c_symbols_1000_haschar.txt",
+    "selection_method": "HasCharacteristics_true_random_master_seed_20260708"
+  }
+}

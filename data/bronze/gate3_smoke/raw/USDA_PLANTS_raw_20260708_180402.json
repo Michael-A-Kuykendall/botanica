@@ -1,0 +1,64 @@
+[
+  {
+    "symbol": "ZEMA",
+    "url": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=ZEMA",
+    "scientific_name": "Zea mays L.",
+    "common_names": "corn",
+    "duration": [
+      "Annual"
+    ],
+    "growth_habit": [
+      "Graminoid"
+    ],
+    "distribution_introduced": "CAN, L48, PB, PR, VI",
+    "height": "8.0 ft",
+    "toxicity": "None",
+    "drought_tolerance": "Low",
+    "moisture": "High",
+    "salt_tolerance": "Low",
+    "shade_tolerance": "Low",
+    "soil": "medium"
+  },
+  {
+    "symbol": "ACRU",
+    "url": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=ACRU",
+    "scientific_name": "Acer rubrum L.",
+    "common_names": "red maple",
+    "duration": [
+      "Perennial"
+    ],
+    "growth_habit": [
+      "Tree"
+    ],
+    "distribution_native": "CAN, L48",
+    "height": "68.0 ft",
+    "toxicity": "Slight",
+    "drought_tolerance": "Medium",
+    "moisture": "High",
+    "salt_tolerance": "None",
+    "shade_tolerance": "Medium",
+    "soil": "coarse, fine, medium",
+    "wetland_indicator": "FAC"
+  },
+  {
+    "symbol": "ACNE2",
+    "url": "https://plantsservices.sc.egov.usda.gov/api/PlantProfile?symbol=ACNE2",
+    "scientific_name": "Acer negundo L.",
+    "common_names": "ash-leaf maple, boxelder, three-leaf maple",
+    "duration": [
+      "Perennial"
+    ],
+    "growth_habit": [
+      "Tree"
+    ],
+    "distribution_native": "CAN, L48",
+    "height": "60.0 ft",
+    "toxicity": "None",
+    "drought_tolerance": "High",
+    "moisture": "Medium",
+    "salt_tolerance": "Medium",
+    "shade_tolerance": "Low",
+    "soil": "coarse, fine, medium",
+    "wetland_indicator": "FAC, FACW"
+  }
+]
