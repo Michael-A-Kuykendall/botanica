@@ -1,0 +1,11 @@
+name: Data / source
+description: Cultivated seed, scrape, KEEP filter
+title: "[data] "
+labels: ["data"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Request
+    validations:
+      required: true

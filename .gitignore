@@ -51,3 +51,6 @@ punch_analysis.json
 # Probe progress can be huge
 /data/bronze/usda_catalog/lists/haschar_probe_progress.json
 
+
+/data/manifests/botanica-keep-data-*.zip
+
