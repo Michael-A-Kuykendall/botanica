@@ -76,6 +76,22 @@ Rebuild KEEP after fills:
 python scripts/export_keep_set.py --tag <sprint>
 ```
 
+
+## Provenance (where data comes from)
+
+Every knowledge fact is labeled by source. See **[\docs/PROVENANCE.md\](docs/PROVENANCE.md)** for licenses, tables, and queries.
+
+| Source | License | Role |
+|--------|---------|------|
+| USDA PLANTS | Public domain | Taxonomy + most care traits |
+| GRIN | Free + attribution | Cultivated / germplasm membership |
+| FAOSTAT | Free + attribution | Commercial crop signal |
+| POWO (Kew) | CC BY 4.0 | Synonyms, distribution, lifeform/climate |
+| GBIF | CC BY 4.0 | Vernacular names |
+| Wikidata | CC0 | Sparse hardiness |
+
+Row-level: \provenance\ + \source\ columns on L2 tables. Batch-level: \data/manifests/*.json\.
+
 ## Iterative updates (houseplants, crops, …)
 
 See **[`docs/ITERATIVE_FILL.md`](docs/ITERATIVE_FILL.md)**.

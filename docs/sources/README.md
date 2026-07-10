@@ -11,3 +11,6 @@
 **Field maps:** [usda_field_map.md](usda_field_map.md)
 
 **Quality:** `python scripts/quality_report.py --tag <name>`
+
+**Provenance model:** [../PROVENANCE.md](../PROVENANCE.md)
+
