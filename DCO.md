@@ -50,3 +50,7 @@ Signed-off-by: Your Name <your.email@example.com>
 ```
 
 You can do this automatically with `git commit -s`.
+
+## Note for Botanica
+
+This project is **open source, not open contribution**. The DCO applies only when the maintainer has invited a scoped contribution. Unsolicited patches are not accepted (see CONTRIBUTING.md).
