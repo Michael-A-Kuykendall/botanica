@@ -12,6 +12,8 @@ Open-source “straw” for human agricultural / garden plant data — taxonomy,
 
 Botanica stays free/open for the **knowledge + schema**. Product UX (camera, plant ID, sync) lives in Budsy.
 
+**Open source, not open contribution.** Sole developer: Michael A. Kuykendall. Unsolicited PRs are closed by default. See [CONTRIBUTING.md](CONTRIBUTING.md) and [GOVERNANCE.md](GOVERNANCE.md). Optional support: [SPONSORS.md](SPONSORS.md).
+
 ## Public data product (what the world should use)
 
 | Path | What |
