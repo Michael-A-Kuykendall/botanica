@@ -1,4 +1,6 @@
-# Botanica
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Michael-A-Kuykendall/botanica/feature/usda-plants-gate2/assets/botanica-logo.png" alt="Botanica" width="320" height="auto" />
+</div>
 
 **Cultivated-plant knowledge base (Rust + DuckDB).**  
 Open-source “straw” for human agricultural / garden plant data — taxonomy, traits, names, provenance. Personal inventory tables ship **empty**; apps (e.g. [Budsy](https://github.com/Michael-A-Kuykendall/budsy)) write those locally.
