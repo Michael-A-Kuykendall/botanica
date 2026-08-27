@@ -1,0 +1,39 @@
+{
+  "built_at": "2026-07-10T14:14:59.522923+00:00",
+  "rule": "is_definitive = (count of independent cultivation/use signals) >= threshold",
+  "threshold": 2,
+  "total_species": 107066,
+  "definitive_species": 18552,
+  "pct_definitive": 17.33,
+  "cultivated_scope_species": 63074,
+  "pct_cultivated_scope": 58.91,
+  "signal_histogram": {
+    ">= 0": 107066,
+    ">= 1": 80345,
+    ">= 2": 18552,
+    ">= 3": 16799,
+    ">= 4": 3048,
+    ">= 5": 2477,
+    ">= 6": 1945,
+    ">= 7": 10
+  },
+  "definitive_signal_composition": {
+    "grin": 17310,
+    "faostat": 488,
+    "wikidata": 18253,
+    "powo": 2607,
+    "trait": 3015,
+    "cultivation": 2728,
+    "en_vernacular": 16982
+  },
+  "cultivated_scope_composition": {
+    "grin": 61827,
+    "faostat": 488,
+    "wikidata": 18253,
+    "powo": 2607,
+    "trait": 3020,
+    "cultivation": 2728,
+    "en_vernacular": 16982
+  },
+  "notes": "is_cultivated_scope = is_definitive OR any cultivated-source signal (grin/faostat/trait/cultivation). This is the vinyl universe. Not yet including POWO-full ids, uses, or media."
+}

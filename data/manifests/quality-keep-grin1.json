@@ -1,0 +1,19 @@
+{
+  "built_at": "2026-07-09T22:47:22.120944+00:00",
+  "denominator": "KEEP set (cultivation payload present)",
+  "keep_species": 18185,
+  "coverage_keep": {
+    "pct_en_vernacular": 91.29,
+    "species_en_vernacular": 16601,
+    "pct_3plus_practical_tier1": 11.31,
+    "species_3plus_practical_tier1": 2057
+  },
+  "v1_bar_on_keep": {
+    "species_ge_5000": true,
+    "en_vernacular_ge_60pct": true,
+    "practical_3plus_ge_40pct": false,
+    "l3_plants_zero": true
+  },
+  "product_path": "data/silver_keep",
+  "notes": "Public product slice for cultivated/ag payload; full warehouse remains data/silver"
+}

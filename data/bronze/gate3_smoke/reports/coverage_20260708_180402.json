@@ -1,0 +1,21 @@
+{
+  "record_count": 3,
+  "tier1_coverage_percent": {
+    "hardiness_min_zone": 0.0,
+    "hardiness_max_zone": 0.0,
+    "sunlight": 0.0,
+    "soil": 100.0,
+    "moisture": 100.0,
+    "mature_height_cm": 100.0,
+    "mature_spread_cm": 0.0,
+    "toxicity": 100.0
+  },
+  "records_with_3plus_tier1": 3,
+  "percent_records_3plus_tier1": 100.0,
+  "generated_at": "2026-07-08T18:04:02.476568",
+  "metadata": {
+    "symbol_source": "inline",
+    "symbol_file_path": null,
+    "selection_method": "endpoint_fix_smoke"
+  }
+}

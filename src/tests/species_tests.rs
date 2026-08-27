@@ -20,7 +20,7 @@ async fn test_insert_species() {
         Some("LC".to_string())
     );
     
-    let result = insert_species(db.pool(), &new_species).await;
+    let result = insert_species(&db, &new_species).await;
     assert!(result.is_ok(), "Failed to insert species: {:?}", result.err());
 }
 
@@ -29,7 +29,7 @@ async fn test_get_species_by_id_existing() {
     let db = setup_test_database().await;
     let (family, genus, species) = setup_sample_taxonomy(&db).await.expect("Failed to setup taxonomy");
     
-    let result = get_species_by_id(db.pool(), species.id).await;
+    let result = get_species_by_id(&db, species.id).await;
     assert!(result.is_ok(), "Failed to get species by id: {:?}", result.err());
     
     let found_species = result.unwrap();
@@ -44,7 +44,7 @@ async fn test_get_species_by_id_nonexistent() {
     let db = setup_test_database().await;
     let nonexistent_id = Uuid::new_v4();
     
-    let result = get_species_by_id(db.pool(), nonexistent_id).await;
+    let result = get_species_by_id(&db, nonexistent_id).await;
     assert!(result.is_ok(), "Query should succeed even for nonexistent id");
     
     let found_species = result.unwrap();
@@ -56,7 +56,7 @@ async fn test_get_species_by_name_exact_match() {
     let db = setup_test_database().await;
     let (family, genus, species) = setup_sample_taxonomy(&db).await.expect("Failed to setup taxonomy");
     
-    let result = get_species_by_name(db.pool(), "rubiginosa").await;
+    let result = get_species_by_name(&db, "rubiginosa").await;
     assert!(result.is_ok(), "Failed to get species by name: {:?}", result.err());
     
     let found_species = result.unwrap();
@@ -85,10 +85,10 @@ async fn test_get_species_by_name_partial_match() {
         Some("LC".to_string())
     );
     
-    insert_species(db.pool(), &species1).await.expect("Failed to insert species1");
-    insert_species(db.pool(), &species2).await.expect("Failed to insert species2");
+    insert_species(&db, &species1).await.expect("Failed to insert species1");
+    insert_species(&db, &species2).await.expect("Failed to insert species2");
     
-    let result = get_species_by_name(db.pool(), "a").await;
+    let result = get_species_by_name(&db, "a").await;
     assert!(result.is_ok(), "Failed to get species by partial name: {:?}", result.err());
     
     let found_species = result.unwrap();
@@ -100,7 +100,7 @@ async fn test_get_species_by_name_no_match() {
     let db = setup_test_database().await;
     setup_sample_taxonomy(&db).await.expect("Failed to setup taxonomy");
     
-    let result = get_species_by_name(db.pool(), "nonexistent").await;
+    let result = get_species_by_name(&db, "nonexistent").await;
     assert!(result.is_ok(), "Query should succeed even for nonexistent name");
     
     let found_species = result.unwrap();
@@ -116,12 +116,12 @@ async fn test_update_species_existing() {
     updated_species.conservation_status = Some("NT".to_string());
     updated_species.publication_year = Some(1754);
     
-    let result = update_species(db.pool(), species.id, &updated_species).await;
+    let result = update_species(&db, species.id, &updated_species).await;
     assert!(result.is_ok(), "Failed to update species: {:?}", result.err());
     assert!(result.unwrap(), "Update should return true for existing species");
     
     // Verify the update
-    let retrieved = get_species_by_id(db.pool(), species.id).await
+    let retrieved = get_species_by_id(&db, species.id).await
         .expect("Failed to retrieve updated species")
         .expect("Updated species should exist");
     
@@ -137,7 +137,7 @@ async fn test_update_species_nonexistent() {
     let nonexistent_id = Uuid::new_v4();
     let fake_species = create_test_species(genus.id);
     
-    let result = update_species(db.pool(), nonexistent_id, &fake_species).await;
+    let result = update_species(&db, nonexistent_id, &fake_species).await;
     assert!(result.is_ok(), "Update query should succeed even for nonexistent id");
     assert!(!result.unwrap(), "Update should return false for nonexistent species");
 }
@@ -147,12 +147,12 @@ async fn test_delete_species_existing() {
     let db = setup_test_database().await;
     let (family, genus, species) = setup_sample_taxonomy(&db).await.expect("Failed to setup taxonomy");
     
-    let result = delete_species(db.pool(), species.id).await;
+    let result = delete_species(&db, species.id).await;
     assert!(result.is_ok(), "Failed to delete species: {:?}", result.err());
     assert!(result.unwrap(), "Delete should return true for existing species");
     
     // Verify the deletion
-    let retrieved = get_species_by_id(db.pool(), species.id).await
+    let retrieved = get_species_by_id(&db, species.id).await
         .expect("Query should succeed after deletion");
     assert!(retrieved.is_none(), "Deleted species should not be found");
 }
@@ -162,7 +162,7 @@ async fn test_delete_species_nonexistent() {
     let db = setup_test_database().await;
     let nonexistent_id = Uuid::new_v4();
     
-    let result = delete_species(db.pool(), nonexistent_id).await;
+    let result = delete_species(&db, nonexistent_id).await;
     assert!(result.is_ok(), "Delete query should succeed even for nonexistent id");
     assert!(!result.unwrap(), "Delete should return false for nonexistent species");
 }
@@ -180,7 +180,7 @@ async fn test_species_foreign_key_constraint() {
         None
     );
     
-    let result = insert_species(db.pool(), &invalid_species).await;
+    let result = insert_species(&db, &invalid_species).await;
     assert!(result.is_err(), "Insert should fail due to foreign key constraint");
 }
 
@@ -198,7 +198,7 @@ async fn test_species_data_integrity() {
         None
     );
     
-    let result = insert_species(db.pool(), &species_empty_name).await;
+    let result = insert_species(&db, &species_empty_name).await;
     assert!(result.is_ok(), "Insert should succeed with empty name");
     
     // Test with empty authority
@@ -210,7 +210,7 @@ async fn test_species_data_integrity() {
         None
     );
     
-    let result = insert_species(db.pool(), &species_empty_authority).await;
+    let result = insert_species(&db, &species_empty_authority).await;
     assert!(result.is_ok(), "Insert should succeed with empty authority");
 }
 
@@ -228,10 +228,10 @@ async fn test_species_with_optional_fields() {
         None
     );
     
-    let result = insert_species(db.pool(), &minimal_species).await;
+    let result = insert_species(&db, &minimal_species).await;
     assert!(result.is_ok(), "Failed to insert minimal species: {:?}", result.err());
     
-    let retrieved = get_species_by_id(db.pool(), minimal_species.id).await
+    let retrieved = get_species_by_id(&db, minimal_species.id).await
         .expect("Failed to retrieve minimal species")
         .expect("Minimal species should exist");
     
@@ -253,10 +253,10 @@ async fn test_species_with_negative_publication_year() {
         Some("EX".to_string())
     );
     
-    let result = insert_species(db.pool(), &ancient_species).await;
+    let result = insert_species(&db, &ancient_species).await;
     assert!(result.is_ok(), "Failed to insert ancient species: {:?}", result.err());
     
-    let retrieved = get_species_by_id(db.pool(), ancient_species.id).await
+    let retrieved = get_species_by_id(&db, ancient_species.id).await
         .expect("Failed to retrieve ancient species")
         .expect("Ancient species should exist");
     

@@ -1,13 +1,2 @@
-# This file defines code review ownership for Botanica.
-# All changes require approval from the lead maintainer to preserve
-# botanical accuracy and project vision.
-
-# Require maintainer review for everything
-*   @Michael-A-Kuykendall
-
-# Critical infrastructure requires extra scrutiny
-/src/database/     @Michael-A-Kuykendall
-/src/migrations/   @Michael-A-Kuykendall
-/src/queries/      @Michael-A-Kuykendall
-/Cargo.toml       @Michael-A-Kuykendall
-/README.md        @Michael-A-Kuykendall
+# Sole maintainer — open source, not open contribution
+* @Michael-A-Kuykendall

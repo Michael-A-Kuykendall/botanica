@@ -1,0 +1,336 @@
+abaca
+agave
+agave fibres
+almonds
+anise
+apples
+apricots
+areca
+areca nuts
+artichokes
+asparagus
+asses
+avocados
+balata
+bambara
+bambara beans
+bananas
+barley
+beans
+beer
+beer of barley
+bees
+beeswax
+blueberries
+brazil
+brazil nuts
+broad
+broad beans and horse beans
+buckwheat
+buffalo
+buffalo fat
+buttermilk
+cabbages
+camels
+canary
+canary seed
+cantaloupes
+cantaloupes and other melons
+carrots
+carrots and turnips
+cashew
+cashew nuts
+cashewapple
+cassava
+cassava leaves
+castor
+castor oil seeds
+cauliflowers
+cauliflowers and broccoli
+cereals
+cereals n.e.c.
+cherries
+chestnuts
+chick
+chick peas
+chickens
+chicory
+chicory roots
+chillies
+chillies and peppers
+cinnamon
+cinnamon and cinnamon-tree flowers
+citrus
+citrus fruit
+cloves
+cloves (whole stems)
+cocoa
+cocoa beans
+coconut
+coconut oil
+coconuts
+coffee
+coir
+cotton
+cotton lint
+cotton seed
+cottonseed
+cottonseed oil
+cow
+cow peas
+cranberries
+cream
+crops
+crops processed
+cucumbers
+cucumbers and gherkins
+currants
+dates
+ducks
+edible
+edible offal of buffalo
+edible offal of goat
+edible offal of pigs
+edible offals of camels and other camelids
+edible offals of horses and other equines
+edible roots and tubers with high starch or inulin content
+eggplants
+eggplants (aubergines)
+eggs
+eggs from other birds in shell
+eggs primary
+fat
+fat of camels
+fat of pigs
+fibre
+fibre crops
+fibre crops primary
+figs
+flax
+fonio
+fruit
+fruit primary
+geese
+ginger
+goat
+goat fat
+goats
+gooseberries
+grapes
+green
+green corn (maize)
+green garlic
+green tea (not fermented)
+groundnut
+groundnut oil
+groundnuts
+hazelnuts
+hempseed
+hen
+hen eggs in shell
+hides
+hides and skins
+hop
+hop cones
+horses
+jojoba
+jojoba seeds
+jute
+kapok
+kapok fibre
+kapok fruit
+kapokseed
+kapokseed in shell
+karite
+karite nuts (sheanuts)
+kenaf
+kiwi
+kiwi fruit
+kola
+kola nuts
+leeks
+leeks and other alliaceous vegetables
+lemons
+lemons and limes
+lentils
+lettuce
+lettuce and chicory
+linseed
+live
+live animals
+livestock
+livestock primary
+livestock processed
+locust
+locust beans (carobs)
+lupins
+maize
+maize (corn)
+mangoes
+margarine
+margarine and shortening
+matã©
+matã© leaves
+melonseed
+millet
+mixed
+mixed grain
+molasses
+mules
+mules and hinnies
+mushrooms
+mushrooms and truffles
+mustard
+mustard seed
+natural
+natural honey
+natural rubber in primary forms
+nutmeg
+oats
+oil
+oil of linseed
+oil of maize
+oil of palm kernel
+oil of sesame seed
+oil palm fruit
+oilcrops
+oilcrops primary
+okra
+olive
+olive oil
+olives
+onions
+onions and shallots
+oranges
+other
+other beans
+other berries and fruits of the genus vaccinium n.e.c.
+other birds
+other camelids
+other citrus fruit
+other fibre crops
+other fruits
+other nuts (excluding wild edible nuts and groundnuts)
+other oil seeds
+other pome fruits
+other pulses n.e.c.
+other rodents
+other stimulant
+other stone fruits
+other sugar crops n.e.c.
+other tropical fruits
+other vegetables
+palm
+palm kernels
+palm oil
+papayas
+peaches
+peaches and nectarines
+pears
+peas
+pepper
+pepper (piper spp.)
+peppermint
+persimmons
+pigeon
+pigeon peas
+pineapples
+pistachios
+plantains
+plantains and cooking bananas
+plums
+plums and sloes
+pomelos
+pomelos and grapefruits
+poppy
+poppy seed
+potatoes
+poultry
+poultry birds
+pulses
+pumpkins
+pyrethrum
+quinces
+quinoa
+rabbits
+rabbits and hares
+ramie
+rape
+rape or colza seed
+rapeseed
+rapeseed or canola oil
+raspberries
+raw
+raw cane or beet sugar (centrifugal only)
+raw hides and skins of buffaloes
+raw hides and skins of goats or kids
+raw silk (not thrown)
+rice
+roots
+roots and tubers
+rye
+safflower
+safflower seed
+safflower-seed
+safflower-seed oil
+seed
+seed cotton
+sesame
+sesame seed
+shorn
+shorn wool
+silk-worm
+silk-worm cocoons suitable for reeling
+sisal
+snails
+sorghum
+sour
+sour cherries
+soya
+soya bean oil
+soya beans
+spinach
+strawberries
+string
+string beans
+sugar
+sugar beet
+sugar cane
+sugar crops primary
+sunflower
+sunflower seed
+sunflower-seed
+sunflower-seed oil
+sweet
+sweet potatoes
+swine
+swine / pigs
+tallow
+tallowtree
+tallowtree seeds
+tangerines
+taro
+tea
+tea leaves
+tomatoes
+treenuts
+triticale
+true
+true hemp
+tung
+tung nuts
+turkeys
+unmanufactured
+unmanufactured tobacco
+vanilla
+vegetables
+vegetables primary
+vetches
+walnuts
+watermelons
+wheat
+whey
+wine
+yams
+yautia
+yoghurt

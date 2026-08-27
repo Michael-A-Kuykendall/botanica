@@ -1,21 +1,31 @@
-//! Botanica: Professional botanical cultivation database with AI-powered plant insights
-//! 
-//! This crate provides type-safe botanical data management with taxonomic validation,
-//! geospatial operations, and scientific nomenclature handling.
+//! Botanica: cultivated-plant knowledge base on DuckDB.
+//!
+//! Taxonomy (L1), horticultural knowledge (L2), and inventory schema (L3).
+//! See `docs/ARCHITECTURE.md` for layers and product boundaries.
 
 pub mod database;
 pub mod types;
 pub mod queries;
 pub mod migrations;
 pub mod error;
+pub mod seed;
+#[cfg(feature = "ingestion")]
+pub mod ingestion;
+#[cfg(feature = "ingestion")]
+pub mod discovery;
 
-#[cfg(feature = "contextlite")]
-pub mod contextlite;
+// Optional modules (incomplete unless documented otherwise)
+#[cfg(feature = "darwin-core")]
+pub mod darwin_core;
+
+#[cfg(feature = "conservation")]
+pub mod conservation;
 
 // Re-exports for convenience
 pub use database::{BotanicalDatabase, DatabaseConfig};
 pub use error::DatabaseError;
-pub use types::{Species, Genus, Family};
+pub use types::{Species, Genus, Family, Plant, HealthStatus, Cultivar, SpeciesIdentifier};
+pub use migrations::schemas::SCHEMA_VERSION;
 
 /// Result type alias for convenient error handling
 pub type Result<T> = std::result::Result<T, DatabaseError>;

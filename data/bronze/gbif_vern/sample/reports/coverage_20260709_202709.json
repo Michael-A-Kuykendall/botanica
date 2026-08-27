@@ -1,0 +1,7 @@
+{
+  "n": 1000,
+  "pct_matched": 99.9,
+  "pct_any_vernacular": 61.9,
+  "pct_en_vernacular": 54.6,
+  "gate_pass_en_ge_40_of_batch": true
+}

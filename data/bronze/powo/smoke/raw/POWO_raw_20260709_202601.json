@@ -1,0 +1,1263 @@
+[
+  {
+    "query": "Abama americana",
+    "search": {
+      "accepted": true,
+      "author": "Ker Gawl.",
+      "kingdom": "Plantae",
+      "family": "Nartheciaceae",
+      "name": "Narthecium americanum",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:538641-1",
+      "fqId": "urn:lsid:ipni.org:names:538641-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/e64bd600beb8cb4e1b2796d57b5cd414.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/b5f8d0b8ef41b84d3461f60ab559fb20.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2018-01-31T11:49:55.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Narthecium",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Dioscoreales",
+      "family": "Nartheciaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:282404",
+      "namePublishedInYear": 1812,
+      "taxonRemarks": "New Jersey to Delaware, South Carolina (Dorcester Co.)",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "perennial or rhizomatous geophyte",
+      "climate": "temperate",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "NWJ_OO",
+        "NORTHEASTERN_USA",
+        "NORTHERN_AMERICA",
+        "MRY",
+        "DEL_OO",
+        "SOUTHEASTERN_USA",
+        "SCA",
+        "SCA_OO",
+        "NWJ",
+        "MRY_OO",
+        "DEL"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:538641-1",
+      "name": "Narthecium americanum",
+      "authors": "Ker Gawl.",
+      "species": "americanum",
+      "rank": "SPECIES",
+      "reference": "Bot. Mag. 37: t. 1505 (1812)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:326442-2",
+          "name": "Nartheciaceae",
+          "author": "Fr. ex Bjurzon",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:326441-2",
+          "name": "Narthecium",
+          "author": "Huds.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:538641-1",
+          "name": "Narthecium americanum",
+          "author": "Ker Gawl.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionymOf": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:527219-1",
+          "name": "Abama americana",
+          "author": "(Ker Gawl.) Morong",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:167130-2",
+          "name": "Narthecium ossifragum var. americanum",
+          "author": "(Ker Gawl.) A.Gray",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Homotypic_Synonym"
+        }
+      ],
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:527219-1",
+          "name": "Abama americana",
+          "author": "(Ker Gawl.) Morong",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:167130-2",
+          "name": "Narthecium ossifragum var. americanum",
+          "author": "(Ker Gawl.) A.Gray",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Homotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Abronia maritima",
+    "search": {
+      "accepted": true,
+      "author": "Nutt. ex S.Watson",
+      "kingdom": "Plantae",
+      "family": "Nyctaginaceae",
+      "name": "Abronia maritima",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:326891-2",
+      "fqId": "urn:lsid:ipni.org:names:326891-2",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/90ee88b4e7de93cfe415357915fe798d.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/f6ab8254821b9f303f38853ef8c086f5.jpg",
+          "caption": "Abronia maritima"
+        },
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/c83894fa88f5d063967dc84b9d094c11.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/b7dd05183fd028320dde261f375172f0.jpg",
+          "caption": "Abronia maritima"
+        },
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/b3582513673f4a85b39bae840aa820b0.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/5738ad6d4e923c51d7a5a0cc14341c2f.jpg",
+          "caption": "Abronia maritima"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Abronia",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Caryophyllales",
+      "family": "Nyctaginaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:2610230",
+      "namePublishedInYear": 1880,
+      "taxonRemarks": "SW. California to W. Mexico (incl. Is. Tres Mari\u00e1s)",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "subshrub",
+      "climate": "subtropical",
+      "hybrid": false,
+      "paftolId": "19709",
+      "childNameUsages": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:85-2",
+          "name": "Abronia maritima subsp. capensis",
+          "author": "A.F.Johnson",
+          "rank": "SUBSPECIES",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:77227792-1",
+          "name": "Abronia maritima subsp. maritima",
+          "author": "",
+          "rank": "SUBSPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "synonym": false,
+      "locations": [
+        "MXS",
+        "MXS_MI",
+        "MXS_JA",
+        "MXS_CL",
+        "MXN_BC",
+        "NORTHERN_AMERICA",
+        "MXS_NA",
+        "MXN",
+        "MXN_SO",
+        "MEXICO",
+        "CAL",
+        "SOUTHWESTERN_USA",
+        "MXS_GR",
+        "MXN_BS",
+        "MXS_OA",
+        "CAL_OO",
+        "MXN_SI"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:326891-2",
+      "name": "Abronia maritima",
+      "authors": "Nutt. ex S.Watson",
+      "species": "maritima",
+      "rank": "SPECIES",
+      "reference": "S.Watson & al., Bot. California 2: 44 (1880)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000256-2",
+          "name": "Nyctaginaceae",
+          "author": "Juss.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:326868-2",
+          "name": "Abronia",
+          "author": "Juss.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:326891-2",
+          "name": "Abronia maritima",
+          "author": "Nutt. ex S.Watson",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Abutilon pauciflorum",
+    "search": {
+      "accepted": true,
+      "author": "(A.St.-Hil.) Dorr",
+      "kingdom": "Plantae",
+      "family": "Malvaceae",
+      "name": "Callianthe pauciflora",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:77146521-1",
+      "fqId": "urn:lsid:ipni.org:names:77146521-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/f59e0f670b836b9a1e58d4a75b41b19e.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/bf8f8c40576ca957d98622676523d526.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Callianthe",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Malvales",
+      "family": "Malvaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:3001861",
+      "namePublishedInYear": 2014,
+      "taxonRemarks": "Peru and Brazil to N. Argentina",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "shrub",
+      "climate": "seasonally dry tropical",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "BZC_DF",
+        "AGW_SJ",
+        "BZC_GO",
+        "AGE_FO",
+        "BZE_PB",
+        "BZL_RJ",
+        "BZE_FN",
+        "AGW",
+        "BZS_SC",
+        "BOL",
+        "PER",
+        "PAR",
+        "AGE_ER",
+        "SOUTHERN_AMERICA",
+        "AGE_DF",
+        "BZS_RS",
+        "BZE_PE",
+        "AGE_MI",
+        "BZE_AL",
+        "AGE_CH",
+        "AGW_SL",
+        "AGE_LP",
+        "BZE_BA",
+        "AGE_BA",
+        "AGE_CN",
+        "AGE_CO",
+        "AGE",
+        "BZE_MA",
+        "BZL_MG",
+        "URU_OO",
+        "SOUTHERN_SOUTH_AMERICA",
+        "AGW_CA",
+        "URU",
+        "AGW_ME",
+        "WESTERN_SOUTH_AMERICA",
+        "BZL_ES",
+        "AGW_SA",
+        "BZE_CE",
+        "BZL",
+        "BZS",
+        "BZC_MS",
+        "AGW_SE",
+        "AGW_LR",
+        "BZE_RN",
+        "BZS_PR",
+        "BRAZIL",
+        "BZL_SP",
+        "BZE_SE",
+        "AGW_TU",
+        "BZC",
+        "BZL_TR",
+        "AGE_SF",
+        "PER_OO",
+        "PAR_OO",
+        "AGW_JU",
+        "BZE_PI",
+        "BOL_OO",
+        "BZE",
+        "BZC_MT"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:77146521-1",
+      "name": "Callianthe pauciflora",
+      "authors": "(A.St.-Hil.) Dorr",
+      "species": "pauciflora",
+      "rank": "SPECIES",
+      "reference": "Monogr. Syst. Bot. Missouri Bot. Gard. 127: 1272 (2014)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000208-2",
+          "name": "Malvaceae",
+          "author": "Juss.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:77130187-1",
+          "name": "Callianthe",
+          "author": "Donnell",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:77146521-1",
+          "name": "Callianthe pauciflora",
+          "author": "(A.St.-Hil.) Dorr",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionym": {
+        "fqId": "urn:lsid:ipni.org:names:323565-2",
+        "name": "Abutilon pauciflorum",
+        "author": "A.St.-Hil.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "Homotypic_Synonym"
+      },
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:269-2",
+          "name": "Abutilon melanocarpum var. parvifolium",
+          "author": "A.St.-Hil. & Naudin",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:326-2",
+          "name": "Abutilon rugosulum",
+          "author": "Hochr.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:294-2",
+          "name": "Abutilon pauciflorum var. canotomentosum",
+          "author": "Hassl.",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:293-2",
+          "name": "Abutilon parvifolium",
+          "author": "(A.St.-Hil. & Naudin) Hochr.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:295-2",
+          "name": "Abutilon pauciflorum f. longicorniculatum",
+          "author": "Hassl.",
+          "rank": "Form",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:323565-2",
+          "name": "Abutilon pauciflorum",
+          "author": "A.St.-Hil.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:323542-2",
+          "name": "Abutilon melanocarpum",
+          "author": "A.St.-Hil. & Naudin",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Acacia craspedocarpa",
+    "search": {
+      "accepted": true,
+      "author": "F.Muell.",
+      "kingdom": "Plantae",
+      "family": "Fabaceae",
+      "name": "Acacia craspedocarpa",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:470070-1",
+      "fqId": "urn:lsid:ipni.org:names:470070-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/320d0472f59766e3cbb7b884158c1d15.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/352f2587883dc737663c96fa03c9184d.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Acacia",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:2611789",
+      "namePublishedInYear": 1887,
+      "taxonRemarks": "WC. Western Australia",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "shrub or tree",
+      "climate": "desert or dry shrubland",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "AUSTRALASIA",
+        "WAU_AC",
+        "AUSTRALIA",
+        "WAU",
+        "WAU_WA"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:470070-1",
+      "name": "Acacia craspedocarpa",
+      "authors": "F.Muell.",
+      "species": "craspedocarpa",
+      "rank": "SPECIES",
+      "reference": "Chem. & Druggist Australas. 2: 73 (1887)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000147-2",
+          "name": "Fabaceae",
+          "author": "Lindl.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:325783-2",
+          "name": "Acacia",
+          "author": "Mill.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:470070-1",
+          "name": "Acacia craspedocarpa",
+          "author": "F.Muell.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionymOf": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:60432376-2",
+          "name": "Racosperma craspedocarpum",
+          "author": "(F.Muell.) Pedley",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        }
+      ],
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:60432376-2",
+          "name": "Racosperma craspedocarpum",
+          "author": "(F.Muell.) Pedley",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:470283-1",
+          "name": "Acacia euphleba",
+          "author": "W.Fitzg.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Acacia leiophylla",
+    "search": {
+      "accepted": true,
+      "author": "Benth.",
+      "kingdom": "Plantae",
+      "family": "Fabaceae",
+      "name": "Acacia leiophylla",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:470724-1",
+      "fqId": "urn:lsid:ipni.org:names:470724-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/461d2c3447297c378a2f8f06ecff055e.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/c6b4dcb46c076374a6b9c82a7d7562e4.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Acacia",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:2612748",
+      "namePublishedInYear": 1842,
+      "taxonRemarks": "S. South Australia",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "shrub or tree",
+      "climate": "subtropical",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "SOA",
+        "AUSTRALASIA",
+        "SOA_OO",
+        "AUSTRALIA"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:470724-1",
+      "name": "Acacia leiophylla",
+      "authors": "Benth.",
+      "species": "leiophylla",
+      "rank": "SPECIES",
+      "reference": "London J. Bot. 1: 351 (1842)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000147-2",
+          "name": "Fabaceae",
+          "author": "Lindl.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:325783-2",
+          "name": "Acacia",
+          "author": "Mill.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:470724-1",
+          "name": "Acacia leiophylla",
+          "author": "Benth.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionymOf": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:77060199-1",
+          "name": "Racosperma leiophyllum",
+          "author": "(Benth.) Pedley",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        }
+      ],
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:78585-3",
+          "name": "Acacia retinodes var. oracia",
+          "author": "J.M.Black ex Eardley",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:77060199-1",
+          "name": "Racosperma leiophyllum",
+          "author": "(Benth.) Pedley",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:469851-1",
+          "name": "Acacia blomei",
+          "author": "Ohlend.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Acacia riparia",
+    "search": {
+      "accepted": true,
+      "author": "(DC.) Britton & Rose",
+      "kingdom": "Plantae",
+      "family": "Fabaceae",
+      "name": "Senegalia polyphylla",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:518289-1",
+      "fqId": "urn:lsid:ipni.org:names:518289-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/356cc59d1b16b64c349e657fbfe6b871.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/b9f32184a1eb08d3e6698910c9fe5250.jpg",
+          "caption": "Senegalia polyphylla (DC.) Britton &amp; Rose"
+        },
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/672beb14e6d4ec0678a01a40f4a7a7f5.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/54b871cdcf7df7a979d60a7bfe12432c.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        },
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/08b7e0828d5e4e9c8759984c2086882f.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/1067dc18111b0fce3b7c6811b12d09c6.jpg",
+          "caption": "Senegalia polyphylla"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Senegalia",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:2590777",
+      "namePublishedInYear": 1936,
+      "taxonRemarks": "S. Mexico to NE. Argentina",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "scrambling tree",
+      "climate": "seasonally dry tropical",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "PAR_OO",
+        "BZL_TR",
+        "VEN",
+        "BLZ",
+        "BZE_PI",
+        "HON_OO",
+        "BZN_AM",
+        "BZN_AP",
+        "ECU",
+        "BOL_OO",
+        "BZL_RJ",
+        "BZC_GO",
+        "BZL_ES",
+        "ECU_OO",
+        "CLM",
+        "BZE_MA",
+        "SOUTHERN_SOUTH_AMERICA",
+        "FRG_OO",
+        "BZC_MT",
+        "BZN_RO",
+        "PAN",
+        "BZE_FN",
+        "SOUTHERN_AMERICA",
+        "BZN_TO",
+        "BZL_MG",
+        "BZC_MS",
+        "BZE_AL",
+        "BZE",
+        "FRG",
+        "MXT_QR",
+        "VNA_OO",
+        "GUA",
+        "BZN_PA",
+        "MXS_JA",
+        "AGE_CN",
+        "ELS_OO",
+        "BZE_BA",
+        "CENTRAL_AMERICA",
+        "BZE_RN",
+        "COS_OO",
+        "VEN_OO",
+        "BZC",
+        "GUY",
+        "HON",
+        "PAN_OO",
+        "BLZ_OO",
+        "GUA_OO",
+        "BZL_SP",
+        "VNA",
+        "BZN",
+        "AGE_FO",
+        "AGE",
+        "GUY_OO",
+        "AGE_BA",
+        "MXS_MI",
+        "WESTERN_SOUTH_AMERICA",
+        "MEXICO",
+        "MXT",
+        "NORTHERN_AMERICA",
+        "AGE_CO",
+        "BZS_SC",
+        "BZL",
+        "PER",
+        "ELS",
+        "CLM_OO",
+        "CARIBBEAN",
+        "PER_OO",
+        "BZN_RM",
+        "AGE_LP",
+        "BRAZIL",
+        "MXT_TB",
+        "AGE_SF",
+        "NORTHERN_SOUTH_AMERICA",
+        "BZE_SE",
+        "PAR",
+        "BOL",
+        "MXS_CL",
+        "MXS_NA",
+        "BZS_RS",
+        "BZE_PE",
+        "MXS",
+        "MXS_OA",
+        "BZS_PR",
+        "MXT_CA",
+        "AGE_MI",
+        "MXG_VC",
+        "BZE_CE",
+        "BZN_AC",
+        "MXT_YU",
+        "MXS_GR",
+        "MXG",
+        "COS",
+        "BZC_DF",
+        "MXT_CI",
+        "AGE_CH",
+        "BZS",
+        "AGE_DF",
+        "BZE_PB",
+        "AGE_ER"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:518289-1",
+      "name": "Senegalia polyphylla",
+      "authors": "(DC.) Britton & Rose",
+      "species": "polyphylla",
+      "rank": "SPECIES",
+      "reference": "Ann. New York Acad. Sci. 35: 142 (1936)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000147-2",
+          "name": "Fabaceae",
+          "author": "Lindl.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:30003347-2",
+          "name": "Senegalia",
+          "author": "Raf.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:518289-1",
+          "name": "Senegalia polyphylla",
+          "author": "(DC.) Britton & Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionym": {
+        "fqId": "urn:lsid:ipni.org:names:471188-1",
+        "name": "Acacia polyphylla",
+        "author": "DC.",
+        "rank": "SPECIES",
+        "taxonomicStatus": "Homotypic_Synonym"
+      },
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:518266-1",
+          "name": "Senegalia langlassei",
+          "author": "Britton & Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:518255-1",
+          "name": "Senegalia glomerosa",
+          "author": "(Benth.) Britton & Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:543-2",
+          "name": "Acacia langlassei",
+          "author": "(Britton & Rose) Bullock",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:518314-1",
+          "name": "Senegalia tomentella",
+          "author": "Britton & Killip",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:471188-1",
+          "name": "Acacia polyphylla",
+          "author": "DC.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:471329-1",
+          "name": "Acacia riparia",
+          "author": "Bertero ex Spreng.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:2612341-4",
+          "name": "Acacia glomerosa var. parviflora",
+          "author": "Benth. ex Hemsl.",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:470349-1",
+          "name": "Acacia fluviatilis",
+          "author": "Spreng.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:504-2",
+          "name": "Acacia glomerosa",
+          "author": "Benth.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:138938-2",
+          "name": "Leucaena boliviana",
+          "author": "Rusby",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:393-2",
+          "name": "Acacia amambayensis",
+          "author": "Hassl.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:518269-1",
+          "name": "Senegalia lobana",
+          "author": "Britton & Killip",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:508522-1",
+          "name": "Mimosa polyphylla",
+          "author": "(DC.) Poir.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Acaciella shrevei",
+    "search": {
+      "accepted": true,
+      "author": "(Rose) Britton & Rose",
+      "kingdom": "Plantae",
+      "family": "Fabaceae",
+      "name": "Acaciella lemmonii",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:738-2",
+      "fqId": "urn:lsid:ipni.org:names:738-2",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/23a875078d0a86b1f82b4134839b012f.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/9e96f691e8e5ac298bb32565d5efa0e8.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2022-07-11T23:00:00.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Acaciella",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:2614396",
+      "namePublishedInYear": 1928,
+      "taxonRemarks": "Arizona to N. Mexico",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "shrub",
+      "climate": "desert or dry shrubland",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "MXE_HI",
+        "ARI_OO",
+        "MXN_BS",
+        "MXE_TA",
+        "MXE_NL",
+        "MXE_GU",
+        "MXE",
+        "MXE_CU",
+        "MXE_QU",
+        "SOUTHWESTERN_USA",
+        "MXN_SI",
+        "MXN_BC",
+        "MEXICO",
+        "NORTHERN_AMERICA",
+        "MXE_SL",
+        "MXN_SO",
+        "MXE_DU",
+        "MXN",
+        "MXE_AG",
+        "MXE_ZA",
+        "MXE_CO",
+        "ARI"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:738-2",
+      "name": "Acaciella lemmonii",
+      "authors": "(Rose) Britton & Rose",
+      "species": "lemmonii",
+      "rank": "SPECIES",
+      "reference": "N.L.Britton & al. (eds.), N. Amer. Fl. 23: 103 (1928)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30000147-2",
+          "name": "Fabaceae",
+          "author": "Lindl.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:296613-2",
+          "name": "Acaciella",
+          "author": "Britton & Rose",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:738-2",
+          "name": "Acaciella lemmonii",
+          "author": "(Rose) Britton & Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionym": {
+        "fqId": "urn:lsid:ipni.org:names:548-2",
+        "name": "Acacia lemmonii",
+        "author": "Rose",
+        "rank": "SPECIES",
+        "taxonomicStatus": "Homotypic_Synonym"
+      },
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:665-2",
+          "name": "Acacia shrevei",
+          "author": "(Britton & Rose) Tidestr.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:524-2",
+          "name": "Acacia hirta var. shrevei",
+          "author": "(Britton & Rose) Kearney & Peebles",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:405-2",
+          "name": "Acacia angustissima subsp. lemmonii",
+          "author": "(Rose) Wiggins",
+          "rank": "SUBSPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:548-2",
+          "name": "Acacia lemmonii",
+          "author": "Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:406-2",
+          "name": "Acacia angustissima var. shrevei",
+          "author": "(Britton & Rose) Isely",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:751-2",
+          "name": "Acaciella shrevei",
+          "author": "Britton & Rose",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        }
+      ]
+    }
+  },
+  {
+    "query": "Acanthopanax sieboldianus",
+    "search": {
+      "accepted": true,
+      "author": "(Makino) Koidz.",
+      "kingdom": "Plantae",
+      "family": "Araliaceae",
+      "name": "Eleutherococcus sieboldianus",
+      "rank": "Species",
+      "url": "/taxon/urn:lsid:ipni.org:names:90437-1",
+      "fqId": "urn:lsid:ipni.org:names:90437-1",
+      "images": [
+        {
+          "thumbnail": "//d2seqvvyy3b8p2.cloudfront.net/abba8d477bfa30a61b81cc2096142a4d.jpg",
+          "fullsize": "//d2seqvvyy3b8p2.cloudfront.net/43e7be58371f3c3e0fd605f5aedfca4e.jpg",
+          "caption": "A specimen from Kew's Herbarium"
+        }
+      ]
+    },
+    "taxon": {
+      "modified": "2019-11-08T14:03:43.000Z",
+      "bibliographicCitation": "IPNI 2026. Published on the Internet http://www.ipni.org; WCVP 2026. WCVP. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; https://powo.science.kew.org/ Retrieved 2011 onwards",
+      "genus": "Eleutherococcus",
+      "taxonomicStatus": "Accepted",
+      "kingdom": "Plantae",
+      "phylum": "Streptophyta",
+      "clazz": "Equisetopsida",
+      "subclass": "Magnoliidae",
+      "order": "Apiales",
+      "family": "Araliaceae",
+      "nomenclaturalCode": "Botanical",
+      "source": "wcvp:66488",
+      "namePublishedInYear": 1939,
+      "taxonRemarks": "China (Anhui)",
+      "nomenclaturalStatus": "Available",
+      "lifeform": "shrub",
+      "climate": "temperate",
+      "hybrid": false,
+      "synonym": false,
+      "locations": [
+        "KOR_SK",
+        "NORTH_CENTRAL_USA",
+        "CHS_JS",
+        "CHS_FJ",
+        "NWJ",
+        "MAS_OO",
+        "NORTHEASTERN_USA",
+        "KOR",
+        "NORTHERN_AMERICA",
+        "NWH",
+        "VRG",
+        "EASTERN_CANADA",
+        "CHINA",
+        "ASIA_TEMPERATE",
+        "ILL",
+        "JAP_KY",
+        "JAP_SH",
+        "ONT",
+        "MIC",
+        "MRY",
+        "WVA",
+        "CHS_MA",
+        "INI",
+        "UTA_OO",
+        "VER",
+        "CHS_HN",
+        "OHI",
+        "OHI_OO",
+        "MAS",
+        "NWJ_OO",
+        "UTA",
+        "CNT",
+        "NWY_OO",
+        "CHS_HE",
+        "PEN_OO",
+        "JAP_HN",
+        "CHS_JX",
+        "CHS_GD",
+        "KTY_OO",
+        "INI_OO",
+        "JAP",
+        "CHS_MP",
+        "CHS_HK",
+        "CHS_KI",
+        "CNT_OO",
+        "CHS_ZJ",
+        "NWY",
+        "CHS_SH",
+        "ONT_OO",
+        "NWH_OO",
+        "JAP_HK",
+        "ILL_OO",
+        "PEN",
+        "CHS_GX",
+        "KTY",
+        "SOUTHWESTERN_USA",
+        "CHS",
+        "MIC_OO",
+        "EASTERN_ASIA",
+        "CHS_AH",
+        "SOUTHEASTERN_USA",
+        "KOR_NK",
+        "WVA_OO",
+        "VRG_OO",
+        "VER_OO",
+        "MRY_OO"
+      ],
+      "plantae": true,
+      "fungi": false,
+      "fqId": "urn:lsid:ipni.org:names:90437-1",
+      "name": "Eleutherococcus sieboldianus",
+      "authors": "(Makino) Koidz.",
+      "species": "sieboldianus",
+      "rank": "SPECIES",
+      "reference": "Acta Phytotax. Geobot. 8: 52 (1939)",
+      "classification": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:30001539-2",
+          "name": "Araliaceae",
+          "author": "Juss.",
+          "rank": "FAMILY",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:328246-2",
+          "name": "Eleutherococcus",
+          "author": "Maxim.",
+          "rank": "GENUS",
+          "taxonomicStatus": "Accepted"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:90437-1",
+          "name": "Eleutherococcus sieboldianus",
+          "author": "(Makino) Koidz.",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Accepted"
+        }
+      ],
+      "basionym": {
+        "fqId": "urn:lsid:ipni.org:names:89490-1",
+        "name": "Acanthopanax sieboldianus",
+        "author": "Makino",
+        "rank": "SPECIES",
+        "taxonomicStatus": "Homotypic_Synonym"
+      },
+      "synonyms": [
+        {
+          "fqId": "urn:lsid:ipni.org:names:89490-1",
+          "name": "Acanthopanax sieboldianus",
+          "author": "Makino",
+          "rank": "SPECIES",
+          "taxonomicStatus": "Homotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:494828-4",
+          "name": "Acanthopanax sieboldianus var. variegatus",
+          "author": "(G.Nicholson) Rehder",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:1559-4",
+          "name": "Acanthopanax pentaphyllus var. variegatus",
+          "author": "(G.Nicholson) Rehder",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:874492-1",
+          "name": "Eleutherococcus sieboldianus f. variegatus",
+          "author": "(G.Nicholson) S.Y.Hu",
+          "rank": "Form",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:77264869-1",
+          "name": "Aralia pentaphylla var. variegata",
+          "author": "G.Nicholson",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        },
+        {
+          "fqId": "urn:lsid:ipni.org:names:494830-4",
+          "name": "Eleutherococcus japonicus var. variegata",
+          "author": "(G.Nicholson) Nakai",
+          "rank": "VARIETY",
+          "taxonomicStatus": "Heterotypic_Synonym"
+        }
+      ]
+    }
+  }
+]

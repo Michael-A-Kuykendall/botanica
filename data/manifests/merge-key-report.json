@@ -1,0 +1,88 @@
+{
+  "policy": "Merge: (source, external_id) unique \u2192 else lower(scientific_name) \u2192 quarantine",
+  "duplicate_scientific_names_top": [
+    {
+      "name": "sorghum bicolor",
+      "count": 4
+    },
+    {
+      "name": "chamerion angustifolium",
+      "count": 3
+    },
+    {
+      "name": "robinia hispida",
+      "count": 3
+    },
+    {
+      "name": "physostegia denticulata",
+      "count": 3
+    },
+    {
+      "name": "fritillaria liliacea",
+      "count": 3
+    },
+    {
+      "name": "pseudoroegneria spicata",
+      "count": 3
+    },
+    {
+      "name": "alnus incana",
+      "count": 3
+    },
+    {
+      "name": "pinus rigida",
+      "count": 3
+    },
+    {
+      "name": "dasiphora fruticosa",
+      "count": 3
+    },
+    {
+      "name": "pluchea odorata",
+      "count": 3
+    },
+    {
+      "name": "nuphar lutea",
+      "count": 3
+    },
+    {
+      "name": "solanum gracile",
+      "count": 3
+    },
+    {
+      "name": "eleocharis ovata",
+      "count": 3
+    },
+    {
+      "name": "symphyotrichum chilense",
+      "count": 3
+    },
+    {
+      "name": "erigeron acris",
+      "count": 3
+    },
+    {
+      "name": "yucca macrocarpa",
+      "count": 3
+    },
+    {
+      "name": "monarda fistulosa",
+      "count": 3
+    },
+    {
+      "name": "cornus sericea",
+      "count": 3
+    },
+    {
+      "name": "sambucus nigra",
+      "count": 3
+    },
+    {
+      "name": "alnus viridis",
+      "count": 3
+    }
+  ],
+  "duplicate_identifier_pairs": [],
+  "ok_no_dup_identifiers": true,
+  "dup_name_groups": 20
+}

@@ -1,0 +1,52 @@
+{
+  "artifact": "botanica-cultivated-keep-v0.2",
+  "built_at": "2026-07-09T22:55:31.794362+00:00",
+  "engine": "parquet",
+  "schema_version": "0.4.0",
+  "scope": "KEEP = traits OR cultivation_requirements OR uses (negative filter on USDA warehouse)",
+  "counts": {
+    "species": 18566,
+    "families": 532,
+    "genera": 3687,
+    "species_identifiers": 72635,
+    "cultivars": 0,
+    "synonyms": 35294,
+    "vernacular_names": 246878,
+    "distribution_regions": 308237,
+    "traits": 26389,
+    "seasonal_characteristics": 0,
+    "cultivation_requirements": 26289,
+    "ecological_interactions": 0,
+    "uses": 0,
+    "media": 0,
+    "provenance": 37503
+  },
+  "l3_rows": 0,
+  "silver_files": [
+    "data/silver_keep/cultivars.parquet",
+    "data/silver_keep/cultivation_requirements.parquet",
+    "data/silver_keep/distribution_regions.parquet",
+    "data/silver_keep/ecological_interactions.parquet",
+    "data/silver_keep/families.parquet",
+    "data/silver_keep/genera.parquet",
+    "data/silver_keep/ingest_quarantine.parquet",
+    "data/silver_keep/media.parquet",
+    "data/silver_keep/provenance.parquet",
+    "data/silver_keep/seasonal_characteristics.parquet",
+    "data/silver_keep/species.parquet",
+    "data/silver_keep/species_identifiers.parquet",
+    "data/silver_keep/synonyms.parquet",
+    "data/silver_keep/traits.parquet",
+    "data/silver_keep/uses.parquet",
+    "data/silver_keep/vernacular_names.parquet"
+  ],
+  "membership": "data/manifests/keep-membership.json",
+  "quality": "data/manifests/quality-keep-v0.2.json",
+  "sources_note": "See data/manifests/botanica-cultivated-v0.1.json for upstream sources; KEEP is a filter view",
+  "github_packaging": {
+    "silver_total_full_mb_approx": 61,
+    "keep_dir": "data/silver_keep",
+    "under_github_file_limits": true,
+    "largest_full_file_mb": 21
+  }
+}

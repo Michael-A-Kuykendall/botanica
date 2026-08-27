@@ -1,0 +1,1987 @@
+[
+  {
+    "query_name": "Quercus alba",
+    "matched": true,
+    "gbif_key": 2879737,
+    "canonical_name": "Quercus alba",
+    "status": "ACCEPTED",
+    "confidence": 98,
+    "vernacular_names": [
+      {
+        "name": "Ak me\u015fe",
+        "language": "tur",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Amerikaanse witte eik",
+        "language": "nld",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Amerikanische Wei\u00df-Eiche",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "A\u011f pal\u0131d",
+        "language": "aze",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Baiyi",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Baltais ozols",
+        "language": "lav",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Baltasis \u0105\u017euolas",
+        "language": "lit",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Baya",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Carvalho-branco",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ch\u00eane blanc",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Encino blanco",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Feh\u00e9r t\u00f6lgy",
+        "language": "hun",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Hvid-Eg",
+        "language": "dan",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Hv\u00edteik",
+        "language": "isl",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ki-en-tah-ken-ah'tah",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Kviteik",
+        "language": "nor",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Otok\u00e9nha",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Quercia bianca",
+        "language": "ita",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Roble blanco",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Roure blanc americ\u00e0",
+        "language": "cat",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Runehn\u00fare\u0294",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Stave Oak",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Martha's Vineyard species checklist"
+      },
+      {
+        "name": "White Oak",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vermont Species"
+      },
+      {
+        "name": "White oak",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Wiishkobi-mitigomizh (m\u00eeci'm\u00een)",
+        "language": "oji",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "dub biely",
+        "language": "slk",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "dub b\u00edl\u00fd",
+        "language": "ces",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "d\u0105b bia\u0142y",
+        "language": "pol",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "eastern white oak",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "howaito-&omacr;ku",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "howaito-\u014dku",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "hvideg",
+        "language": "dan",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "rinnevalkotammi",
+        "language": "fin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "vitek",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "\u0414\u0443\u0431 \u0431\u0435\u043b\u044b\u0439",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u054d\u057a\u056b\u057f\u0561\u056f \u056f\u0561\u0572\u0576\u056b",
+        "language": "hye",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0628\u0644\u0648\u0637 \u0633\u0641\u06cc\u062f",
+        "language": "fas",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0633\u0646\u062f\u064a\u0627\u0646 \u0623\u0628\u064a\u0636",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0633\u0646\u062f\u064a\u0627\u0646 \u0627\u0628\u064a\u0636",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u10d7\u10d4\u10d7\u10e0\u10d8 \u10db\u10e3\u10ee\u10d0",
+        "language": "kat",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u30db\u30ef\u30a4\u30c8\u30aa\u30fc\u30af",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u5317\u7f8e\u767d\u6a61",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u7f8e\u6d32\u767d\u6a61",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      }
+    ],
+    "has_en": true,
+    "source": "GBIF",
+    "license": "CC BY 4.0"
+  },
+  {
+    "query_name": "Aloe vera",
+    "matched": true,
+    "gbif_key": 2777724,
+    "canonical_name": "Aloe vera",
+    "status": "ACCEPTED",
+    "confidence": 97,
+    "vernacular_names": [
+      {
+        "name": "Aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Alo\u00e8s vrai, Alo\u00e8s amer, Mazambron, Alo\u00e8s cura\u00e7ao, Alo\u00e8s des Barbades, Alo\u00e8s vulgaire",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Alo\u00e8s vrai, Alo\u00e8s cura\u00e7ao, Alo\u00e8s des Barbades, Alo\u00e8s vulgaire",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Alo\u00e8s vrai, Alo\u00e8s des Barbades",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Alo\u00ebs",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Barbados Aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Barbados Aloes",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Chizia mlili",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Common Aloes",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Cura\u00e7ao aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "Indian aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "Jaffarabad aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "Mediterranean aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "Sakoankankini",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Sentebibu",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "West Indian aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "acibar",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "NCBI Taxonomy"
+      },
+      {
+        "name": "acibar",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ac\u00edbar",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "allas",
+        "language": "ell",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "aloe",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "aloe vera",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "aloe-vera",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "NCBI Taxonomy"
+      },
+      {
+        "name": "aloi",
+        "language": "ell",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "aloja",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "alo\u00e8s amer",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "alo\u00e8s vulgaire",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "alo\u00e9",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "alo\u00e9-dos-barbados",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "atzavara",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "babosa",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "babosa",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "babosa-comum",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "babosa-medicinal",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "babosa-medicinal",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "burn plant",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "coastal aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "common aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "echte Aloe",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "erva-azebra",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "erva-babosa",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "erva-babosa",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "flor de deserto",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "lin\u00e1loe",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "loto de deserto",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "maguey morado",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "mazambron",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "medicinal aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "penca s\u00e1bila",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "pita zabila",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "pitera amarelo",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "star cactus",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "s\u00e1bila do penca",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "s\u00e1vila",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "toots amarelo",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "true aloe",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "unguentine cactus",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "zabila",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "zabira",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "\u00e1loe de los Barbados",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Integrated Taxonomic Information System (ITIS)"
+      },
+      {
+        "name": "\u00e4kta aloe",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u017cabbara",
+        "language": "mlt",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Aloe",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Checklist Dutch Caribbean Species Register"
+      }
+    ],
+    "has_en": true,
+    "source": "GBIF",
+    "license": "CC BY 4.0"
+  },
+  {
+    "query_name": "Camellia sinensis",
+    "matched": true,
+    "gbif_key": 3189635,
+    "canonical_name": "Camellia sinensis",
+    "status": "ACCEPTED",
+    "confidence": 99,
+    "vernacular_names": [
+      {
+        "name": "Cam\u00e9lia de Chine",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Ceai",
+        "language": "ron",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ch\u00e1 \u00b7ch\u00e1-da-\u00edndia",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "C\u00e2y ch\u00e8",
+        "language": "vie",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Herbata chi\u0144ska",
+        "language": "pol",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Japanese tea",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Kininis arbatmedis",
+        "language": "lit",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Mchai",
+        "language": "swa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Pianta del T\u00e8",
+        "language": "ita",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Planta de t\u00e9",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Planta do ch\u00e1",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Tea",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Global Register of Introduced and Invasive Species - United States (Contiguous) (ver.2.0, 2022)"
+      },
+      {
+        "name": "Tea (EN)",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Tea camellia",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vascular Plants in Korea"
+      },
+      {
+        "name": "Tee",
+        "language": "tsn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Teepflanze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Teep\u00f5\u00f5sas",
+        "language": "est",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Teestrauch",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Teestrauch (DE)",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Theestruik",
+        "language": "nld",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Th\u00e9, Th\u00e9ier",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "T\u00e8",
+        "language": "ita",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "arbre \u00e0 th\u00e9",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "black tea",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "NCBI Taxonomy"
+      },
+      {
+        "name": "black tea",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "cha",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "cha",
+        "language": "hin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "cha-no-ki",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "cha-no-ki",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "chai",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "chai",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "ch\u00e1",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ch\u00e1",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "ch\u00e1-da-\u00cdndia",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ch\u00e1-preto",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "ch\u00e1-preto",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "common tea",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "green tea",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "te",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "teabush",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "teaplant",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "tebusk",
+        "language": "nob",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "teepensas",
+        "language": "fin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "teestruik",
+        "language": "afr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "teh",
+        "language": "ind",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "th\u00e9",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "th\u00e9ier",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "t\u00e9",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "zhu",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u00e1rbol del t\u00e9",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "\u00e7ay",
+        "language": "tur",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u010dajovn\u00edk \u010d\u00ednsky",
+        "language": "slk",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u010dajovn\u00edk \u010d\u00ednsk\u00fd",
+        "language": "ces",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u041a\u0430\u043c\u0435\u043b\u0438\u044f \u043a\u0438\u0442\u0430\u0439\u0441\u043a\u0430\u044f",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u041a\u0430\u043c\u0435\u043b\u0456\u044f \u043a\u0438\u0442\u0430\u0439\u0441\u044c\u043a\u0430",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439 \u00b7 \u0447\u0430\u0301\u0439\u043d\u044b\u0439 \u043a\u0443\u0441\u0442",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439 \u043a\u0438\u0442\u0430\u0439\u0441\u044c\u043a\u0438\u0439",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439\u043d\u0435 \u0434\u0435\u0440\u0435\u0432\u043e",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439\u043d\u0438\u0439 \u043a\u0443\u0449",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u0430\u0439\u043d\u044b\u0439 \u043a\u0443\u0441\u0442",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0427\u044d\u0439 \u044b\u0430\u0440\u0495\u0430\u0442\u0430",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u091a\u093e\u092f",
+        "language": "hin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u091a\u093f\u092f\u093e",
+        "language": "nep",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u099a\u09be\u09b9",
+        "language": "asm",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0dad\u0dda",
+        "language": "sin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0e0a\u0e32",
+        "language": "tha",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u107c\u1035\u1004\u103a\u1088 \u00b7 \u101a\u102d\u102f\u101d\u103a\u1089",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u30c1\u30e3\u30ce\u30ad",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u30c1\u30e3\u30ce\u30ad\uff08\u8336\u306e\u6728\uff09",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u8336\u6811",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u8336\u6a39",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u8336\u6a39 \u00b7 \u8336\u6811",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\ucc28\ub098\ubb34",
+        "language": "kor",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\ucc28\ub098\ubb34",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Korean Peninsula Flora"
+      }
+    ],
+    "has_en": true,
+    "source": "GBIF",
+    "license": "CC BY 4.0"
+  },
+  {
+    "query_name": "Ginkgo biloba",
+    "matched": true,
+    "gbif_key": 2687885,
+    "canonical_name": "Ginkgo biloba",
+    "status": "ACCEPTED",
+    "confidence": 99,
+    "vernacular_names": [
+      {
+        "name": "Abricotier d'argent",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Arbre aux quarante \u00e9cus",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Bai Guo",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "B\u1ea1ch qu\u1ea3",
+        "language": "vie",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Coeden ginco",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Common Ginkgo",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vermont Species"
+      },
+      {
+        "name": "Divdaivu ginks",
+        "language": "lav",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Dviskiautis ginkmedis",
+        "language": "lit",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Dvore\u017enjasti ginko",
+        "language": "hrv",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Gincgo",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ginco",
+        "language": "ita",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Gingko bilob\u00e9, Ginkgo, Arbre aux quarante \u00e9cus",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Ginkgo",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "Ginkgo",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vermont Species"
+      },
+      {
+        "name": "Ginkgo",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "IUCN Red List Vascular Plants (2018, metropolitan France) - IUCN Liste Rouge de la Flore Vasculaire (2018, m\u00e9tropolitaine France)"
+      },
+      {
+        "name": "Ginkgo",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ginkgobam",
+        "language": "ltz",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ginkgobaum",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "Ginki",
+        "language": "lav",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Guinco",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Japanse Notenboom",
+        "language": "nld",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Kinesiskt Tempeltr\u00e4d",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Maidenhair Tree",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vermont Species"
+      },
+      {
+        "name": "Maidenhair tree",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Maidenhair-tree",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Mi\u0142orz\u0105b Dwuklapowy",
+        "language": "pol",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Tempeltre",
+        "language": "nor",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Tempeltr\u00e6",
+        "language": "dan",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Xinkgo",
+        "language": "glg",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Yinxing",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "dvokrpi ginko",
+        "language": "slv",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "eunhaengnamu",
+        "language": "kor",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "eunhaengnamu",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "gingko",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "gingo",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "ginkgo",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ginkgo",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "ginkgo biloba",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ginko dvojlalo\u010dn\u00e9",
+        "language": "slk",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "golden fossil tree",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "h\u00f5lmikpuu",
+        "language": "est",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "ich&omacr;",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "ich\u014d",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "jinan dvoulalo\u010dn\u00fd",
+        "language": "ces",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "k\u00ednai p\u00e1fr\u00e1nyfeny\u0151",
+        "language": "hun",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "mabet a\u011fac\u0131",
+        "language": "tur",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "neidonhiuspuu",
+        "language": "fin",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "nogueira-do-Jap\u00e3o",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "noyer du Japon",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "p\u00e1fr\u00e1nyfeny\u0151",
+        "language": "hun",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "stinkbomb tree",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "xinkgu",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "yin xing",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "\u00e1rvore-avenca",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "\u00e1rvore-da-vida",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "\u00e1rvore-dos-quarenta-escudos",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "\u00e1rvore-dos-templos",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "\u00e1rvore-folha-de-avenca",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Flora e Funga do Brasil - Lista Oficial"
+      },
+      {
+        "name": "\u0130kiayal\u0131 ginkqo",
+        "language": "aze",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0393\u03ba\u03af\u03b3\u03ba\u03bf",
+        "language": "ell",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0413\u0438\u043d\u043a\u0433\u043e \u0434\u0432\u0443\u043b\u043e\u043f\u0430\u0441\u0442\u043d\u044b\u0439",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0413\u0438\u043d\u043a\u0433\u043e \u0434\u0432\u0443\u0445\u043b\u043e\u043f\u0430\u0441\u0442\u043d\u044b\u0439",
+        "language": "rus",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0413\u0438\u043d\u043a\u043e",
+        "language": "bul",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0413\u0456\u043d\u043a\u0433\u0430",
+        "language": "bel",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0413\u0456\u043d\u043a\u0433\u043e \u0434\u0432\u043e\u043b\u043e\u043f\u0430\u0442\u0435\u0432\u0435",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0414\u0432\u0443\u0434\u0435\u043b\u043d\u043e \u0433\u0438\u043d\u043a\u043e",
+        "language": "bul",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0490\u0456\u043d\u043a\u0433\u043e \u0434\u0432\u043e\u043b\u043e\u043f\u0430\u0442\u0435\u0432\u0435",
+        "language": "ukr",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u05d2\u05d9\u05e0\u05e7\u05d2\u05d5 \u05d3\u05d5 \u05d0\u05d5\u05e0\u05ea\u05d9",
+        "language": "heb",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u062c\u0646\u0643\u0629 \u0628\u064a\u0644\u0648\u0628\u0627",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u062c\u0646\u0643\u0648",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u062c\u0646\u0643\u0648 \u0630\u0648 \u0627\u0644\u0634\u0642\u064a\u0646",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u062c\u0646\u0643\u0648 \u0630\u0648 \u0627\u0644\u0641\u0635\u064a\u0646",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0634\u062c\u0631\u0629 \u0627\u0644\u0645\u0639\u0628\u062f",
+        "language": "ara",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u06a9\u0647\u0646\u062f\u0627\u0631",
+        "language": "fas",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u0e41\u0e1b\u0e30\u0e01\u0e4a\u0e27\u0e22",
+        "language": "tha",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u10d2\u10d8\u10dc\u10d9\u10d2\u10dd",
+        "language": "kat",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u30a4\u30c1\u30e7\u30a6",
+        "language": "jpn",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u9280\u674f",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\u94f6\u674f",
+        "language": "zho",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "\uc740\ud589\ub098\ubb34",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Korean Peninsula Flora"
+      },
+      {
+        "name": "\uc740\ud589\ub098\ubb34",
+        "language": "kor",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Ginkgo",
+        "language": "nld",
+        "preferred": true,
+        "source_dataset": "Checklist Dutch Species Register - Nederlands Soortenregister"
+      },
+      {
+        "name": "ginkgo",
+        "language": "nno",
+        "preferred": true,
+        "source_dataset": null
+      },
+      {
+        "name": "ginkgo",
+        "language": "nob",
+        "preferred": true,
+        "source_dataset": null
+      },
+      {
+        "name": "Ginkgo",
+        "language": "lat",
+        "preferred": false,
+        "source_dataset": "United Kingdom Species Inventory (UKSI)"
+      }
+    ],
+    "has_en": true,
+    "source": "GBIF",
+    "license": "CC BY 4.0"
+  },
+  {
+    "query_name": "Mentha spicata",
+    "matched": true,
+    "gbif_key": 2927175,
+    "canonical_name": "Mentha spicata",
+    "status": "ACCEPTED",
+    "confidence": 97,
+    "vernacular_names": [
+      {
+        "name": "Aarmunt",
+        "language": "nld",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Aehrige Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Info Flora Schweiz - Lamiaceae"
+      },
+      {
+        "name": "Bush Mint",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Checklist of Vermont Species"
+      },
+      {
+        "name": "Gruene Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Flora Helvetica - Lamiaceae"
+      },
+      {
+        "name": "Gr\u00f8n mynte",
+        "language": "dan",
+        "preferred": false,
+        "source_dataset": "Red List Vascular Plants (Denmark) - R\u00f8dliste Karplanter (Danmark)"
+      },
+      {
+        "name": "Gr\u00fcn-Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Gr\u00fcne Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Taxon list of vascular plants from Bavaria, Germany compiled in the context of the BFL project"
+      },
+      {
+        "name": "Krauseminze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Menta Romana",
+        "language": "ita",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Menthe Verte",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Menthe en Grappe",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Menthe en \u00e9pi",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "IUCN Red List Vascular Plants (2018, metropolitan France) - IUCN Liste Rouge de la Flore Vasculaire (2018, m\u00e9tropolitaine France)"
+      },
+      {
+        "name": "Menthe en \u00e9pi, Menthe verte",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "Mintys Mair",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Mintys Sbigog",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Mintys Ysbigog",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Mintys y Gwaed",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Mi\u0119ta zielona",
+        "language": "pol",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Nag\u0127niegh",
+        "language": "mlt",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "Pupur Fint",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "Spear Mint",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Martha's Vineyard species checklist"
+      },
+      {
+        "name": "Spearmint",
+        "language": "eng",
+        "preferred": false,
+        "source_dataset": "Global Register of Introduced and Invasive Species - Hawaii, United States (ver.2.0, 2022)"
+      },
+      {
+        "name": "Ysper Fintys",
+        "language": "cym",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "baume",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "gr\u00f6nmynta",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "Nordic Crop Wild Relative (CWR) Checklist"
+      },
+      {
+        "name": "gr\u00f8nmynte",
+        "language": "nno",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "gr\u00f8nnmynte",
+        "language": "nob",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "gr\u00f8nnmynte",
+        "language": "nor",
+        "preferred": false,
+        "source_dataset": "Red List Vascular Plants (2021, Norway) - R\u00f8dlista Karplanter (2021, Norge)"
+      },
+      {
+        "name": "hortel\u00e3-comum",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "hortel\u00e3-crespa",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "hortel\u00e3-preta",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "hortel\u00e3-preta",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "hortel\u00e3-verde",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "hortel\u00e3-verde",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "GRIN Taxonomy"
+      },
+      {
+        "name": "hortel\u00e3-verde-dos-a\u00e7ores",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "hortel\u00e3-vulgar",
+        "language": "por",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "kr\u016bzm\u0113tra",
+        "language": "lav",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "kursemynte",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "Nordic plant uses from Gunnerus and H\u00f8eg"
+      },
+      {
+        "name": "menta romana",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "menthe en \u00e9pis",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "menthe \u00e0 \u00e9pis",
+        "language": "fra",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "m\u00e1ta klasnat\u00e1",
+        "language": "ces",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "otime, mati, mati kekaa",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      },
+      {
+        "name": "rohem\u00fcnt",
+        "language": "est",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "spearmint",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "NCBI Taxonomy"
+      },
+      {
+        "name": "viherminttu",
+        "language": "fin",
+        "preferred": false,
+        "source_dataset": "Nordic Crop Wild Relative (CWR) Checklist"
+      },
+      {
+        "name": "viherminttu",
+        "language": "swe",
+        "preferred": false,
+        "source_dataset": "Nordic Crop Wild Relative (CWR) Checklist"
+      },
+      {
+        "name": "yerbabuena",
+        "language": "spa",
+        "preferred": false,
+        "source_dataset": "Catalogue of Life"
+      },
+      {
+        "name": "z\u00f6ld menta (incl. fodormenta)",
+        "language": "hun",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "\u00c4hren-Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Red List Vascular Plants (2018, Germany) - Rote Liste Gef\u00e4sspflanzen (2018, Deutschland)"
+      },
+      {
+        "name": "\u00c4hren-Minze (Artengruppe)",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "Red List Vascular Plants (2018, Germany) - Rote Liste Gef\u00e4sspflanzen (2018, Deutschland)"
+      },
+      {
+        "name": "\u00c4hrige Minze",
+        "language": "deu",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "\u0160altoji m\u0117ta",
+        "language": "lit",
+        "preferred": false,
+        "source_dataset": "DAISIE - Inventory of alien invasive species in Europe"
+      },
+      {
+        "name": "\u2019\u00f6time, tut\u00e4mu",
+        "language": "und",
+        "preferred": false,
+        "source_dataset": "TAXREF"
+      }
+    ],
+    "has_en": true,
+    "source": "GBIF",
+    "license": "CC BY 4.0"
+  }
+]

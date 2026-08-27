@@ -1,0 +1,14 @@
+{
+  "built_at": "2026-07-09T22:55:11.808613+00:00",
+  "source": "Wikidata SPARQL P8194 hardiness zone / P8193 hardiness of plant",
+  "license": "CC0",
+  "keep_names": 18566,
+  "sparql_taxon_matches": 18371,
+  "species_with_hardiness_zone": 0,
+  "species_with_hardiness": 545,
+  "zone_rows_written": 0,
+  "hardy_rows_written": 570,
+  "species_with_sunlight_any_source": 79,
+  "sunlight_note": "No dedicated free bulk sunlight property used; USDA sunlight still sparse",
+  "ceiling": true
+}

@@ -19,8 +19,47 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
+*.duckdb
+*.duckdb.wal
+
+# Keep silver parquet + manifests; ignore local rebuild noise
+/data/botanica-cultivated-*.duckdb
+
+# Large bronze rebuildables (regenerate via scripts / PlantSearch)
+/data/bronze/usda_catalog/plant_search_pct.json
+/data/bronze/gbif_vern/full/
+/data/bronze/powo/full/
+/data/bronze/powo/sample/raw/
+/data/bronze/ff_debug/
+/data/bronze/ff_smoke/
+/data/bronze/grin/grin.zip
+/data/bronze/grin/extracted/
+/data/bronze/faostat/*.zip
+/data/bronze/faostat/extracted/
 
 # Python cache (for demo scripts)
 __pycache__/
 *.pyc
 *.pyo
+
+# Generated analysis reports
+json
+punch_analysis.json
+
+.internal/chat.md
+
+# Probe progress can be huge
+/data/bronze/usda_catalog/lists/haschar_probe_progress.json
+
+
+/data/manifests/botanica-keep-data-*.zip
+
+# Local AI session / state stores (not project source)
+/.opencode/
+/.openstate
+
+
+# Beads derived runtime DB / backups (source of truth is .beads/issues.jsonl)
+/.beads/embeddeddolt/
+/.beads/backup/
+/.beads/.auto-import-issues.jsonl

@@ -1,38 +1,39 @@
-# Botanica Roadmap
+# Botanica roadmap
 
-Botanica is a production-ready botanical database with AI-powered plant insights.
-Its mission is **invisible botanical infrastructure**: drop it in, it works.
+Aligned with [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). This is not a marketing checklist.
 
-## Current Milestones
-- ✅ Complete taxonomic hierarchy (Family → Genus → Species).
-- ✅ Scientific nomenclature with authority citations and publication tracking.
-- ✅ Professional cultivation management with growth stages and environmental tracking.
-- ✅ Optional ContextLite AI integration for plant recommendations.
-- ✅ 69 comprehensive tests with zero unsafe code.
+**Progress ruler:** [`docs/PRODUCT_ROUNDS.md`](docs/PRODUCT_ROUNDS.md) · **queue:** `bd ready`
 
-## Next Goals
-- [ ] Enhanced search and filtering capabilities across all taxonomic levels.
-- [ ] IUCN Red List integration for conservation status updates.
-- [ ] Herbarium specimen management with location and collector data.
-- [ ] Phenology tracking for seasonal growth patterns.
-- [ ] Advanced cultivation analytics and yield optimization.
-- [ ] GraphQL API layer for modern application integration.
+## Done (Round 0)
 
-## Long-Term Vision
-- Complete botanical research platform covering all major plant families.
-- Integration with major herbarium databases and botanical institutions.
-- AI-powered species identification from photographs and descriptions.
-- Climate adaptation modeling for conservation planning.
-- Open data exchange with global botanical databases.
-- Mobile app companion for field research.
+- [x] Taxonomic hierarchy types + CRUD (family / genus / species)
+- [x] DuckDB migrations: L1 + L2 reference tables + L3 inventory schema (empty in seed)
+- [x] Optional ingest scaffolding (POWO / GBIF / USDA)
+- [x] Architecture decisions Phase 0 (Q1–Q6, D1–D15)
+- [x] Honesty pass: README, remove ContextLite, archive vapor specs
+- [x] Phase 1B Budsy park (sibling repo)
+- [x] Phase 2: schema 0.4.0 — identifiers, cultivars, quarantine, plant health, sync hooks, plant CRUD, no Unknown bulk
+- [x] Phase 3: USDA Species bulk (~62k) + HasChar traits (~4480) + silver parquet + MANIFEST
+- [x] Fail-fast scrape regimen (debug → smoke → full)
+- [x] Execution plan + product rounds + beads R1–R7
 
-## Philosophy
-Botanica will remain **free forever** under MIT license. Scientific research deserves scientific-grade tools without paywalls or feature restrictions.
+## In progress / next (by round)
 
----
+| Round | Focus | Status |
+|------:|-------|--------|
+| **R1** | Scoreboard: field map + quality report + baseline % | **done** |
+| **R2** | POWO fail-fast → dense bulk (uses API ceiling) | **done** |
+| **R3** | GBIF vernaculars full on missing-EN | **done** |
+| **R4** | Merge + cultivated denominators + quality ceilings | **done** (v1 bar partial) |
+| **R5** | OSS parity (CI, templates, RELEASE_PROCESS) | **next** |
+| **R6** | **One** data tag + crate bump + Release | after R5 |
+| **R7** | Budsy vertical on real seed | deferred |
 
-### Governance
-- **Lead Maintainer:** Michael A. Kuykendall  
-- Contributions are welcome via Pull Requests.  
-- The roadmap is set by the lead maintainer to preserve project vision.
-- No features will be added that compromise the "invisible infrastructure" philosophy.
+Metrics: `data/manifests/quality-post_r2_r3.json`
+
+## Explicitly not promised
+
+- Full wild flora of Earth
+- Real IUCN production client (mock if enabled)
+- Darwin Core as complete herbarium stack
+- ContextLite / bundled “AI insights”

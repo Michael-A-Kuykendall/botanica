@@ -16,7 +16,7 @@ async fn test_insert_family() {
         "Martius".to_string()
     );
     
-    let result = insert_family(db.pool(), &family).await;
+    let result = insert_family(&db, &family).await;
     assert!(result.is_ok(), "Failed to insert family: {:?}", result.err());
 }
 
@@ -25,9 +25,9 @@ async fn test_get_family_by_id_existing() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
-    let result = get_family_by_id(db.pool(), family.id).await;
+    let result = get_family_by_id(&db, family.id).await;
     assert!(result.is_ok(), "Failed to get family by id: {:?}", result.err());
     
     let found_family = result.unwrap();
@@ -42,7 +42,7 @@ async fn test_get_family_by_id_nonexistent() {
     let db = setup_test_database().await;
     let nonexistent_id = Uuid::new_v4();
     
-    let result = get_family_by_id(db.pool(), nonexistent_id).await;
+    let result = get_family_by_id(&db, nonexistent_id).await;
     assert!(result.is_ok(), "Query should succeed even for nonexistent id");
     
     let found_family = result.unwrap();
@@ -54,9 +54,9 @@ async fn test_get_families_by_name_exact_match() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
-    let result = get_families_by_name(db.pool(), "Rosaceae").await;
+    let result = get_families_by_name(&db, "Rosaceae").await;
     assert!(result.is_ok(), "Failed to get families by name: {:?}", result.err());
     
     let found_families = result.unwrap();
@@ -73,11 +73,11 @@ async fn test_get_families_by_name_partial_match() {
     let family2 = Family::new("Brassicaceae".to_string(), "Burnett".to_string());
     let family3 = Family::new("Poaceae".to_string(), "Barnhart".to_string());
     
-    insert_family(db.pool(), &family1).await.expect("Failed to insert family1");
-    insert_family(db.pool(), &family2).await.expect("Failed to insert family2");
-    insert_family(db.pool(), &family3).await.expect("Failed to insert family3");
+    insert_family(&db, &family1).await.expect("Failed to insert family1");
+    insert_family(&db, &family2).await.expect("Failed to insert family2");
+    insert_family(&db, &family3).await.expect("Failed to insert family3");
     
-    let result = get_families_by_name(db.pool(), "aceae").await;
+    let result = get_families_by_name(&db, "aceae").await;
     assert!(result.is_ok(), "Failed to get families by partial name: {:?}", result.err());
     
     let found_families = result.unwrap();
@@ -94,10 +94,10 @@ async fn test_get_families_by_name_case_sensitivity() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
-    // Search with different case - SQLite LIKE is case-insensitive by default
-    let result = get_families_by_name(db.pool(), "rosaceae").await;
+    // Search with different case - DuckDB ILIKE is case-insensitive
+    let result = get_families_by_name(&db, "rosaceae").await;
     assert!(result.is_ok(), "Failed to get families by lowercase name: {:?}", result.err());
     
     let found_families = result.unwrap();
@@ -109,9 +109,9 @@ async fn test_get_families_by_name_no_match() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
-    let result = get_families_by_name(db.pool(), "nonexistent").await;
+    let result = get_families_by_name(&db, "nonexistent").await;
     assert!(result.is_ok(), "Query should succeed even for nonexistent name");
     
     let found_families = result.unwrap();
@@ -123,18 +123,18 @@ async fn test_update_family_existing() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
     let mut updated_family = family.clone();
     updated_family.name = "Updated_Rosaceae".to_string();
     updated_family.authority = "Updated Authority".to_string();
     
-    let result = update_family(db.pool(), family.id, &updated_family).await;
+    let result = update_family(&db, family.id, &updated_family).await;
     assert!(result.is_ok(), "Failed to update family: {:?}", result.err());
     assert!(result.unwrap(), "Update should return true for existing family");
     
     // Verify the update
-    let retrieved = get_family_by_id(db.pool(), family.id).await
+    let retrieved = get_family_by_id(&db, family.id).await
         .expect("Failed to retrieve updated family")
         .expect("Updated family should exist");
     
@@ -149,7 +149,7 @@ async fn test_update_family_nonexistent() {
     let nonexistent_id = Uuid::new_v4();
     let fake_family = create_test_family();
     
-    let result = update_family(db.pool(), nonexistent_id, &fake_family).await;
+    let result = update_family(&db, nonexistent_id, &fake_family).await;
     assert!(result.is_ok(), "Update query should succeed even for nonexistent id");
     assert!(!result.unwrap(), "Update should return false for nonexistent family");
 }
@@ -159,14 +159,14 @@ async fn test_delete_family_existing() {
     let db = setup_test_database().await;
     let family = create_test_family();
     
-    insert_family(db.pool(), &family).await.expect("Failed to insert family");
+    insert_family(&db, &family).await.expect("Failed to insert family");
     
-    let result = delete_family(db.pool(), family.id).await;
+    let result = delete_family(&db, family.id).await;
     assert!(result.is_ok(), "Failed to delete family: {:?}", result.err());
     assert!(result.unwrap(), "Delete should return true for existing family");
     
     // Verify the deletion
-    let retrieved = get_family_by_id(db.pool(), family.id).await
+    let retrieved = get_family_by_id(&db, family.id).await
         .expect("Query should succeed after deletion");
     assert!(retrieved.is_none(), "Deleted family should not be found");
 }
@@ -176,7 +176,7 @@ async fn test_delete_family_nonexistent() {
     let db = setup_test_database().await;
     let nonexistent_id = Uuid::new_v4();
     
-    let result = delete_family(db.pool(), nonexistent_id).await;
+    let result = delete_family(&db, nonexistent_id).await;
     assert!(result.is_ok(), "Delete query should succeed even for nonexistent id");
     assert!(!result.unwrap(), "Delete should return false for nonexistent family");
 }
@@ -187,17 +187,17 @@ async fn test_family_data_integrity() {
     
     // Test with empty name
     let family_empty_name = Family::new("".to_string(), "Test".to_string());
-    let result = insert_family(db.pool(), &family_empty_name).await;
+    let result = insert_family(&db, &family_empty_name).await;
     assert!(result.is_ok(), "Insert should succeed with empty name");
     
     // Test with empty authority
     let family_empty_authority = Family::new("TestFamily".to_string(), "".to_string());
-    let result = insert_family(db.pool(), &family_empty_authority).await;
+    let result = insert_family(&db, &family_empty_authority).await;
     assert!(result.is_ok(), "Insert should succeed with empty authority");
     
     // Test with both empty (edge case)
     let family_empty_both = Family::new("".to_string(), "".to_string());
-    let result = insert_family(db.pool(), &family_empty_both).await;
+    let result = insert_family(&db, &family_empty_both).await;
     assert!(result.is_ok(), "Insert should succeed with both fields empty");
 }
 
@@ -234,23 +234,23 @@ async fn test_multiple_families_same_name() {
     let family1 = Family::new("SameName".to_string(), "Authority1".to_string());
     let family2 = Family::new("SameName".to_string(), "Authority2".to_string());
     
-    let result1 = insert_family(db.pool(), &family1).await;
+    let result1 = insert_family(&db, &family1).await;
     assert!(result1.is_ok(), "Failed to insert family1: {:?}", result1.err());
     
-    let result2 = insert_family(db.pool(), &family2).await;
+    let result2 = insert_family(&db, &family2).await;
     assert!(result2.is_ok(), "Failed to insert family2: {:?}", result2.err());
     
     // Both should be retrievable by name search
-    let found_families = get_families_by_name(db.pool(), "SameName").await
+    let found_families = get_families_by_name(&db, "SameName").await
         .expect("Failed to search for families");
     assert_eq!(found_families.len(), 2, "Should find both families with same name");
     
     // Both should be retrievable by ID
-    let retrieved1 = get_family_by_id(db.pool(), family1.id).await
+    let retrieved1 = get_family_by_id(&db, family1.id).await
         .expect("Failed to retrieve family1")
         .expect("Family1 should exist");
         
-    let retrieved2 = get_family_by_id(db.pool(), family2.id).await
+    let retrieved2 = get_family_by_id(&db, family2.id).await
         .expect("Failed to retrieve family2")
         .expect("Family2 should exist");
     
@@ -268,10 +268,10 @@ async fn test_family_unicode_names() {
         "Tëst Authör".to_string() // Accented characters
     );
     
-    let result = insert_family(db.pool(), &unicode_family).await;
+    let result = insert_family(&db, &unicode_family).await;
     assert!(result.is_ok(), "Failed to insert Unicode family: {:?}", result.err());
     
-    let retrieved = get_family_by_id(db.pool(), unicode_family.id).await
+    let retrieved = get_family_by_id(&db, unicode_family.id).await
         .expect("Failed to retrieve Unicode family")
         .expect("Unicode family should exist");
     
@@ -289,10 +289,10 @@ async fn test_family_long_names() {
     
     let long_family = Family::new(long_name.clone(), long_authority.clone());
     
-    let result = insert_family(db.pool(), &long_family).await;
+    let result = insert_family(&db, &long_family).await;
     assert!(result.is_ok(), "Failed to insert family with long names: {:?}", result.err());
     
-    let retrieved = get_family_by_id(db.pool(), long_family.id).await
+    let retrieved = get_family_by_id(&db, long_family.id).await
         .expect("Failed to retrieve long name family")
         .expect("Long name family should exist");
     

@@ -1,24 +1,21 @@
-use sqlx::SqlitePool;
+use std::sync::Arc;
+use tokio::sync::Mutex;
 use crate::error::DatabaseError;
 
 /// Configuration for the botanical database connection
 #[derive(Debug, Clone)]
 pub struct DatabaseConfig {
-    /// Database connection URL (SQLite file path or :memory:)
+    /// Database file path or ":memory:" for in-memory
     pub url: String,
-    
-    /// Maximum number of connections in the pool
-    pub max_connections: u32,
-    
-    /// Enable foreign key constraints
+
+    /// Enable foreign key constraints (DuckDB enforces by default)
     pub foreign_keys: bool,
 }
 
 impl Default for DatabaseConfig {
     fn default() -> Self {
         Self {
-            url: "sqlite:botanical.db".to_string(),
-            max_connections: 10,
+            url: "botanical.duckdb".to_string(),
             foreign_keys: true,
         }
     }
@@ -28,69 +25,112 @@ impl DatabaseConfig {
     /// Create a new database configuration for in-memory database
     pub fn memory() -> Self {
         Self {
-            url: "sqlite::memory:".to_string(),
-            max_connections: 1,
+            url: ":memory:".to_string(),
             foreign_keys: true,
         }
     }
-    
+
     /// Create a new database configuration for file-based database
     pub fn file<S: AsRef<str>>(path: S) -> Self {
         Self {
-            url: format!("sqlite:{}", path.as_ref()),
-            max_connections: 10,
+            url: path.as_ref().to_string(),
             foreign_keys: true,
         }
     }
 }
 
-/// Main database connection pool for botanical operations
+/// Async wrapper around DuckDB connection
 #[derive(Debug, Clone)]
 pub struct BotanicalDatabase {
-    /// SQLite connection pool
-    pub pool: SqlitePool,
+    conn: Arc<Mutex<duckdb::Connection>>,
 }
 
 impl BotanicalDatabase {
     /// Create a new database connection from configuration
     pub async fn new(config: DatabaseConfig) -> Result<Self, DatabaseError> {
-        let pool = SqlitePool::connect(&config.url).await?;
-        
-        // Enable foreign key constraints if requested
-        if config.foreign_keys {
-            sqlx::query("PRAGMA foreign_keys = ON")
-                .execute(&pool)
-                .await?;
-        }
-        
-        Ok(Self { pool })
+        let url = config.url.clone();
+        let conn = tokio::task::spawn_blocking(move || {
+            duckdb::Connection::open(&url)
+        })
+        .await
+        .map_err(|e| DatabaseError::config(format!("Failed to spawn blocking task: {}", e)))??;
+
+        Ok(Self {
+            conn: Arc::new(Mutex::new(conn)),
+        })
     }
-    
+
     /// Create a new in-memory database for testing
     pub async fn memory() -> Result<Self, DatabaseError> {
         Self::new(DatabaseConfig::memory()).await
     }
-    
+
     /// Run database migrations to set up tables
     pub async fn migrate(&self) -> Result<(), DatabaseError> {
-        crate::migrations::run_migrations(&self.pool).await
+        crate::migrations::run_migrations(&self).await
     }
-    
+
     /// Check if the database connection is healthy
     pub async fn health_check(&self) -> Result<(), DatabaseError> {
-        sqlx::query("SELECT 1")
-            .execute(&self.pool)
-            .await?;
+        let conn = self.conn.lock().await;
+        conn.execute("SELECT 1", [])?;
         Ok(())
     }
-    
-    /// Get a reference to the underlying connection pool
-    pub fn pool(&self) -> &SqlitePool {
-        &self.pool
+
+    /// Get a reference to the underlying connection (for sync operations)
+    pub async fn conn(&self) -> tokio::sync::MutexGuard<'_, duckdb::Connection> {
+        self.conn.lock().await
     }
-    
-    /// Close the database connection pool
+
+
+
+    /// Run a closure within a database transaction using SQL BEGIN/COMMIT/ROLLBACK
+    /// The closure receives a reference to the DuckDB connection
+    /// and should return Ok(()) on success or an error.
+    pub async fn run_in_transaction<F>(&self, f: F) -> Result<(), DatabaseError>
+    where
+        F: FnOnce(&duckdb::Connection) -> Result<(), DatabaseError> + Send + 'static,
+    {
+        let conn = self.conn.clone();
+        tokio::task::spawn_blocking(move || {
+            let conn = conn.blocking_lock();
+            conn.execute("BEGIN TRANSACTION", []).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
+            match f(&conn) {
+                Ok(()) => {
+                    conn.execute("COMMIT", []).map_err(|e| DatabaseError::DuckDbError(e.to_string()))?;
+                    Ok(())
+                }
+                Err(e) => {
+                    let _ = conn.execute("ROLLBACK", []);
+                    Err(e)
+                }
+            }
+        })
+        .await
+        .map_err(|e| DatabaseError::config(format!("Task failed: {}", e)))?
+    }
+
+    /// Close the database connection
     pub async fn close(&self) {
-        self.pool.close().await;
+        // DuckDB connections close when dropped
+        // The Arc<Mutex> will handle cleanup
+    }
+
+    /// Execute a SQL statement
+    pub async fn execute(&self, sql: &str) -> Result<usize, DatabaseError> {
+        let conn = self.conn.lock().await;
+        let affected = conn.execute(sql, [])?;
+        Ok(affected)
+    }
+
+    /// Execute a SQL statement with parameters
+    pub async fn execute_named(
+        &self,
+        sql: &str,
+        params: &[&dyn duckdb::ToSql],
+    ) -> Result<usize, DatabaseError> {
+        let conn = self.conn.lock().await;
+        let affected = conn.execute(sql, params)?;
+        Ok(affected)
     }
 }

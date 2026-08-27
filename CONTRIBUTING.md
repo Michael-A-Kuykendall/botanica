@@ -1,65 +1,58 @@
-# Contributing to botanica
+# Contributing to Botanica
 
-## Open Source, Not Open Contribution
+## Open source, not open contribution
 
-botanica is **open source** but **not open contribution**.
+Botanica is **open source** but **not open contribution**.
 
-- The code is freely available under the MIT license
-- You can fork, modify, use, and learn from it without restriction
+- The code and cultivated knowledge seed are available under **MIT OR Apache-2.0** (see licenses)
+- You may fork, study, use, and redistribute under those licenses
 - **Pull requests are not accepted by default**
-- All architectural, roadmap, and merge decisions are made by the project maintainer
+- Roadmap, schema, data membership (KEEP set), and merges are sole-maintainer decisions
 
-This model keeps the project coherent, maintains clear ownership, and ensures consistent quality. It's the same approach used by SQLite and many infrastructure projects.
+This matches infrastructure projects that stay coherent under one owner (same model as SQLite-style stewardship and other Michael A. Kuykendall repos such as CrabCamera / Auxide).
 
-## How to Contribute
+## Sole developer
 
-If you believe you can contribute meaningfully to botanica:
+**Michael A. Kuykendall** is the only developer and final arbiter for this repository. There is no community merge path and no expectation of multi-maintainer governance.
 
-1. **Email the maintainer first**: [michaelallenkuykendall@gmail.com](mailto:michaelallenkuykendall@gmail.com)
-2. Describe your background and proposed contribution
-3. If there is alignment, a scoped collaboration may be discussed privately
-4. Only after discussion will PRs be considered
+## How to propose work
 
-**Unsolicited PRs will be closed without merge.** This isn't personal, it's how this project operates.
+If you believe a change is worth discussing:
 
-## What We Welcome (via email first)
+1. **Email first**: [michaelallenkuykendall@gmail.com](mailto:michaelallenkuykendall@gmail.com)
+2. Describe background and the specific proposal
+3. If aligned, a scoped collaboration may be arranged privately
+4. Only after that will a PR be considered
 
-- Bug reports with detailed reproduction steps (Issues are fine)
-- Security vulnerability reports (please email directly)
-- Documentation improvements (discuss first)
-- Platform-specific bug fixes (discuss first)
+**Unsolicited PRs will be closed without merge.** That is policy, not personal.
 
-## What We Handle Internally
+## What is welcome without a PR
 
-- New features and architectural changes
-- API design decisions
-- Dependency updates
-- Performance optimizations
-- Cross-platform compatibility work
+| Channel | Welcome |
+|---------|---------|
+| **GitHub Issues** | Bug reports with repro steps; data-quality notes on the KEEP seed |
+| **Email** | Security reports; collaboration proposals |
+| **Forks** | Always free under the license |
 
-## Bug Reports
+## What stays maintainer-only
 
-Bug reports via GitHub Issues are welcome! Please include:
-- Platform (Windows/macOS/Linux) and version
-- Rust version and botanica version
-- Minimal reproduction case
-- Expected vs actual behavior
+- Schema and API design
+- Source selection, scrape pipelines, KEEP membership rules
+- Public data releases and version tags
+- Dependency and architecture changes
+- Brand / positioning
 
-## Why This Model?
+## Code style (if invited)
 
-Building reliable infrastructure requires tight architectural control. This ensures:
-- Consistent design across the ecosystem
-- No ownership disputes or governance overhead
-- Quality control without committee delays
-- Clear direction for the project's future
+- Rust 2021; `cargo fmt` and `cargo clippy`
+- Tests for behavior changes
+- Data changes must update MANIFEST / quality reports where relevant
+- Never ship L3 personal inventory rows in the public seed
 
-The code is open. The governance is centralized. This is intentional.
+## Code of conduct
 
-## Recognition
+See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
-Helpful bug reports and community feedback are acknowledged in release notes.
-If email collaboration leads to merged work, attribution will be given appropriately.
+## Sponsorship
 
----
-
-**Maintainer**: Michael A. Kuykendall
+Botanica stays free. Optional support: [SPONSORS.md](SPONSORS.md) and GitHub Sponsors.
