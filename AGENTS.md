@@ -12,6 +12,29 @@ This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get sta
 - Version cut only in **Round 6** (one coordinated data tag + crate bump)
 - Do not freestyle sources outside `docs/EXECUTION_PLAN.md` / PRODUCT_ROUNDS without updating those docs
 
+## Versioning (the rule — read before touching version numbers)
+
+Three digits = **major.minor.patch** (left to right). A **patch** (bug fix, docs, CI fix,
+minor edit) bumps the **rightmost** digit: `0.3.0 → 0.3.1`. A **minor** (feature / API or
+schema addition) bumps the **middle**: `0.3.0 → 0.4.0`. Only a real, justified stable
+release bumps **major** — never a CI fix, never a doc change, never "because it's
+Tuesday."
+
+Rules:
+- **We stay in `0.x`.** `1.0.0` means "stable API, real users depend on it." We have
+  neither, so no major bump, ever, until that is genuinely true.
+- **Tag only real releases.** Each CI fix, pipeline edit, or tiny correction is a
+  **patch** (`0.3.x → 0.3.(x+1)`), NOT a new tag and NOT a minor. Never tag a CI fix as
+  a version.
+- **One coordinated cut** at Round 6/V10: changelog entry + tag + release assets together.
+- Counter-example to avoid (from ContextLite): an AI bumping `0.9-alpha1..alpha10` then
+  `v1.0.x` dozens of times for every CI fix — a version-number train wreck. Do not
+  reproduce it here.
+
+Current state (record): `0.3.0` is the crate version at HEAD; last tagged release is
+`v0.2.0`; `0.3.0` was bumped (minor, justified — schema 0.4 + features) but never
+tagged. V10 tags `v0.3.0`; later edits go to `0.3.1`, etc.
+
 ## Quick Reference
 
 ```bash
