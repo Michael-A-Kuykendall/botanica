@@ -230,3 +230,8 @@ Deferred product path; not required for Botanica OSS cut.
 | 2026-07-09 | R0 complete | USDA 62k + HasChar 4480 + fail-fast; beads tree for R1–R7 created |
 | 2026-07-09 | R1 next | Scoreboard before POWO bulk |
 | 2026-07-09 | **R1–R4 data pass** | Quality script + baseline; POWO dense ~2.6k (uses API ceiling); GBIF vern full missing-EN; enrich+silver. See `quality-post_r2_r3.json` + ceilings. |
+| 2026-07-10 | **VINYL epic `bot-dh8` opened** | Goal: definitive global cultivated seed (data-v1.0.0). G (gold curation mart) done; V1/V2/V3 done. |
+| 2026-07-10 | V1 GOLD | `scripts/build_curation.py` + `docs/GOLD_CURATION.md`; KEEP now driven by `is_definitive`. Parity 18552. |
+| 2026-07-10 | V2 BACKBONE | Inserted 44,508 GRIN taxa not in USDA → warehouse 62,558→107,066. `scripts/ingest_grin_backbone.py`. |
+| 2026-07-10 | V3 RE-SCORE | Added `is_cultivated_scope`. **Vinyl universe = 63,074** (GRIN-driven); definitive subset 18,552. KEEP re-exported for both gates. |
+| 2026-07-10 | V4–V10 next | Depth remains shallow on new 44k (EN vern 26.9%, 3+Tier1 3.3%). POWO-full (V4), uses (V6), media (V8), depth (V9), release (V10) pending. |

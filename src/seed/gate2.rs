@@ -1,4 +1,9 @@
-//! Ingest USDA gate2 normalized JSON (bronze) into L1/L2.
+//! Ingest USDA PLANTS gate2 normalized JSON (bronze) into L1/L2 horticultural/ecological traits.
+//!
+//! NOTE: cultivated scope is owned by the gold curation mart (`build_curation.py` ->
+//! `is_cultivated_scope`), driven by real cultivation signals (grin/faostat/wcups/itpgrfa/
+//! trait/cultivation). USDA PLANTS publishes no cultivated-status field via its JSON API, so
+//! gate2 carries horticultural/ecological traits only and never asserts `is_cultivated`.
 
 use crate::database::BotanicalDatabase;
 use crate::error::DatabaseError;
@@ -37,7 +42,6 @@ struct HortTraits {
     duration: Vec<String>,
     mature_height_cm: Option<f64>,
     toxicity: Option<String>,
-    is_cultivated: Option<bool>,
 }
 
 #[derive(Debug, Default, Deserialize)]
@@ -418,7 +422,6 @@ async fn insert_text_traits(
         }
     }
 
-    let _ = rec.horticultural_traits.is_cultivated;
     Ok(n)
 }
 

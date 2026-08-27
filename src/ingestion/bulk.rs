@@ -216,6 +216,7 @@ pub async fn bulk_ingest_cultivated(
             println!("[{}/{}] {}", idx, to_ingest.len(), row.scientific_name);
         }
 
+        let err_sci = row.scientific_name.clone();
         let row = row.clone();
         let outcome = db
             .run_in_transaction(move |conn| {
@@ -312,7 +313,7 @@ pub async fn bulk_ingest_cultivated(
                 accepted += 1;
             }
             Err(e) => {
-                eprintln!("error on {}: {}", row.scientific_name, e);
+                eprintln!("error on {}: {}", err_sci, e);
                 quarantined += 1;
             }
         }

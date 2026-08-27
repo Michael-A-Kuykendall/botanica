@@ -1,0 +1,13 @@
+{
+  "n": 5,
+  "pct_matched": 20.0,
+  "pct_useful_enrichment": 20.0,
+  "pct_synonyms": 0.0,
+  "pct_locations": 20.0,
+  "pct_lifeform": 20.0,
+  "pct_climate": 20.0,
+  "pct_uses": 0.0,
+  "uses_api_ceiling": true,
+  "uses_note": "POWO api/2/taxon does not expose plant uses (2026); gate uses lifeform/climate/locations/synonyms",
+  "gate_pass_useful_ge_50": false
+}

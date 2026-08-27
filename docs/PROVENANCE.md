@@ -47,10 +47,9 @@ Exact counts: query `data/silver_keep/provenance.parquet` and `source` columns, 
 
 ## KEEP rule vs provenance
 
-A species is in **`silver_keep/`** if it has:
-
-- hort payload (`traits` / `cultivation_requirements` / `uses`), **or**
-- identifier from **`grin`** or **`faostat`**
+A species is in **`silver_keep/`** if it is **`is_definitive`** in the gold curation mart
+(`docs/GOLD_CURATION.md`) — i.e. ≥2 independent cultivation/use signals. The mart is the
+definitive gate; `export_keep_set.py` reads it when present (`--no-curation` for legacy).
 
 That is a **membership filter**, not a substitute for field-level provenance. A GRIN-only species may have little care data but is still “in” because of the GRIN id.
 

@@ -1,0 +1,20 @@
+{
+  "source": "Kew World Checklist of Useful Plant Species 2020 (PDF)",
+  "pdf": "C:\\Users\\micha\\repos\\botanica\\data\\bronze\\allowlist\\wcups\\World_Checklist_of_Useful_Plant_Species_2020.pdf",
+  "total_entries": 40240,
+  "distinct_names": 39668,
+  "entries_with_family": 9304,
+  "use_code_histogram": {
+    "AF": 4434,
+    "EU": 8982,
+    "FU": 2528,
+    "GS": 5208,
+    "HF": 7013,
+    "IF": 1040,
+    "MA": 13660,
+    "ME": 26642,
+    "PO": 3014,
+    "SU": 2596
+  },
+  "note": "Two-letter use codes map to 10 EBDCS categories (ME medicines, HF human food, etc)."
+}

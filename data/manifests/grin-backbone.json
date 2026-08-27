@@ -1,0 +1,10 @@
+{
+  "built_at": "2026-07-10T14:13:47.410679+00:00",
+  "source": "GRIN Taxonomy (GBIF-hosted zip)",
+  "grin_accepted_species": 61984,
+  "warehouse_before": 62558,
+  "warehouse_after": 107066,
+  "new_species_inserted": 44508,
+  "unresolved_no_family": 157,
+  "note": "New taxa resolved genus->family from GRIN parentID; no Unknown taxa invented."
+}

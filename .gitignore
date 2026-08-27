@@ -28,7 +28,7 @@ Thumbs.db
 # Large bronze rebuildables (regenerate via scripts / PlantSearch)
 /data/bronze/usda_catalog/plant_search_pct.json
 /data/bronze/gbif_vern/full/
-/data/bronze/powo/full/raw/
+/data/bronze/powo/full/
 /data/bronze/powo/sample/raw/
 /data/bronze/ff_debug/
 /data/bronze/ff_smoke/
@@ -54,3 +54,12 @@ punch_analysis.json
 
 /data/manifests/botanica-keep-data-*.zip
 
+# Local AI session / state stores (not project source)
+/.opencode/
+/.openstate
+
+
+# Beads derived runtime DB / backups (source of truth is .beads/issues.jsonl)
+/.beads/embeddeddolt/
+/.beads/backup/
+/.beads/.auto-import-issues.jsonl

@@ -5,7 +5,8 @@
 | `bronze/` | Raw source payloads (local; large dumps may be gitignored) |
 | `lookups/` | Curated maps (e.g. genus → family) |
 | `silver/` | Full warehouse parquet (L1+L2; includes non-cultivated taxonomy bulk) |
-| **`silver_keep/`** | **Public product** — cultivated KEEP only (traits ∨ cult.req ∨ uses) |
+| `gold/` | **Gold curation mart** — `species_curation.parquet` (definitive signal score + `is_definitive`) |
+| **`silver_keep/`** | **Public product** — cultivated KEEP, driven by `gold/species_curation.is_definitive` |
 | `manifests/` | MANIFEST + quality + keep-membership json |
 | `botanica-cultivated-v*.duckdb` | Optional local engine (usually gitignored) |
 

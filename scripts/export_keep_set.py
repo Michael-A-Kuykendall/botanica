@@ -44,6 +44,10 @@ CHILD_TABLES = [
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", default="baseline")
+    ap.add_argument("--no-curation", action="store_true",
+                    help="Ignore species_curation mart; use legacy traits/cult.req/uses/grin|faostat rule")
+    ap.add_argument("--vinyl", action="store_true",
+                    help="Gate KEEP on is_cultivated_scope (all cultivated taxa) instead of stricter is_definitive")
     ap.add_argument(
         "--db",
         type=Path,
@@ -101,33 +105,61 @@ def main() -> int:
                 sql = sql.replace(f"JOIN {t}", f"JOIN src.{t}")
         return con.execute(sql)
 
+    # Detect gold curation mart (the definitive gate, VINYL V1)
+    sp_tbl = "src.species" if src else "species"
+    has_curation = False
+    if not args.no_curation:
+        try:
+            has_curation = con.execute(
+                "SELECT COUNT(*) FROM information_schema.tables WHERE table_name='species_curation'"
+            ).fetchone()[0] > 0
+        except Exception:
+            has_curation = False
+
     # Materialize KEEP ids
-    con.execute(
-        """
-        CREATE OR REPLACE TEMP TABLE keep_ids AS
-        SELECT DISTINCT s.id AS species_id
-        FROM """
-        + ("src.species" if src else "species")
-        + """ s
-        WHERE EXISTS (
-            SELECT 1 FROM """
-        + ("src.traits" if src else "traits")
-        + """ t WHERE t.species_id = s.id
-        ) OR EXISTS (
-            SELECT 1 FROM """
-        + ("src.cultivation_requirements" if src else "cultivation_requirements")
-        + """ c WHERE c.species_id = s.id
-        ) OR EXISTS (
-            SELECT 1 FROM """
-        + ("src.uses" if src else "uses")
-        + """ u WHERE u.species_id = s.id
-        ) OR EXISTS (
-            SELECT 1 FROM """
-        + ("src.species_identifiers" if src else "species_identifiers")
-        + """ i WHERE i.species_id = s.id AND lower(i.source) IN ('grin','faostat')
+    if has_curation:
+        # Definitive gate: drive KEEP from the scored gold curation mart.
+        cur_tbl = "src.species_curation" if src else "species_curation"
+        gate_col = "is_cultivated_scope" if args.vinyl else "is_definitive"
+        con.execute(
+            f"""
+            CREATE OR REPLACE TEMP TABLE keep_ids AS
+            SELECT DISTINCT c.species_id
+            FROM {cur_tbl} c
+            WHERE c.{gate_col}
+            """
         )
-        """
-    )
+        keep_rule = ("is_cultivated_scope (gold curation mart: definitive OR any cultivated signal)"
+                     if args.vinyl else
+                     "is_definitive (gold curation mart: >=2 independent signals)")
+    else:
+        con.execute(
+            """
+            CREATE OR REPLACE TEMP TABLE keep_ids AS
+            SELECT DISTINCT s.id AS species_id
+            FROM """
+            + sp_tbl
+            + """ s
+            WHERE EXISTS (
+                SELECT 1 FROM """
+            + ("src.traits" if src else "traits")
+            + """ t WHERE t.species_id = s.id
+            ) OR EXISTS (
+                SELECT 1 FROM """
+            + ("src.cultivation_requirements" if src else "cultivation_requirements")
+            + """ c WHERE c.species_id = s.id
+            ) OR EXISTS (
+                SELECT 1 FROM """
+            + ("src.uses" if src else "uses")
+            + """ u WHERE u.species_id = s.id
+            ) OR EXISTS (
+                SELECT 1 FROM """
+            + ("src.species_identifiers" if src else "species_identifiers")
+            + """ i WHERE i.species_id = s.id AND lower(i.source) IN ('grin','faostat')
+            )
+            """
+        )
+        keep_rule = "legacy: traits OR cultivation_requirements OR uses OR grin|faostat identifier"
     keep_n = con.execute("SELECT COUNT(*) FROM keep_ids").fetchone()[0]
     all_n = con.execute(
         f"SELECT COUNT(*) FROM {'src.species' if src else 'species'}"
@@ -220,7 +252,7 @@ def main() -> int:
     ).fetchall()
     membership = {
         "built_at": datetime.now(timezone.utc).isoformat(),
-        "rule": "KEEP = traits OR cultivation_requirements OR uses OR grin|faostat identifier",
+        "rule": keep_rule,
         "all_species": all_n,
         "keep_species": keep_n,
         "drop_species": all_n - keep_n,
@@ -293,7 +325,7 @@ def main() -> int:
         "built_at": quality["built_at"],
         "engine": "parquet",
         "schema_version": "0.4.0",
-        "scope": "KEEP = traits OR cultivation_requirements OR uses (negative filter on USDA warehouse)",
+        "scope": keep_rule,
         "counts": counts,
         "l3_rows": 0,
         "silver_files": sorted(
