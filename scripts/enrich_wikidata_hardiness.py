@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """C1: Wikidata hardiness (P8193/P8194) for KEEP species via SPARQL. CC0."""
+
 from __future__ import annotations
 
 import json
@@ -48,7 +49,7 @@ def label_value(binding_val: str) -> str:
 def main() -> int:
     db = ROOT / "data/botanica-cultivated-v0.1.duckdb"
     con = duckdb.connect(str(db))
-    keep_sp = ROOT / "data/silver_keep/species.parquet"
+    keep_sp = ROOT / "data/silver_keep/species" / "*.parquet"
     names = [
         r[0]
         for r in con.execute(
@@ -156,7 +157,7 @@ def main() -> int:
                 with_any_hardy.add(sid)
 
         print(
-            f"  {i+len(chunk)}/{len(names)} sparql={len(rows)} "
+            f"  {i + len(chunk)}/{len(names)} sparql={len(rows)} "
             f"zone_spp={len(with_any_zone)} hardy_spp={len(with_any_hardy)}",
             flush=True,
         )

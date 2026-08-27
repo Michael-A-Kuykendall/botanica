@@ -8,6 +8,7 @@ This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get sta
 - **Queue:** `bd ready` / `bd show <id>`
 - Before work, state: **Round N, step Rx.y — exit is …**
 - New feeds: always fail-fast **debug → smoke → full** (`docs/SCRAPE_FAIL_FAST.md`)
+- **Parquet:** every table ships as `<dir>/<table>/part-NNNNNN.parquet` with each part ≤ **40 MB** (under GitHub's 50 MB warning / 100 MB hard limit) — **no Git LFS**. Read via `read_parquet('<dir>/<table>/*.parquet')`. Writers MUST route output through `scripts/shard_parquet.py`; CI enforces `--verify-only`. See `docs/DATA_PARQUET.md`.
 - Version cut only in **Round 6** (one coordinated data tag + crate bump)
 - Do not freestyle sources outside `docs/EXECUTION_PLAN.md` / PRODUCT_ROUNDS without updating those docs
 

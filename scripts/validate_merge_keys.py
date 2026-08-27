@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """B2: report duplicate risk on scientific_name and identifier collisions."""
+
 from __future__ import annotations
 
 import json
@@ -19,10 +20,10 @@ def main() -> int:
         sp, sid = "src.species", "src.species_identifiers"
     else:
         con.execute(
-            f"CREATE VIEW species AS SELECT * FROM read_parquet('{(ROOT / 'data/silver/species.parquet').as_posix()}')"
+            f"CREATE VIEW species AS SELECT * FROM read_parquet('{(ROOT / 'data/silver/species').as_posix()}/*.parquet')"
         )
         con.execute(
-            f"CREATE VIEW species_identifiers AS SELECT * FROM read_parquet('{(ROOT / 'data/silver/species_identifiers.parquet').as_posix()}')"
+            f"CREATE VIEW species_identifiers AS SELECT * FROM read_parquet('{(ROOT / 'data/silver/species_identifiers').as_posix()}/*.parquet')"
         )
         sp, sid = "species", "species_identifiers"
 
@@ -46,7 +47,9 @@ def main() -> int:
     ).fetchall()
     report = {
         "policy": "Merge: (source, external_id) unique → else lower(scientific_name) → quarantine",
-        "duplicate_scientific_names_top": [{"name": n, "count": c} for n, c in dup_names],
+        "duplicate_scientific_names_top": [
+            {"name": n, "count": c} for n, c in dup_names
+        ],
         "duplicate_identifier_pairs": [
             {"source": s, "external_id": e, "count": c} for s, e, c in dup_ids
         ],

@@ -10,6 +10,7 @@ Reads data/silver/*.parquet (or DuckDB), writes:
   data/manifests/keep-membership.json
   data/manifests/quality-keep-<tag>.json (via coverage SQL on keep)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -44,10 +45,16 @@ CHILD_TABLES = [
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--tag", default="baseline")
-    ap.add_argument("--no-curation", action="store_true",
-                    help="Ignore species_curation mart; use legacy traits/cult.req/uses/grin|faostat rule")
-    ap.add_argument("--vinyl", action="store_true",
-                    help="Gate KEEP on is_cultivated_scope (all cultivated taxa) instead of stricter is_definitive")
+    ap.add_argument(
+        "--no-curation",
+        action="store_true",
+        help="Ignore species_curation mart; use legacy traits/cult.req/uses/grin|faostat rule",
+    )
+    ap.add_argument(
+        "--vinyl",
+        action="store_true",
+        help="Gate KEEP on is_cultivated_scope (all cultivated taxa) instead of stricter is_definitive",
+    )
     ap.add_argument(
         "--db",
         type=Path,
@@ -110,9 +117,12 @@ def main() -> int:
     has_curation = False
     if not args.no_curation:
         try:
-            has_curation = con.execute(
-                "SELECT COUNT(*) FROM information_schema.tables WHERE table_name='species_curation'"
-            ).fetchone()[0] > 0
+            has_curation = (
+                con.execute(
+                    "SELECT COUNT(*) FROM information_schema.tables WHERE table_name='species_curation'"
+                ).fetchone()[0]
+                > 0
+            )
         except Exception:
             has_curation = False
 
@@ -129,9 +139,11 @@ def main() -> int:
             WHERE c.{gate_col}
             """
         )
-        keep_rule = ("is_cultivated_scope (gold curation mart: definitive OR any cultivated signal)"
-                     if args.vinyl else
-                     "is_definitive (gold curation mart: >=2 independent signals)")
+        keep_rule = (
+            "is_cultivated_scope (gold curation mart: definitive OR any cultivated signal)"
+            if args.vinyl
+            else "is_definitive (gold curation mart: >=2 independent signals)"
+        )
     else:
         con.execute(
             """
@@ -171,7 +183,7 @@ def main() -> int:
     con.execute(
         f"""
         COPY (
-          SELECT s.* FROM {'src.species' if src else 'species'} s
+          SELECT s.* FROM {"src.species" if src else "species"} s
           INNER JOIN keep_ids k ON k.species_id = s.id
         ) TO '{sp_path}' (FORMAT PARQUET)
         """
@@ -182,8 +194,8 @@ def main() -> int:
     con.execute(
         f"""
         COPY (
-          SELECT DISTINCT g.* FROM {'src.genera' if src else 'genera'} g
-          INNER JOIN {'src.species' if src else 'species'} s ON s.genus_id = g.id
+          SELECT DISTINCT g.* FROM {"src.genera" if src else "genera"} g
+          INNER JOIN {"src.species" if src else "species"} s ON s.genus_id = g.id
           INNER JOIN keep_ids k ON k.species_id = s.id
         ) TO '{gen_path}' (FORMAT PARQUET)
         """
@@ -192,9 +204,9 @@ def main() -> int:
     con.execute(
         f"""
         COPY (
-          SELECT DISTINCT f.* FROM {'src.families' if src else 'families'} f
-          INNER JOIN {'src.genera' if src else 'genera'} g ON g.family_id = f.id
-          INNER JOIN {'src.species' if src else 'species'} s ON s.genus_id = g.id
+          SELECT DISTINCT f.* FROM {"src.families" if src else "families"} f
+          INNER JOIN {"src.genera" if src else "genera"} g ON g.family_id = f.id
+          INNER JOIN {"src.species" if src else "species"} s ON s.genus_id = g.id
           INNER JOIN keep_ids k ON k.species_id = s.id
         ) TO '{fam_path}' (FORMAT PARQUET)
         """
@@ -234,7 +246,7 @@ def main() -> int:
         qpath = str((OUT / "ingest_quarantine.parquet").resolve()).replace("\\", "/")
         con.execute(
             f"""
-            COPY (SELECT * FROM {'src.ingest_quarantine' if src else 'ingest_quarantine'} LIMIT 0)
+            COPY (SELECT * FROM {"src.ingest_quarantine" if src else "ingest_quarantine"} LIMIT 0)
             TO '{qpath}' (FORMAT PARQUET)
             """
         )
@@ -245,7 +257,7 @@ def main() -> int:
     names = con.execute(
         f"""
         SELECT s.scientific_name, s.id
-        FROM {'src.species' if src else 'species'} s
+        FROM {"src.species" if src else "species"} s
         INNER JOIN keep_ids k ON k.species_id = s.id
         ORDER BY 1
         """
@@ -267,7 +279,7 @@ def main() -> int:
     # quality on KEEP
     en = con.execute(
         f"""
-        SELECT COUNT(DISTINCT v.species_id) FROM {'src.vernacular_names' if src else 'vernacular_names'} v
+        SELECT COUNT(DISTINCT v.species_id) FROM {"src.vernacular_names" if src else "vernacular_names"} v
         INNER JOIN keep_ids k ON k.species_id = v.species_id
         WHERE lower(v.language_code) IN ('en','eng','en-us','en-gb')
         """
@@ -276,15 +288,15 @@ def main() -> int:
         f"""
         WITH flags AS (
           SELECT k.species_id,
-            (EXISTS (SELECT 1 FROM {'src.cultivation_requirements' if src else 'cultivation_requirements'} c
+            (EXISTS (SELECT 1 FROM {"src.cultivation_requirements" if src else "cultivation_requirements"} c
               WHERE c.species_id=k.species_id AND lower(c.requirement_type)='soil'
               AND c.value_text IS NOT NULL AND c.value_text!=''))::INT AS soil,
-            (EXISTS (SELECT 1 FROM {'src.cultivation_requirements' if src else 'cultivation_requirements'} c
+            (EXISTS (SELECT 1 FROM {"src.cultivation_requirements" if src else "cultivation_requirements"} c
               WHERE c.species_id=k.species_id AND lower(c.requirement_type)='moisture'
               AND c.value_text IS NOT NULL AND c.value_text!=''))::INT AS moist,
-            (EXISTS (SELECT 1 FROM {'src.traits' if src else 'traits'} t
+            (EXISTS (SELECT 1 FROM {"src.traits" if src else "traits"} t
               WHERE t.species_id=k.species_id AND lower(t.trait_name) IN ('mature_height','height','mature_height_cm')))::INT AS ht,
-            (EXISTS (SELECT 1 FROM {'src.traits' if src else 'traits'} t
+            (EXISTS (SELECT 1 FROM {"src.traits" if src else "traits"} t
               WHERE t.species_id=k.species_id AND lower(t.trait_name)='toxicity'))::INT AS tox
           FROM keep_ids k
         )
@@ -329,21 +341,26 @@ def main() -> int:
         "counts": counts,
         "l3_rows": 0,
         "silver_files": sorted(
-            str(p.relative_to(ROOT)).replace("\\", "/") for p in OUT.glob("*.parquet")
+            str(p.relative_to(ROOT)).replace("\\", "/") for p in OUT.rglob("*.parquet")
         ),
         "membership": "data/manifests/keep-membership.json",
         "quality": str(qp.relative_to(ROOT)).replace("\\", "/"),
         "sources_note": "See data/manifests/botanica-cultivated-v0.1.json for upstream sources; KEEP is a filter view",
         "github_packaging": {
-            "silver_total_full_mb_approx": 61,
+            "silver_total_full_mb_approx": 126,
             "keep_dir": "data/silver_keep",
             "under_github_file_limits": True,
-            "largest_full_file_mb": 21,
+            "per_part_target_mb": 40,
+            "largest_part_mb": "verified by scripts/shard_parquet.py --verify-only in CI",
         },
     }
     pp = MANIFESTS / f"botanica-keep-{args.tag}.json"
     pp.write_text(json.dumps(product, indent=2), encoding="utf-8")
     print(f"wrote {pp}")
+    # Normalize any flat parquet into sharded <table>/part-* dirs (see docs/DATA_PARQUET.md)
+    from shard_parquet import shard as shard_out, TARGET_MB_DEFAULT
+
+    shard_out(OUT, TARGET_MB_DEFAULT, con)
     con.close()
     return 0
 

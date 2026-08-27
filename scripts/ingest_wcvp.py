@@ -191,9 +191,12 @@ def apply_all(con: duckdb.DuckDBPyConnection) -> dict:
 
 
 def export_silver(con: duckdb.DuckDBPyConnection) -> None:
+    from shard_parquet import shard as shard_out, TARGET_MB_DEFAULT
+
     for t in ("species_identifiers", "synonyms", "distribution_regions", "species"):
         p = str((ROOT / "data/silver" / f"{t}.parquet").resolve()).replace("\\", "/")
         con.execute(f"COPY (SELECT * FROM {t}) TO '{p}' (FORMAT PARQUET)")
+    shard_out(ROOT / "data/silver", TARGET_MB_DEFAULT, con)
 
 
 def main() -> int:

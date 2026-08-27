@@ -14,6 +14,7 @@ Signals: each new species also gets a species_identifiers row source='grin',
 Fail-fast: default --dry-run prints counts only. --apply does a 50-sample
 insert inside a transaction (ROLLBACK) to validate, then the full bulk commit.
 """
+
 from __future__ import annotations
 import argparse, csv, json, uuid
 from datetime import datetime, timezone
@@ -37,11 +38,13 @@ def load_grin_species() -> list[dict]:
             name = (row.get("col:scientificName") or "").strip()
             if not name:
                 continue
-            out.append({
-                "grin_id": (row.get("col:ID") or "").strip(),
-                "scientific_name": name,
-                "authorship": (row.get("col:authorship") or "").strip(),
-            })
+            out.append(
+                {
+                    "grin_id": (row.get("col:ID") or "").strip(),
+                    "scientific_name": name,
+                    "authorship": (row.get("col:authorship") or "").strip(),
+                }
+            )
     return out
 
 
@@ -51,9 +54,14 @@ def load_grin_genus_family() -> dict[str, str]:
     with GRIN_TSV.open(encoding="utf-8", errors="replace", newline="") as f:
         r = csv.DictReader(f, delimiter="\t")
         for row in r:
-            rows.append((row.get("col:ID"), (row.get("col:rank") or "").lower(),
-                         (row.get("col:parentID") or "").strip(),
-                         (row.get("col:scientificName") or "").strip()))
+            rows.append(
+                (
+                    row.get("col:ID"),
+                    (row.get("col:rank") or "").lower(),
+                    (row.get("col:parentID") or "").strip(),
+                    (row.get("col:scientificName") or "").strip(),
+                )
+            )
     by_id = {rid: (rank, parent, name) for rid, rank, parent, name in rows}
     g2f = {}
     for rid, rank, parent, name in rows:
@@ -77,20 +85,31 @@ def load_grin_genus_family() -> dict[str, str]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="counts only (default)")
-    ap.add_argument("--apply", action="store_true", help="insert after 50-sample pre-check")
+    ap.add_argument(
+        "--apply", action="store_true", help="insert after 50-sample pre-check"
+    )
     args = ap.parse_args()
     if not GRIN_TSV.exists():
-        print("missing", GRIN_TSV); return 2
+        print("missing", GRIN_TSV)
+        return 2
 
     grin = load_grin_species()
     g2f = load_grin_genus_family()
     print(f"GRIN accepted species: {len(grin)}; GRIN genus->family map: {len(g2f)}")
 
     con = duckdb.connect(str(DB))
-    wh_names = {n for (n,) in con.execute(
-        "SELECT lower(trim(scientific_name)) FROM species WHERE scientific_name IS NOT NULL").fetchall()}
-    wh_gen = {n: i for i, n in con.execute("SELECT lower(name), id FROM genera").fetchall()}
-    wh_fam = {n: i for i, n in con.execute("SELECT lower(name), id FROM families").fetchall()}
+    wh_names = {
+        n
+        for (n,) in con.execute(
+            "SELECT lower(trim(scientific_name)) FROM species WHERE scientific_name IS NOT NULL"
+        ).fetchall()
+    }
+    wh_gen = {
+        n: i for i, n in con.execute("SELECT lower(name), id FROM genera").fetchall()
+    }
+    wh_fam = {
+        n: i for i, n in con.execute("SELECT lower(name), id FROM families").fetchall()
+    }
 
     new = [g for g in grin if g["scientific_name"].lower() not in wh_names]
     print(f"Already in warehouse: {len(grin) - len(new)}")
@@ -114,11 +133,13 @@ def main() -> int:
         if genus in wh_gen:
             gen_in_wh += 1
         elif genus not in seen_gen:
-            seen_gen.add(genus); need_gen_insert += 1
+            seen_gen.add(genus)
+            need_gen_insert += 1
         if fam.lower() in wh_fam:
             fam_in_wh += 1
         elif fam.lower() not in seen_fam:
-            seen_fam.add(fam.lower()); need_fam_insert += 1
+            seen_fam.add(fam.lower())
+            need_fam_insert += 1
         if len(sample_new) < 50:
             sample_new.append(g)
 
@@ -140,27 +161,55 @@ def main() -> int:
         _bulk_insert(con, sample_new, g2f, wh_gen, wh_fam)
     except Exception as e:
         con.execute("ROLLBACK")
-        print("PRE-CHECK FAILED:", e); con.close(); return 1
-    added = con.execute("SELECT COUNT(*) FROM species WHERE id LIKE 'grin_tmp%'").fetchone()[0]
+        print("PRE-CHECK FAILED:", e)
+        con.close()
+        return 1
+    added = con.execute(
+        "SELECT COUNT(*) FROM species WHERE id LIKE 'grin_tmp%'"
+    ).fetchone()[0]
     con.execute("ROLLBACK")
-    print(f"PRE-CHECK OK: 50-sample inserted then rolled back (temp rows now {added}). Proceeding to full bulk.")
+    print(
+        f"PRE-CHECK OK: 50-sample inserted then rolled back (temp rows now {added}). Proceeding to full bulk."
+    )
 
     # ---- full bulk ----
-    existing_grin = {e for (e,) in con.execute(
-        "SELECT external_id FROM species_identifiers WHERE source='grin'").fetchall()}
+    existing_grin = {
+        e
+        for (e,) in con.execute(
+            "SELECT external_id FROM species_identifiers WHERE source='grin'"
+        ).fetchall()
+    }
     before = con.execute("SELECT COUNT(*) FROM species").fetchone()[0]
-    n_sp, n_gen, n_fam, n_id = _bulk_insert(con, new, g2f, wh_gen, wh_fam, tmp=False,
-                                            existing_grin=existing_grin)
+    n_sp, n_gen, n_fam, n_id = _bulk_insert(
+        con, new, g2f, wh_gen, wh_fam, tmp=False, existing_grin=existing_grin
+    )
     after = con.execute("SELECT COUNT(*) FROM species").fetchone()[0]
-    print(f"\nFULL BULK: species +{after-before} (inserted {n_sp}), genera +{n_gen}, families +{n_fam}, grin ids +{n_id}")
-    con.execute("""COPY (SELECT * FROM species) TO ? (FORMAT PARQUET)""",
-                [str((ROOT/'data/silver/species.parquet').resolve()).replace('\\','/')])
-    con.execute("""COPY (SELECT * FROM genera) TO ? (FORMAT PARQUET)""",
-                [str((ROOT/'data/silver/genera.parquet').resolve()).replace('\\','/')])
-    con.execute("""COPY (SELECT * FROM families) TO ? (FORMAT PARQUET)""",
-                [str((ROOT/'data/silver/families.parquet').resolve()).replace('\\','/')])
-    con.execute("""COPY (SELECT * FROM species_identifiers) TO ? (FORMAT PARQUET)""",
-                [str((ROOT/'data/silver/species_identifiers.parquet').resolve()).replace('\\','/')])
+    print(
+        f"\nFULL BULK: species +{after - before} (inserted {n_sp}), genera +{n_gen}, families +{n_fam}, grin ids +{n_id}"
+    )
+    con.execute(
+        """COPY (SELECT * FROM species) TO ? (FORMAT PARQUET)""",
+        [str((ROOT / "data/silver/species.parquet").resolve()).replace("\\", "/")],
+    )
+    con.execute(
+        """COPY (SELECT * FROM genera) TO ? (FORMAT PARQUET)""",
+        [str((ROOT / "data/silver/genera.parquet").resolve()).replace("\\", "/")],
+    )
+    con.execute(
+        """COPY (SELECT * FROM families) TO ? (FORMAT PARQUET)""",
+        [str((ROOT / "data/silver/families.parquet").resolve()).replace("\\", "/")],
+    )
+    con.execute(
+        """COPY (SELECT * FROM species_identifiers) TO ? (FORMAT PARQUET)""",
+        [
+            str((ROOT / "data/silver/species_identifiers.parquet").resolve()).replace(
+                "\\", "/"
+            )
+        ],
+    )
+    from shard_parquet import shard as shard_out, TARGET_MB_DEFAULT
+
+    shard_out(ROOT / "data/silver", TARGET_MB_DEFAULT, con)
     report = {
         "built_at": datetime.now(timezone.utc).isoformat(),
         "source": "GRIN Taxonomy (GBIF-hosted zip)",
@@ -171,7 +220,9 @@ def main() -> int:
         "unresolved_no_family": no_family,
         "note": "New taxa resolved genus->family from GRIN parentID; no Unknown taxa invented.",
     }
-    (ROOT/'data/manifests/grin-backbone.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
+    (ROOT / "data/manifests/grin-backbone.json").write_text(
+        json.dumps(report, indent=2), encoding="utf-8"
+    )
     print(json.dumps(report, indent=2))
     con.close()
     return 0
@@ -181,8 +232,8 @@ def _bulk_insert(con, items, g2f, wh_gen, wh_fam, tmp=False, existing_grin=None)
     prefix = "grin_tmp" if tmp else "grin"
     existing_grin = existing_grin or set()
     # collect needed families/genera
-    need_fam = {}   # lower name -> id
-    need_gen = {}   # lower name -> (id, family_id)
+    need_fam = {}  # lower name -> id
+    need_gen = {}  # lower name -> (id, family_id)
     sp_rows, id_rows = [], []
     for g in items:
         if g["grin_id"] in existing_grin:
@@ -224,14 +275,17 @@ def _bulk_insert(con, items, g2f, wh_gen, wh_fam, tmp=False, existing_grin=None)
     # insert species
     con.executemany(
         "INSERT INTO species (id, genus_id, specific_epithet, authority, scientific_name, taxonomic_status, rank) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?)", sp_rows)
+        "VALUES (?, ?, ?, ?, ?, ?, ?)",
+        sp_rows,
+    )
     # insert identifiers (idempotent)
     for r in id_rows:
         con.execute(
             "INSERT INTO species_identifiers (id, species_id, source, external_id, is_primary) "
             "SELECT ?, ?, 'grin', ?, ? "
             "WHERE NOT EXISTS (SELECT 1 FROM species_identifiers WHERE source='grin' AND external_id=?)",
-            [r[0], r[1], r[3], r[4], r[3]])
+            [r[0], r[1], r[3], r[4], r[3]],
+        )
     return len(sp_rows), len(need_gen), len(need_fam), len(id_rows)
 
 

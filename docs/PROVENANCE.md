@@ -41,7 +41,7 @@ Botanica is not a single opaque dump. Knowledge rows carry a **source** label; m
 | Distribution | Mostly **POWO**; some **USDA** |
 | Uses | *None yet* |
 
-Exact counts: query `data/silver_keep/provenance.parquet` and `source` columns, or re-run scorecards after a fill.
+Exact counts: query `data/silver_keep/provenance/*.parquet` and `source` columns, or re-run scorecards after a fill.
 
 ---
 
@@ -85,13 +85,13 @@ Product-facing apps should not strip `source` columns when displaying care data.
 
 ```bash
 # Who contributed provenance rows in KEEP?
-duckdb -c "SELECT source, count(*) FROM read_parquet('data/silver_keep/provenance.parquet') GROUP BY 1 ORDER BY 2 DESC;"
+duckdb -c "SELECT source, count(*) FROM read_parquet('data/silver_keep/provenance/*.parquet') GROUP BY 1 ORDER BY 2 DESC;"
 
 # Where did care requirements come from?
-duckdb -c "SELECT source, requirement_type, count(*) FROM read_parquet('data/silver_keep/cultivation_requirements.parquet') GROUP BY 1, 2 ORDER BY 3 DESC LIMIT 20;"
+duckdb -c "SELECT source, requirement_type, count(*) FROM read_parquet('data/silver_keep/cultivation_requirements/*.parquet') GROUP BY 1, 2 ORDER BY 3 DESC LIMIT 20;"
 
 # External IDs on a species
-duckdb -c "SELECT i.source, i.external_id FROM read_parquet('data/silver_keep/species.parquet') s JOIN read_parquet('data/silver_keep/species_identifiers.parquet') i ON i.species_id = s.id WHERE s.scientific_name = 'Aloe vera';"
+duckdb -c "SELECT i.source, i.external_id FROM read_parquet('data/silver_keep/species/*.parquet') s JOIN read_parquet('data/silver_keep/species_identifiers/*.parquet') i ON i.species_id = s.id WHERE s.scientific_name = 'Aloe vera';"
 ```
 
 ---

@@ -5,6 +5,7 @@ Usage:
   python scripts/gap_report.py
   python scripts/gap_report.py --list data/lookups/priority_houseplants.txt
 """
+
 from __future__ import annotations
 
 import argparse
@@ -79,7 +80,7 @@ def main() -> int:
     ap.add_argument(
         "--keep",
         type=Path,
-        default=ROOT / "data/silver_keep/species.parquet",
+        default=ROOT / "data/silver_keep/species" / "*.parquet",
     )
     args = ap.parse_args()
     names = list(DEFAULT_HOUSEPLANTS)
@@ -111,8 +112,8 @@ def main() -> int:
             missing.append(n)
 
     print(f"priority list n={len(names)}")
-    print(f"  IN keep:  {len(present)} ({100*len(present)/len(names):.0f}%)")
-    print(f"  MISSING:  {len(missing)} ({100*len(missing)/len(names):.0f}%)")
+    print(f"  IN keep:  {len(present)} ({100 * len(present) / len(names):.0f}%)")
+    print(f"  MISSING:  {len(missing)} ({100 * len(missing) / len(names):.0f}%)")
     print("\n-- present --")
     for want, got in present[:30]:
         print(f"  OK  {want}  →  {got}")

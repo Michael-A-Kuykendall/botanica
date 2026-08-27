@@ -19,7 +19,7 @@ Goal: grow **KEEP** coverage for human-relevant slices (houseplants, crops, orna
 
 ```bash
 # Product counts
-duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species.parquet');"
+duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species/*.parquet');"
 
 # Field coverage on KEEP
 python scripts/quality_report.py --tag now   # warehouse DB if present

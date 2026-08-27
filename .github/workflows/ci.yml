@@ -14,4 +14,6 @@ jobs:
       - name: cargo test
         run: cargo test --lib
       - name: KEEP parquet present
-        run: test -f data/silver_keep/species.parquet || test -f data/silver/species.parquet
+        run: test -f data/silver_keep/species/part-000000.parquet || test -f data/silver/species/part-000000.parquet
+      - name: parquet size gate (each part < 40 MB, under GitHub limit)
+        run: python scripts/shard_parquet.py --data data/silver_keep data/silver --verify-only

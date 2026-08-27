@@ -70,22 +70,23 @@ Sources already in: **USDA PLANTS**, **GRIN taxonomy**, **FAOSTAT** crop labels,
 
 ## Get the data (GitHub columnar)
 
-One **file per table** under `data/silver_keep/` (not one giant DB blob):
+One **directory per table** under `data/silver_keep/` — each table split into small
+`part-NNNNNN.parquet` files (every part ≤ 40 MB, so we never need Git LFS). DuckDB reads
+a whole table by globbing the parts. See `docs/DATA_PARQUET.md`.
 
-| File (examples) | ~Size |
+| Table dir (examples) | ~Total |
 |-----------------|------:|
-| `vernacular_names.parquet` | ~13 MB |
-| `distribution_regions.parquet` | ~13 MB |
-| `species_identifiers.parquet` | ~6 MB |
-| `species.parquet` | ~1 MB |
-| `traits.parquet` / `cultivation_requirements.parquet` | ~1 MB each |
-| **All KEEP tables together** | **~41 MB** |
-| Release zip `data-v0.2.0` | **~30 MB** |
+| `vernacular_names/` | ~16 MB |
+| `distribution_regions/` | ~57 MB |
+| `species_identifiers/` | ~16 MB |
+| `species/` | ~4 MB |
+| `traits/` / `cultivation_requirements/` | ~1 MB each |
+| **All KEEP tables together** | **~126 MB** |
 
 ```bash
 # after clone
-duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species.parquet');"
-duckdb -c "SELECT scientific_name FROM read_parquet('data/silver_keep/species.parquet') WHERE scientific_name ILIKE 'Monstera%' LIMIT 10;"
+duckdb -c "SELECT count(*) FROM read_parquet('data/silver_keep/species/*.parquet');"
+duckdb -c "SELECT scientific_name FROM read_parquet('data/silver_keep/species/*.parquet') WHERE scientific_name ILIKE 'Monstera%' LIMIT 10;"
 ```
 
 Or download the [Release asset](https://github.com/Michael-A-Kuykendall/botanica/releases/tag/data-v0.2.0).

@@ -3,6 +3,7 @@
 
 Not scientific names — commodity labels (Apples, Barley, …). Match via vernacular_names.
 """
+
 from __future__ import annotations
 
 import csv
@@ -15,7 +16,9 @@ from pathlib import Path
 import duckdb
 
 ROOT = Path(__file__).resolve().parents[1]
-ITEMS = ROOT / "data/bronze/faostat/extracted/Production_Crops_Livestock_E_ItemCodes.csv"
+ITEMS = (
+    ROOT / "data/bronze/faostat/extracted/Production_Crops_Livestock_E_ItemCodes.csv"
+)
 
 
 def clean_item(item: str) -> list[str]:
@@ -58,12 +61,35 @@ def clean_item(item: str) -> list[str]:
     )
     if any(s in low for s in skip) and "bean" not in low:
         # allow "Bambara beans" etc.
-        if not any(x in low for x in ("bean", "nut", "seed", "fruit", "berry", "grape", "rice", "wheat", "maize", "potato", "tomato", "onion", "apple", "banana", "citrus")):
-            if re.search(r"\b(meat|milk|butter|cheese|egg|cattle|sheep|pig|chicken)\b", low):
+        if not any(
+            x in low
+            for x in (
+                "bean",
+                "nut",
+                "seed",
+                "fruit",
+                "berry",
+                "grape",
+                "rice",
+                "wheat",
+                "maize",
+                "potato",
+                "tomato",
+                "onion",
+                "apple",
+                "banana",
+                "citrus",
+            )
+        ):
+            if re.search(
+                r"\b(meat|milk|butter|cheese|egg|cattle|sheep|pig|chicken)\b", low
+            ):
                 return []
     primary = item.split(";")[0].strip()
     # strip ", dry" ", raw" style tails after comma if short
-    primary = re.sub(r",\s*(dry|green|raw|fresh|in shell).*$", "", primary, flags=re.I).strip()
+    primary = re.sub(
+        r",\s*(dry|green|raw|fresh|in shell).*$", "", primary, flags=re.I
+    ).strip()
     cands = {primary, primary.lower()}
     # first token for multi-word if useful
     if " " in primary:
@@ -116,8 +142,13 @@ def main() -> int:
             [str(uuid.uuid4()), sid, sid[:16], sid[:16], sid],
         )
     print(f"tagged species via vernacular match: {len(hit_species)}")
-    p = str((ROOT / "data/silver/species_identifiers.parquet").resolve()).replace("\\", "/")
+    p = str((ROOT / "data/silver/species_identifiers.parquet").resolve()).replace(
+        "\\", "/"
+    )
     con.execute(f"COPY (SELECT * FROM species_identifiers) TO '{p}' (FORMAT PARQUET)")
+    from shard_parquet import shard as shard_out, TARGET_MB_DEFAULT
+
+    shard_out(ROOT / "data/silver", TARGET_MB_DEFAULT, con)
 
     report = {
         "built_at": datetime.now(timezone.utc).isoformat(),

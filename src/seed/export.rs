@@ -24,7 +24,11 @@ pub const SILVER_TABLES: &[&str] = &[
     "ingest_quarantine",
 ];
 
-/// COPY each silver table to `{out_dir}/{table}.parquet`.
+/// COPY each silver table to `{out_dir}/{table}/part-NNNNNN.parquet`.
+///
+/// Tables are sharded into a per-table directory so every part stays under the Git
+/// size margin (see docs/DATA_PARQUET.md). DuckDB reads a whole table via the glob
+/// `<dir>/<table>/*.parquet`.
 pub async fn export_silver_parquet(
     db: &BotanicalDatabase,
     out_dir: &Path,
@@ -36,7 +40,10 @@ pub async fn export_silver_parquet(
     let mut written = Vec::new();
 
     for table in SILVER_TABLES {
-        let path = out_dir.join(format!("{}.parquet", table));
+        let tdir = out_dir.join(table);
+        std::fs::create_dir_all(&tdir)
+            .map_err(|e| DatabaseError::validation(format!("create table dir: {}", e)))?;
+        let path = tdir.join("part-000000.parquet");
         // Use forward slashes for DuckDB on Windows
         let path_str = path.to_string_lossy().replace('\\', "/");
         let sql = format!(
@@ -55,7 +62,10 @@ pub async fn export_silver_parquet(
     Ok(written)
 }
 
-/// Rebuild DuckDB tables from silver parquet directory (loader path).
+/// Rebuild DuckDB tables from a sharded silver parquet directory (loader path).
+///
+/// Reads each table via `<dir>/<table>/*.parquet`, falling back to the legacy flat
+/// `<dir>/<table>.parquet` if a table directory does not exist.
 pub async fn load_silver_parquet(
     db: &BotanicalDatabase,
     silver_dir: &Path,
@@ -65,16 +75,22 @@ pub async fn load_silver_parquet(
     let mut loaded = 0usize;
 
     for table in SILVER_TABLES {
-        let path = silver_dir.join(format!("{}.parquet", table));
-        if !path.exists() {
+        let tdir = silver_dir.join(table);
+        let flat = silver_dir.join(format!("{}.parquet", table));
+        let pattern: String;
+        let source = if tdir.join("*.parquet").parent().is_some() && tdir.is_dir() {
+            pattern = format!("{}/*.parquet", tdir.to_string_lossy().replace('\\', "/"));
+            pattern
+        } else if flat.exists() {
+            flat.to_string_lossy().replace('\\', "/")
+        } else {
             continue;
-        }
-        let path_str = path.to_string_lossy().replace('\\', "/");
+        };
         // Clear and reload for idempotent load
         let _ = conn.execute(&format!("DELETE FROM {}", table), []);
         let sql = format!(
             "INSERT INTO {} SELECT * FROM read_parquet('{}')",
-            table, path_str
+            table, source
         );
         conn.execute(&sql, [])
             .map_err(|e| DatabaseError::DuckDbError(format!("load {}: {}", table, e)))?;
