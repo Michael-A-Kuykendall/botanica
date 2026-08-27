@@ -27,9 +27,14 @@ on Earth" rather than USDA-centric crops.
   app, no CSV export — would need session-scraping; 6,100 *crops* overlap heavily with
   WCUPS/GRIN) and Genesys (germplasm API — overlaps GRIN). Revisit only if a fuller
   international union is required; both would primarily re-confirm already-in-scope taxa.
-- **Pending:** V4 POWO full merge (V5) — running in background; will add `powo` ids +
-  synonym resolution that can later pull in the ~12,199 WCUPS species whose genus had no
-  resolvable family.
+- **POWO full (V4/V5) — DONE via WCVP bulk.** The POWO api
+  (`powo.science.kew.org/api/2`) is blocked by a Cloudflare challenge from CI/cloud
+  hosts, so V4 used the **WCVP Darwin-Core archive**
+  (`sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip`, 2026-06) — the same Kew
+  checklist the API serves, with identical IPNI LSIDs. `scripts/ingest_wcvp.py` mapped
+  **65,752** warehouse species (59%) to accepted WCVP taxa by binomial and inserted powo
+  identifiers (LSID), synonyms, and TDWG WGSRPD distribution + lifeform/climate. Sig
+  growth: definitive **67,227**, cultivated scope **77,489**.
 
 ## Tier 1 — Global union of human use (primary allowlist)
 

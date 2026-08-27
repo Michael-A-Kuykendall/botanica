@@ -1,0 +1,27 @@
+[
+  {
+    "query": "Quercus alba",
+    "search": null,
+    "error": "403 Client Error: Forbidden for url: https://powo.science.kew.org/api/2/search?q=Quercus+alba&perPage=5"
+  },
+  {
+    "query": "Aloe vera",
+    "search": null,
+    "error": "403 Client Error: Forbidden for url: https://powo.science.kew.org/api/2/search?q=Aloe+vera&perPage=5"
+  },
+  {
+    "query": "Camellia sinensis",
+    "search": null,
+    "error": "403 Client Error: Forbidden for url: https://powo.science.kew.org/api/2/search?q=Camellia+sinensis&perPage=5"
+  },
+  {
+    "query": "Ginkgo biloba",
+    "search": null,
+    "error": "403 Client Error: Forbidden for url: https://powo.science.kew.org/api/2/search?q=Ginkgo+biloba&perPage=5"
+  },
+  {
+    "query": "Mentha spicata",
+    "search": null,
+    "error": "403 Client Error: Forbidden for url: https://powo.science.kew.org/api/2/search?q=Mentha+spicata&perPage=5"
+  }
+]

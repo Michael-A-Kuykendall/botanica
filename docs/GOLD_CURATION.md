@@ -45,10 +45,20 @@ when the mart exists (use `--no-curation` to fall back to the legacy rule).
 | ≥ 2 signals | 18,552 (29.7%) |
 | ≥ 3 signals | 16,799 (26.9%) |
 
-To grow the definitive set toward "all cultivated Earth" (~30–50k), add signals:
-- **Backbone:** insert the ~45k GRIN taxa not yet in the warehouse (V2).
-- **POWO-full:** only 2.6k POWO ids exist today; a full run adds accepted-name +
-  distribution + cultivated signal to ~60k taxa (V4).
-- **Uses / media:** currently 0 rows (V6, V8).
+## POWO/WCVP full (2026-08)
+
+The POWO **api** (`powo.science.kew.org/api/2`) is Cloudflare-challenged from CI/hosts,
+so the full run was replaced with the equivalent **WCVP bulk Darwin-Core archive**
+(`sftp.kew.org/pub/data-repositories/WCVP/wcvp_dwca.zip`, 2026-06) — the same Kew
+checklist behind the API, same IPNI LSIDs. `scripts/ingest_wcvp.py` maps warehouse
+species by binomial and inserts:
+
+- `species_identifiers` source=**powo** (LSID) — 2,607 → **65,873**
+- `synonyms` source=**powo** — 341,984 rows for 49.7k species
+- `distribution_regions` source=**powo** (TDWG WGSRPD) — 688,508 rows for 65.7k species
+- lifeform/climate extracted from WCVP `dynamicproperties` (reported in manifest)
+
+Re-scored (V5): definitive **32,768 → 67,227**; cultivated scope **70,461 → 77,489**.
+`powo` supplies 64,143 signals in the definitive set.
 
 See `docs/PRODUCT_ROUNDS.md` (Round 8 / VINYL epic `bot-dh8`).

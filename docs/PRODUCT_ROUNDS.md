@@ -235,3 +235,4 @@ Deferred product path; not required for Botanica OSS cut.
 | 2026-07-10 | V2 BACKBONE | Inserted 44,508 GRIN taxa not in USDA → warehouse 62,558→107,066. `scripts/ingest_grin_backbone.py`. |
 | 2026-07-10 | V3 RE-SCORE | Added `is_cultivated_scope`. **Vinyl universe = 63,074** (GRIN-driven); definitive subset 18,552. KEEP re-exported for both gates. |
 | 2026-07-10 | V4–V10 next | Depth remains shallow on new 44k (EN vern 26.9%, 3+Tier1 3.3%). POWO-full (V4), uses (V6), media (V8), depth (V9), release (V10) pending. |
+| 2026-08-27 | **V4 POWO-full + V5 merge … DONE via WCVP bulk** | POWO api Cloudflare-blocked from host; pivoted to WCVP Darwin-Core archive (same Kew checklist, IPNI LSIDs). `ingest_wcvp.py`: 65,752 species matched (59%); powo ids 2.6k→65.9k; synonyms +342k; distribution +688k (TDWG). Re-scored: definitive 32,768→**67,227**; cultivated scope 70,461→**77,489**. Remaining open: V6 uses, V7, V8 media, V9 depth, V10 quality/cut. |
