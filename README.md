@@ -19,7 +19,7 @@ If you or someone you love needs support:
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Michael-A-Kuykendall/botanica/master/assets/botanica-logo.png" alt="Botanica" width="320" height="auto" />
+  <img src="https://raw.githubusercontent.com/Michael-A-Kuykendall/botanica/main/assets/botanica-logo.png" alt="Botanica" width="320" height="auto" />
 </div>
 
 **Cultivated-plant knowledge base (Rust + DuckDB) — with a loaded public seed.**  
