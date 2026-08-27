@@ -1,0 +1,9 @@
+{
+  "built_at": "2026-08-27T22:55:15.788148+00:00",
+  "corrupt_rows_dropped": 54,
+  "dup_clusters_merged": 813,
+  "dup_rows_removed": 1547,
+  "child_rows_repointed": 11262,
+  "species_before": 112754,
+  "species_after": 111160
+}
