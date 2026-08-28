@@ -18,6 +18,22 @@ Precise requirement for each so you know exactly what to do.
 - **Effort: minimal** — just the GBIF account + creds. Everything else is automated.
 - **Caveat:** US-centric (North America). Still the cleanest single cultivated flag.
 
+### VERIFIED (2026-08-28): GBIF checklist is a metadata stub — archive NOT exposed
+Credentials authenticate (`/v1/user/login` → 200, account `mikekuykendall`), but the
+checklist archive is **not downloadable through the GBIF API**:
+- `/occurrence/download/request` → 404 (no occurrences; it's a checklist)
+- `/dataset/{key}/archive` and `/download` → 404
+- `species/search?datasetKey=...` → count 0 (name index does not expose it)
+- `gbif.org/dataset/{key}/archive` → 403 (bot-gated)
+So the GBIF dataset is a **registration stub** (metadata + DOI + 93,969 usage count) —
+the actual cultivated-status data is not served through any bulk GBIF path. The real
+archive would need the USDA SPA's internal API or a USDA-side agreement.
+
+**Fallback for the cultivated axis:** rather than fight the USDA SPA, the pragmatic
+next move is to use the **already-loaded data** we have and NOT add a weak/new source.
+The corroborated core (GRIN/WCUPS/ITPGRFA/FAOSTAT ≥2 = 22,282) stands as the honest
+product set.
+
 ## 2. iNaturalist cultivated observations — EASY (no membership)
 - **What it is:** 18.2M observations flagged "captive/cultivated."
 - **Access:** Free open API (no key for read), CC-BY; GBIF export also available.
