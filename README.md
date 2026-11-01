@@ -4,7 +4,18 @@
 
 [![Trans rights](https://pride-badges.pony.workers.dev/static/v1?label=trans%20rights&stripeWidth=6&stripeColors=5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA)](https://translifeline.org/) [![LGBTQ+ friendly](https://pride-badges.pony.workers.dev/static/v1?label=lgbtq%2B%20friendly&stripeWidth=6&stripeColors=E40303,FF8C00,FFED00,008026,24408E,732982)](https://www.thetrevorproject.org/) [![Sponsor](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-Sponsor-ea4aaa?logo=github)](https://github.com/sponsors/Michael-A-Kuykendall)
 
-💝 Support Botanica: [sponsor on GitHub](https://github.com/sponsors/Michael-A-Kuykendall) — 100% of support keeps it free forever. See [SPONSORS.md](SPONSORS.md). 🙏
+### Support
+
+This project is independently maintained and free forever. Sponsorship helps fund ongoing development, certification, compatibility work, and releases.
+
+[Sponsor on GitHub](https://github.com/sponsors/Michael-A-Kuykendall) · [Buy Me a Coffee](https://www.buymeacoffee.com/michaelakuykendall)
+
+Any amount is appreciated. Suggested tiers:
+
+- **$5/month** — Thanks
+- **$15/month** — Supporter
+- **$50/month** — Backer
+- **Custom** — [Email for invoicing](mailto:michaelallenkuykendall@gmail.com)
 
 ## Support
 
